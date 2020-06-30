@@ -1,4 +1,4 @@
-Mon Jun 29 20:19:48 2020
+Mon Jun 29 20:30:21 2020
 Darwin-18.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
  
@@ -21,7 +21,7 @@ Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.01s
 DPI scale factor: 1.000000
-Creating interface object took 0.19s
+Creating interface object took 0.13s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -197,11 +197,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 0.951121091843s
+Total time until interface ready: 0.890373945236s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016992 seconds.
-- Frame drawn at 0.033916 seconds.
-- Frame drawn at 0.050196 seconds.
-- Frame drawn at 0.067312 seconds.
-- 0.067312 seconds to render 5 frames.
+- Frame drawn at 0.017027 seconds.
+- Frame drawn at 0.032745 seconds.
+- Frame drawn at 0.050234 seconds.
+- Frame drawn at 0.066952 seconds.
+- 0.066952 seconds to render 5 frames.
