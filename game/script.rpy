@@ -22,7 +22,6 @@ label start:
 
     menu:
 
-
         "Taking measurements for a new stage to be built in town square.":
 
             jump intro_carpenter
@@ -37,16 +36,27 @@ label start:
 
 label intro_carpenter:
     $ carpenter = True
+
     "Our quaint little town had come quite a ways over the past ten years,"
+
+    jump next
 
 label intro_tutor:
     $ tutor = True
+
     "My newest pupil was a"
+
+    jump next
 
 label intro_merchant:
     $ merchant = True
+
     ""
-    
+
+    jump next
+
+label next:
+
     "Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements."
 
     "It's only when I hear the sounds of shuffling feet and supplies being put away that I realize that the lecture's over."
