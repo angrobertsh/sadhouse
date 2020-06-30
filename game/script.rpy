@@ -16,7 +16,7 @@ label start:
     scene bg lecturehall
     with fade
 
-    "Once upon a time I really had to take a shet."
+    "Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements."
 
     "It's only when I hear the sounds of shuffling feet and supplies being put away that I realize that the lecture's over."
 
