@@ -5,6 +5,9 @@ define m = Character(_("Me"), color="#c8c8ff")
 # This is a variable that is True if you've compared a VN to a book, and False
 # otherwise.
 default book = False
+default carpenter = False
+default tutor = False
+default merchant = False
 
 
 # The game starts here.
@@ -15,8 +18,46 @@ label start:
 
     scene bg lecturehall
     with fade
+    "I had received a call in the morning from an unfamiliar voice, while I was..."
 
-    "Once upon a time I really had to take a shet."
+    menu:
+
+        "Taking measurements for a new stage to be built in town square.":
+
+            jump intro_carpenter
+
+        "Preparing a general lesson plan of maths problems and written exercises.":
+
+            jump intro_tutor
+
+        "Inspecting a recent shipment of goods from one of my suppliers.":
+
+            jump intro_merchant
+
+label intro_carpenter:
+    $ carpenter = True
+
+    "Our quaint little town had come quite a ways over the past ten years,"
+
+    jump next
+
+label intro_tutor:
+    $ tutor = True
+
+    "My newest pupil was a"
+
+    jump next
+
+label intro_merchant:
+    $ merchant = True
+
+    ""
+
+    jump next
+
+label next:
+
+    "Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements."
 
     "It's only when I hear the sounds of shuffling feet and supplies being put away that I realize that the lecture's over."
 
