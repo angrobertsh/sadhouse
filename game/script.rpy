@@ -37,35 +37,67 @@ label start:
 label intro_carpenter:
     $ carpenter = True
 
-    "Our quaint little town had come quite a ways over the past ten years,"
+    "Our little town had come a long way over the years. I remember going to the market as a child, the fruits and vegetables on display next to the butcher's meats and across the street was the cobbler's, which is now a gourmet cafe. Often, you can find patrons lining up out the door and around the corner, as they did for the ice cream shop that was there before it.
+
+    The town had more recently began sponsoring a summer festival in town square. This year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster. We would need to start building in the cold of winter to finish in time. "
 
     jump next
 
 label intro_tutor:
     $ tutor = True
 
-    "My newest pupil was a"
+    "My newest pupil was the youngest of three. The parents were doctors, and the family had recently moved into the new Galen Heights neighborhood. The outer hills of Atford were now populated with elegant residences that attracted tenants from out of town, all of them seemingy affluent."
+
+    "Not all of the locals were pleased with this development, but I couldn't complain about the increase in clientele. As development increased in the area, there was talk of incorporating Galen Heights into a separate town, which further drew ire."
 
     jump next
 
 label intro_merchant:
     $ merchant = True
 
-    ""
+    "I had worked part-time during school at the local...""
 
     jump next
 
 label next:
 
+    "The gentleman introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
+
+    "Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away."
+
+    "He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of "natural cause.""
+
     "Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements."
 
-    "It's only when I hear the sounds of shuffling feet and supplies being put away that I realize that the lecture's over."
+    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other."
 
-    "Professor Eileen's lectures are usually interesting, but today I just couldn't concentrate on it."
+    menu:
 
-    "I've had a lot of other thoughts on my mind...thoughts that culminate in a question."
+        "I'll do it. Please let me know what the next steps are.":
 
-    "It's a question that I've been meaning to ask a certain someone."
+            jump accept
+
+        "I'm afraid I don't understand. What do you mean by "executor"?"
+
+            jump ambivalent
+
+        "I haven't spoken to Jim in years, I'm not sure what this has to do with me."
+
+            jump apathetic
+
+label accept:
+
+    "Please meet me at my office this afternoon at 3pm. The address is 32 Fairview Drive, Suite B in the Palace Gardens district. We can discuss the details further in person."
+
+label ambivalent:
+
+    "An executor is tasked with handling the distribution of the deceased's assets..."
+
+label apathetic:
+
+    "Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date. Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish."
+
+
 
     scene bg uni
     with fade
