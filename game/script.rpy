@@ -110,7 +110,9 @@ label apathetic:
 
 label short_ending:
 
-    "Jim. Jimmy. That was a lifetime ago. I don't know why he thought of me, but there's been a mistake."
+    "Jim. Jimmy. That was a lifetime ago. Indeed I shouldn't be obliged to accept, and, in fact, I won't."
+
+    "Surely it was suggested by some party that I may be the right choice, but it appears there's been a mistake."
 
     menu:
 
@@ -118,7 +120,7 @@ label short_ending:
 
             jump neutral_ending
 
-        "He can get someone else to clean up his mess.":
+        "He made his choice once he left. He can get someone else to clean up his mess.":
 
             jump mean_ending
 
