@@ -37,18 +37,26 @@ label start:
 label intro_carpenter:
     $ carpenter = True
 
-    "Our little town had come a long way over the years. I remember going to the market as a child, the fruits and vegetables on display next to the butcher's meats and across the street was the cobbler's, which is now a gourmet cafe. Often, you can find patrons lining up out the door and around the corner, as they did for the ice cream shop that was there before it."
+    "Our little town had come a long way over the years. I remember going to the market as a child, the fruits and vegetables on display next to the butcher's meats."
 
-    "The town had more recently began sponsoring a summer festival in town square. This year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster. We would need to start building in the cold of winter to finish in time. "
+    "Across the street was the cobbler's, which is now a gourmet cafe. Often, you can find patrons lining up out the door and around the corner, as they did for the ice cream shop that was there before it."
+
+    "The town had more recently began sponsoring a summer festival in town square. This year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster."
+
+    "We would need to start building in the cold of winter to finish in time."
 
     jump next
 
 label intro_tutor:
     $ tutor = True
 
-    "My newest pupil was the youngest of three. The parents were doctors, and the family had recently moved into the new Galen Heights neighborhood. The outer hills of Atford were now populated with elegant residences that attracted tenants from out of town, all of them seemingy affluent."
+    "My newest pupil was the youngest of three. The parents were doctors, and the family had recently moved into the new Galen Heights neighborhood."
 
-    "Not all of the locals were pleased with this development, but I couldn't complain about the increase in clientele. As development increased in the area, there was talk of incorporating Galen Heights into a separate town, which further drew ire."
+    "The outer hills of Atford were now populated with elegant residences that attracted tenants from out of town, all of them seemingy affluent."
+
+    "Not all of the locals were pleased with this development, but I couldn't complain about the increase in clientele."
+
+    "As development increased in the area, there was talk of incorporating Galen Heights into a separate town, which further drew ire."
 
     jump next
 
@@ -89,16 +97,19 @@ label accept:
 
     "\"Please meet me at my office this afternoon at 3pm. The address is 32 Fairview Drive, Suite B in the Palace Gardens district. We can discuss the details further in person.\""
 
+    jump james_letter
+
 label ambivalent:
 
     "\"An executor is tasked with handling the distribution of the deceased's assets...\""
+
 
 label apathetic:
 
     "\"Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date. Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish.\""
 
 
-
+label james_letter:
     scene bg uni
     with fade
 

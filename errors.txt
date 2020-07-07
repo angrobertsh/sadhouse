@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 80: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "I'm afraid I don't understand. What do you mean by \"executor\"?"
-                                                                      ^
+File "game/script.rpy", line 96: end of line expected.
+    jump james_letter:
+                     ^
+
+File "game/script.rpy", line 108: expected ':' not found.
+    label james_letter
+                      ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Jul  6 19:22:56 2020
+Mon Jul  6 20:01:43 2020
