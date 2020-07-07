@@ -55,7 +55,7 @@ label intro_tutor:
 label intro_merchant:
     $ merchant = True
 
-    "I had worked part-time during school at the local...""
+    "I had worked part-time during school at the local..."
 
     jump next
 
@@ -65,7 +65,7 @@ label next:
 
     "Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away."
 
-    "He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of "natural cause.""
+    "He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \"natural cause.\""
 
     "Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements."
 
