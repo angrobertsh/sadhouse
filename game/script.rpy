@@ -37,9 +37,9 @@ label start:
 label intro_carpenter:
     $ carpenter = True
 
-    "Our little town had come a long way over the years. I remember going to the market as a child, the fruits and vegetables on display next to the butcher's meats and across the street was the cobbler's, which is now a gourmet cafe. Often, you can find patrons lining up out the door and around the corner, as they did for the ice cream shop that was there before it.
+    "Our little town had come a long way over the years. I remember going to the market as a child, the fruits and vegetables on display next to the butcher's meats and across the street was the cobbler's, which is now a gourmet cafe. Often, you can find patrons lining up out the door and around the corner, as they did for the ice cream shop that was there before it."
 
-    The town had more recently began sponsoring a summer festival in town square. This year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster. We would need to start building in the cold of winter to finish in time. "
+    "The town had more recently began sponsoring a summer festival in town square. This year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster. We would need to start building in the cold of winter to finish in time. "
 
     jump next
 
