@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 80: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "I'm afraid I don't understand. What do you mean by \"executor\"?"
+                                                                      ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Mon Jul  6 19:22:56 2020

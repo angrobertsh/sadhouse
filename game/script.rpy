@@ -63,13 +63,13 @@ label next:
 
     "The gentleman introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
 
-    "Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away."
+    "\"Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away.\""
 
-    "He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \"natural cause.\""
+    "\"He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \"natural cause.\""
 
-    "Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements."
+    "\"Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements.\""
 
-    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other."
+    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other.\""
 
     menu:
 
@@ -77,25 +77,25 @@ label next:
 
             jump accept
 
-        "I'm afraid I don't understand. What do you mean by "executor"?"
+        "I'm afraid I don't understand. What do you mean by \"executor\"?":
 
             jump ambivalent
 
-        "I haven't spoken to Jim in years, I'm not sure what this has to do with me."
+        "I haven't spoken to Jim in years, I'm not sure what this has to do with me.":
 
             jump apathetic
 
 label accept:
 
-    "Please meet me at my office this afternoon at 3pm. The address is 32 Fairview Drive, Suite B in the Palace Gardens district. We can discuss the details further in person."
+    "\"Please meet me at my office this afternoon at 3pm. The address is 32 Fairview Drive, Suite B in the Palace Gardens district. We can discuss the details further in person.\""
 
 label ambivalent:
 
-    "An executor is tasked with handling the distribution of the deceased's assets..."
+    "\"An executor is tasked with handling the distribution of the deceased's assets...\""
 
 label apathetic:
 
-    "Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date. Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish."
+    "\"Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date. Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish.\""
 
 
 
