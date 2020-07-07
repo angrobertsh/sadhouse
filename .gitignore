@@ -1,2 +1,6 @@
 /game/audio
 /game/saves
+/game/cache
+log.txt
+errors.txt
+traceback.txt
