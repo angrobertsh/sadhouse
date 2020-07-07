@@ -108,6 +108,35 @@ label apathetic:
 
     "\"Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date. Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish.\""
 
+label short_ending:
+
+    "Jim. Jimmy. That was a lifetime ago. I don't know why he thought of me, but there's been a mistake."
+
+    menu:
+
+        "He's no longer a part of my life.":
+
+            jump neutral_ending
+
+        "He can get someone else to clean up his mess."
+
+            jump mean_ending
+
+label neutral_ending:
+
+    scene black
+
+    "Jimmy. Haven't heard that name in a while, didn't think I would again."
+
+    return
+
+label mean_ending:
+
+    scene black
+
+    "I want nothing to do with him."
+
+    return
 
 label james_letter:
     scene bg uni

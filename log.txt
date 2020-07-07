@@ -1,46 +1,64 @@
+<<<<<<< Updated upstream
 Mon Jul  6 20:06:09 2020
+=======
+Mon Jul  6 19:52:50 2020
+>>>>>>> Stashed changes
 Darwin-18.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
  
 
+<<<<<<< Updated upstream
 Bootstrap to the start of init.init took 0.10s
+=======
+Bootstrap to the start of init.init took 0.06s
+>>>>>>> Stashed changes
 Early init took 0.00s
 Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.09s
+Loading error handling took 0.03s
+Loading script took 0.75s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
+<<<<<<< Updated upstream
 Running init code took 0.05s
 Loading analysis data took 0.04s
+=======
+Running init code took 0.08s
+Loading analysis data took 0.03s
+>>>>>>> Stashed changes
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Backing up script files to '/Users/robertang/Library/RenPy/backups/Sadhouse':
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.01s
 DPI scale factor: 1.000000
+<<<<<<< Updated upstream
 Creating interface object took 0.14s
+=======
+Creating interface object took 0.15s
+>>>>>>> Stashed changes
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.02s
 Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.08s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.05s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.03s
+Interface start took 0.02s
 
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1680, 1050)
 swap interval: 1 frames
 Windowed mode.
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(2560, 1440)
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce GT 650M OpenGL Engine'
-Version: '2.1 NVIDIA-12.0.24 355.11.10.50.10.103'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon Pro 555X OpenGL Engine'
+Version: '2.1 ATI-2.11.20'
 Display Info: None
 Extensions:
     
@@ -92,6 +110,7 @@ Extensions:
     GL_ARB_shader_texture_lod
     GL_ARB_shading_language_100
     GL_ARB_shadow
+    GL_ARB_shadow_ambient
     GL_ARB_sync
     GL_ARB_texture_border_clamp
     GL_ARB_texture_compression
@@ -113,7 +132,10 @@ Extensions:
     GL_ARB_vertex_program
     GL_ARB_vertex_shader
     GL_ARB_window_pos
+    GL_ATI_blend_equation_separate
+    GL_ATI_blend_weighted_minmax
     GL_ATI_separate_stencil
+    GL_ATI_texture_compression_3dc
     GL_ATI_texture_env_combine3
     GL_ATI_texture_float
     GL_ATI_texture_mirror_once
@@ -134,7 +156,6 @@ Extensions:
     GL_EXT_fog_coord
     GL_EXT_framebuffer_blit
     GL_EXT_framebuffer_multisample
-    GL_EXT_framebuffer_multisample_blit_scaled
     GL_EXT_framebuffer_object
     GL_EXT_framebuffer_sRGB
     GL_EXT_geometry_shader4
@@ -170,18 +191,13 @@ Extensions:
     GL_NV_conditional_render
     GL_NV_depth_clamp
     GL_NV_fog_distance
-    GL_NV_fragment_program2
-    GL_NV_fragment_program_option
     GL_NV_light_max_exponent
-    GL_NV_multisample_filter_hint
-    GL_NV_point_sprite
     GL_NV_texgen_reflection
     GL_NV_texture_barrier
-    GL_NV_vertex_program2_option
-    GL_NV_vertex_program3
     GL_SGIS_generate_mipmap
     GL_SGIS_texture_edge_clamp
     GL_SGIS_texture_lod
+    GL_SGI_color_matrix
 Number of texture units: 8
 Using shader environment.
 Using FBO RTT.
@@ -198,6 +214,7 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
+<<<<<<< Updated upstream
 Total time until interface ready: 0.966547012329s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
@@ -206,3 +223,13 @@ Total time until interface ready: 0.966547012329s
 - Frame drawn at 0.045584 seconds.
 - Frame drawn at 0.059867 seconds.
 - 0.059867 seconds to render 5 frames.
+=======
+Total time until interface ready: 1.67858505249s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016539 seconds.
+- Frame drawn at 0.032839 seconds.
+- Frame drawn at 0.049224 seconds.
+- Frame drawn at 0.067372 seconds.
+- 0.067372 seconds to render 5 frames.
+>>>>>>> Stashed changes
