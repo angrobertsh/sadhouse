@@ -118,7 +118,7 @@ label short_ending:
 
             jump neutral_ending
 
-        "He can get someone else to clean up his mess."
+        "He can get someone else to clean up his mess.":
 
             jump mean_ending
 
