@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 121: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "He can get someone else to clean up his mess."
-                                                   ^
+File "game/script.rpy", line 23: expected end of line
+    stop music "audio/telephone_ring.ogg"
+               ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Jul  6 20:11:41 2020
+Sun Jul 12 19:42:01 2020
