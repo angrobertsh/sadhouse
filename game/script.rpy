@@ -322,11 +322,31 @@ label kitchen_cupboard:
 
 label study_menu:
 
-    "Study menu"
+    menu:
+
+        "Pick a direction"
+
+        "Kitchen":
+
+            jump kitchen_menu
+
+        "Hallway":
+
+            jump hallway_menu
 
 label hallway_menu:
 
-    "Hallway menu"
+    menu:
+
+        "Pick a direction"
+
+        "Kitchen":
+
+            jump kitchen_menu
+
+        "Study":
+
+            jump study_menu
 
     scene bg uni
     with fade
