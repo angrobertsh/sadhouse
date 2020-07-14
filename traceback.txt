@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: Couldn't find file 'audio/a_life_well_lived.wav'.
+IOError: Couldn't find file 'a_life_well_lived_sample.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -34,9 +34,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'audio/a_life_well_lived.wav'.
+IOError: Couldn't find file 'a_life_well_lived_sample.ogg'.
 
 Darwin-18.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
 A Noble Charade 1.0
-Sun Jul 12 19:50:29 2020
+Mon Jul 13 12:07:20 2020

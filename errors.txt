@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 23: expected end of line
-    stop music "audio/telephone_ring.ogg"
-               ^
+File "game/options.rpy", line 64: expected expression
+    define config.main_menu_music = 
+                                    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Jul 12 19:42:01 2020
+Mon Jul 13 00:33:15 2020

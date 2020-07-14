@@ -1,4 +1,4 @@
-Sun Jul 12 19:53:15 2020
+Mon Jul 13 12:07:19 2020
 Darwin-18.7.0-x86_64-i386-64bit
 Ren'Py 7.3.5.606
  
@@ -7,33 +7,32 @@ Bootstrap to the start of init.init took 0.09s
 Early init took 0.01s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.20s
+Loading script took 0.08s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
+Running init code took 0.05s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to '/Users/rachelpaik/Library/RenPy/backups/sadhouse':
 Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
 DPI scale factor: 1.000000
-Creating interface object took 0.13s
+Creating interface object took 0.12s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.06s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.02s
+Interface start took 0.03s
 
 primary display bounds: (0, 0, 1440, 900)
 swap interval: 1 frames
@@ -199,18 +198,45 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.1795771122s
+Total time until interface ready: 0.937712907791s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017588 seconds.
-- Frame drawn at 0.025419 seconds.
-- Frame drawn at 0.056115 seconds.
-- Frame drawn at 0.072402 seconds.
-- 0.072402 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+- Frame drawn at 0.017257 seconds.
+- Frame drawn at 0.030619 seconds.
+- Frame drawn at 0.058922 seconds.
+- Frame drawn at 0.077820 seconds.
+- 0.077820 seconds to render 5 frames.
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/display/core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/display/core.py", line 3380, in interact_core
+    renpy.audio.audio.periodic()
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/audio/audio.py", line 1060, in periodic
+    six.reraise(exc[0], exc[1], exc[2])
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/audio/audio.py", line 1038, in periodic_thread_main
+    periodic_pass()
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/audio/audio.py", line 979, in periodic_pass
+    c.periodic()
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/audio/audio.py", line 457, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/audio/audio.py", line 73, in load
+    rv = renpy.loader.load(fn)
+  File "/Users/rachelpaik/Desktop/renpy-7.3.5-sdk/renpy/loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'a_life_well_lived_sample.ogg'.
+
+While running game code:
+IOError: Couldn't find file 'a_life_well_lived_sample.ogg'.

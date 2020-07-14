@@ -12,6 +12,7 @@ default merchant = False
 
 # The game starts here.
 label start:
+    stop music fadeout 1.0
 
     # Start by playing some music.
 
