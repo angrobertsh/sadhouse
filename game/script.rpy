@@ -14,10 +14,13 @@ default merchant = False
 label start:
 
     # Start by playing some music.
-    play music "audio/a_life_well_lived.wav"
 
     scene bg lecturehall
+
+    play sound "audio/telephone_ring.ogg"
+
     with fade
+
     "I had received a call in the morning from an unfamiliar voice, while I was..."
 
     menu:
@@ -41,35 +44,44 @@ label intro_carpenter:
 
     "Across the street was the cobbler's, which is now a gourmet cafe. Often, you can find patrons lining up out the door and around the corner, as they did for the ice cream shop that was there before it."
 
-    "The town had more recently began sponsoring a summer festival in town square. This year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster."
+    "The town had begun to sponsor a summer festival and this year, funds had been set aside for a new stage to be built that would accommodate an expanded live entertainment roster."
 
-    "We would need to start building in the cold of winter to finish in time."
+    "We would need to start building in the cold of winter to finish in time. The winters were now warmer than I had remembered growing up, but cold nevertheless."
 
     jump next
 
 label intro_tutor:
     $ tutor = True
 
-    "My newest pupil was the youngest of three. The parents were doctors, and the family had recently moved into the new Galen Heights neighborhood."
+    "My newest pupil was the youngest of three. The parents were doctors, and the family had recently moved into the new Galenwood neighborhood."
 
     "The outer hills of Atford were now populated with elegant residences that attracted tenants from out of town, all of them seemingy affluent."
 
     "Not all of the locals were pleased with this development, but I couldn't complain about the increase in clientele."
 
-    "As development increased in the area, there was talk of incorporating Galen Heights into a separate town, which further drew ire."
+    "There was talk of incorporating Galenwood into a separate town, which further drew ire."
+
+    "But progress seemed inevitable and there were never any clear signs of protest other than a petition drafted and posted in town square, lost among the bustle of commerce."
+
+    "In the meantime, was education not the means for bettering oneself and fostering change? Perhaps."
 
     jump next
 
 label intro_merchant:
     $ merchant = True
 
-    "I had worked part-time during school at the local..."
+    "I had worked part-time at Bolton's, a local store, while I was still a student. The job involved assisting customers and keeping the shop tidy."
+
+    "Eventually, this led to a full-time position managing inventory and keeping the books. When Mr. Bolton retired, I became the purchaser."
+
+    "Deciding what to keep in stock is both a logical and intuitive decision. No matter how tough times are, people continue to purchase goods--it's simply a matter of which goods."
+
 
     jump next
 
 label next:
 
-    "The gentleman introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
+    "The gentleman on the phone introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
 
     "\"Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away.\""
 
@@ -101,18 +113,106 @@ label accept:
 
 label ambivalent:
 
-    "\"An executor is tasked with handling the distribution of the deceased's assets...\""
+    "\"An executor is tasked with handling the distribution of the deceased's assets. All of these must be accounted for and secured.\""
+
+    "\"Any remaining debts will need to be settled and any relevant parties notified of his passing. Though given his stature, it will likely become public knowledge soon enough.\""
+
+    menu:
+
+        "What is the process for handling these tasks? This is all very unfamiliar to me.":
+
+            jump curious
+
+        "This sounds like quite a lot of work, if I'm being honest.":
+
+            jump cautious
+
+label curious:
+
+    "\"Not to worry. If you should accept, I will assist you to the best of my ability. You merely need to adhere to Mr. Pryor's wishes in his will.\""
+
+    "\"The bulk of your efforts will be directed towards locating the aforementioned assets. If any questions arise, please don't hesitate to contact me directly.\""
+
+    menu:
+
+        "If you can provide me with some guidance, I'll do my best.":
+
+            jump diligent
+
+        "Respectfully, I must decline. This seems beyond the scope of reasonable effort.":
+
+            jump do_nothing
+
+label cautious:
+
+    "\"By all means, this will require no small effort on your part. Mr. Pryor has only one property that I know of, but...\""
+
+    menu:
+
+        "(accept)":
+
+            jump circumspect
+
+        "(decline)":
+
+            jump cynical
+
+label diligent:
+
+    "\"Certainly, I'm at your service...\""
+
+    jump james_letter
+
+label do_nothing:
+
+    "\"I see, and I thank you for your time.\""
+
+    jump mean_ending
 
 
 label apathetic:
 
-    "\"Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date. Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish.\""
+    "\"Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date.\""
+
+    "\"Of course, you are not obligated to accept. You may choose not to act as Mr. Pryor's executor if you so wish. But I might add that you will be compensated for your efforts.\""
+
+    menu:
+
+        "All right, let's see what this is about.":
+
+            jump beholder
+
+        "I understand, and I'd prefer not to be involved.":
+
+            jump bystander
+
+label circumspect:
+
+    "\"I hope I was able to (answer your questions)\""
+
+    jump james_letter
+
+label cynical:
+
+    "\"I understand if...\""
+
+    jump neutral_ending
+
+label beholder:
+
+    "\"Perhaps it may become clearer if we're to meet and further discuss...\""
+
+    jump james_letter
+
+label bystander:
+
+    "\"Very well, and I'm sorry to have disturbed you. I wish you good day.\""
+
+    jump mean_ending
 
 label short_ending:
 
-    "Jim. Jimmy. That was a lifetime ago. Indeed I shouldn't be obliged to accept, and, in fact, I won't."
-
-    "Surely it was suggested by some party that I may be the right choice, but it appears there's been a mistake."
+    "Jim. Jimmy. That was a lifetime ago. I don't know why he thought of me, but there's been a mistake."
 
     menu:
 
@@ -120,7 +220,7 @@ label short_ending:
 
             jump neutral_ending
 
-        "He made his choice once he left. He can get someone else to clean up his mess.":
+        "He can get someone else to clean up his mess.":
 
             jump mean_ending
 
