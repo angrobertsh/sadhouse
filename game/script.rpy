@@ -9,6 +9,8 @@ default carpenter = False
 default tutor = False
 default merchant = False
 
+# Explored
+default explored_kitchen = False
 
 # The game starts here.
 label start:
@@ -241,6 +243,91 @@ label mean_ending:
     return
 
 label james_letter:
+
+    jump house
+
+label house:
+
+    menu:
+
+        "Pick a direction"
+
+        "Kitchen":
+
+            jump kitchen_menu
+
+        "Hallway":
+
+            jump hallway_menu
+
+        "Study":
+
+            jump study_menu
+
+label kitchen_menu:
+
+    menu:
+
+        "Pick a direction"
+
+        "Stay here":
+
+            jump kitchen
+
+        "Hallway":
+
+            jump hallway_menu
+
+        "Study":
+
+            jump study_menu
+
+label kitchen:
+
+    if explored_kitchen:
+
+        "I've been here before"
+
+    menu:
+
+        "Pick a direction"
+
+        "Look in cupboard":
+
+            jump kitchen_cupboard
+
+        "Look out window":
+
+            jump kitchen_window
+
+        "go back":
+
+            jump kitchen_menu
+
+label kitchen_window:
+
+    $ explored_kitchen = True
+
+    "Look out the window wow!"
+
+    jump kitchen
+
+label kitchen_cupboard:
+
+    $ explored_kitchen = True
+
+    "It's full of glass and raisins"
+
+    jump kitchen
+
+label study_menu:
+
+    "Study menu"
+
+label hallway_menu:
+
+    "Hallway menu"
+
     scene bg uni
     with fade
 
