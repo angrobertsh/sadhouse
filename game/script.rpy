@@ -14,7 +14,7 @@ default explored_kitchen = False
 
 # The game starts here.
 label start:
-
+    jump kitchen
     # Start by playing some music.
 
     scene bg lecturehall
@@ -337,10 +337,6 @@ label kitchen:
 
             jump kitchen_window
 
-        "Look some more" if explored_kitchen:
-
-            jump kitchen_hidden
-
         "go back":
 
             jump kitchen_menu
@@ -358,12 +354,6 @@ label kitchen_cupboard:
     $ explored_kitchen = True
 
     "It's full of glass and raisins"
-
-    jump kitchen
-
-label kitchen_hidden:
-
-    "I looked inside and found some yucky olives"
 
     jump kitchen
 
