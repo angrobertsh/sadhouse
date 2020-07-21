@@ -244,13 +244,50 @@ label mean_ending:
 
 label james_letter:
 
-    jump house
+    scene letters_6
 
-label house:
+    "To my old friend."
+    "Thomas tells me I need to plan for when I'm gone..."
+
+    scene stephen_king_mansion at truecenter
+
+    "It looks like I've just arrived. It's the only mansion among all of these houses, so it's difficult to miss but I almost passed it by, being my first time here."
+
+    "The gate creaks open slowly..."
 
     menu:
 
-        "Pick a direction"
+        "As if to speak of an untold history waiting to be discovered.":
+
+            jump optimistic
+
+        "Ominously, to forebode those who would enter.":
+
+            jump pessmistic
+
+label optimistic:
+
+    "The front yard is trim and well-kept and in the midst of neatly manicured bushes, I take in the serene lull of peace and seclusion."
+
+    jump front_door
+
+label pessmistic:
+
+    "It becomes eerily quiet once I've moved away from the street.."
+
+    jump front_door
+
+label front_door:
+
+    "I walk up to the front door and I reach in my pocket for the key, provided by Mr. Lupin along with a written copy of Jimmy's last instructions."
+
+    "It unlocks easily enough."
+
+    scene stephen_king_hall at truecenter
+
+    "The hall is airy and bright when I enter..."
+
+    menu:
 
         "Kitchen":
 
@@ -321,6 +358,8 @@ label kitchen_cupboard:
     jump kitchen
 
 label study_menu:
+
+    scene study at truecenter
 
     menu:
 
