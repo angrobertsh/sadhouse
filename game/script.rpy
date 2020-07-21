@@ -337,6 +337,10 @@ label kitchen:
 
             jump kitchen_window
 
+        "Look some more" if explored_kitchen:
+
+            jump kitchen_hidden
+
         "go back":
 
             jump kitchen_menu
@@ -356,6 +360,12 @@ label kitchen_cupboard:
     "It's full of glass and raisins"
 
     jump kitchen
+
+label kitchen_hidden:
+
+    "I looked inside and found some yucky olives"
+
+    jump kitchen    
 
 label study_menu:
 
