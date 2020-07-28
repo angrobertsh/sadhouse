@@ -301,6 +301,109 @@ label front_door:
 
             jump study_menu
 
+        # "Upstairs:
+        #
+        #     jump upstairs_menu
+
+
+label dining_room_menu:
+
+    menu:
+
+        "Stay here":
+
+            jump dining_room
+
+        "Kitchen"
+
+            jump kitchen_menu
+
+        "Patio"
+
+            jump patio_menu
+
+        "Hallway"
+
+            jump hallway_menu
+
+label dining_room:
+
+    menu:
+
+        "go back":
+
+            jump dining_room_menu
+
+label patio_menu:
+
+    menu:
+
+        "Stay here":
+
+            jump patio
+
+        "Dining Room"
+
+            jump dining_room_menu
+
+label patio:
+
+    menu:
+
+        "go back":
+
+            jump patio_menu
+
+label lounge_menu:
+
+    menu:
+
+        "Pick a direction"
+
+        "Stay here":
+
+            jump lounge
+
+        "Library"
+
+            jump library_menu
+
+        "Hallway"
+
+            jump hallway_menu
+
+label lounge:
+
+    menu:
+
+        "go back":
+
+            jump lounge_menu
+
+
+label library_menu:
+
+    menu:
+
+        "Pick a direction"
+
+        "Stay here":
+
+            jump library
+
+        "Lounge"
+
+            jump lounge_menu
+
+
+label library:
+
+    menu:
+
+        "go back":
+
+            jump library_menu
+
 label kitchen_menu:
 
     menu:
@@ -311,13 +414,9 @@ label kitchen_menu:
 
             jump kitchen
 
-        "Hallway":
+        "Dining Room":
 
-            jump hallway_menu
-
-        "Study":
-
-            jump study_menu
+            jump dining_room_menu
 
 label kitchen:
 
@@ -365,37 +464,7 @@ label kitchen_hidden:
 
     "I looked inside and found some yucky olives"
 
-    jump kitchen    
-
-label study_menu:
-
-    scene study at truecenter
-
-    menu:
-
-        "Pick a direction"
-
-        "Kitchen":
-
-            jump kitchen_menu
-
-        "Hallway":
-
-            jump hallway_menu
-
-label hallway_menu:
-
-    menu:
-
-        "Pick a direction"
-
-        "Kitchen":
-
-            jump kitchen_menu
-
-        "Study":
-
-            jump study_menu
+    jump kitchen
 
     scene bg uni
     with fade
