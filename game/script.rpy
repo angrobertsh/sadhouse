@@ -11,6 +11,13 @@ default merchant = False
 
 # Explored
 default explored_kitchen = False
+default explored_lounge_piano = False
+default explored_lounge_window = False
+default explored_lounge_chair = False
+default explored_dining_room_dining_table_sit = False
+default explored_dining_room_dining_room_dining_trappings = False
+default explored_kitchen_cupboard = False
+default explored_kitchen_window = False
 
 # The game starts here.
 label start:
@@ -289,120 +296,11 @@ label hallway_menu:
 
     "The hall is airy and bright when I enter..."
 
-    menu:
-
-        "Kitchen":
-
-            jump kitchen_menu
-
-        "Hallway":
-
-            jump hallway_menu
-
-        "Study":
-
-            jump study_menu
-
-        "Upstairs":
-
-            jump upstairs_menu
-
-
-label dining_room_menu:
-
-    scene dining room at truecenter
-
-    "It looks like it was designed with entertaining guests in mind."
-
-    menu:
-
-        "Stay here":
-
-            jump dining_room
-
-        "Kitchen":
-
-            jump kitchen_menu
-
-        "Patio":
-
-            jump patio_menu
-
-        "Hallway":
-
-            jump hallway_menu
-
-label dining_room:
-
-    menu:
-
-        "I take a seat...":
-
-            jump dining_table_sit
-
-        "I examine the...":
-
-            jump dining_trappings
-
-label dining_table_sit:
-
-    "I imagine Jimmy sitting at the head of the table..."
-
-label dining_trappings:
-
-    "A set of silverware, quite literally made of silver."
-
-
-    menu:
-
-        "go back":
-
-            jump dining_room_menu
-
-label patio_menu:
-
-    # NEEDS IMAGE
-    scene stephen_king_hall at truecenter
-
-    menu:
-
-        "Stay here":
-
-            jump patio
-
-        "Dining Room":
-
-            jump dining_room_menu
-
-label patio:
-
-    menu:
-
-        "go back":
-
-            jump patio_menu
-
-label lounge_menu:
-
-    scene living_2 at truecenter
-
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
-
-            jump lounge
-
-        "Library":
-
-            jump library_menu
-
-        "Hallway":
-
-            jump hallway_menu
+    "To my right is the lounge. I move beyond and enter."
 
 label lounge:
+
+    scene piano living room at truecenter
 
     "Where he would have received his many distinguished guests."
 
@@ -410,102 +308,229 @@ label lounge:
 
     "Sunlight pours in through a French door that offers a view into a garden patio."
 
-
     menu:
 
-        "go back":
+        "I sit and play the piano" if not explored_lounge_piano:
 
-            jump lounge_menu
+            jump lounge_piano
 
+        "I gaze out the window" if not explored_lounge_window:
 
-label library_menu:
+            jump lounge_window
 
-    scene library at truecenter
+        "I take a seat on a comfortable couch" if not explored_lounge_chair:
 
-    menu:
+            jump lounge_chair
 
-        "Pick a direction"
-
-        "Stay here":
+        "I move on":
 
             jump library
 
-        "Lounge":
+label lounge_piano:
 
-            jump lounge_menu
+    $ explored_lounge_piano = True
 
+    "The piano is pianoy"
+
+    jump lounge
+
+label lounge_window:
+
+    $ explored_lounge_window = True
+
+    "The window is windowy"
+
+    jump lounge
+
+label lounge_chair:
+
+    $ explored_lounge_chair = True
+
+    "The chair is chairy"
+
+    jump lounge
 
 label library:
 
-    menu:
+    scene library at truecenter
 
-        "go back":
-
-            jump library_menu
-
-label kitchen_menu:
-
-    scene kitchen_1 at truecenter
+    "The library is full of books. It smells like wood and laminant"
 
     menu:
 
-        "Pick a direction"
+        # "I sit and play the piano" if not explored_lounge_piano:
+        #
+        #     jump lounge_piano
+        #
+        # "I gaze out the window" if not explored_lounge_window:
+        #
+        #     jump lounge_window
+        #
+        # "I take a seat on a comfortable couch" if not explored_lounge_chair:
+        #
+        #     jump lounge_chair
 
-        "Stay here":
+        "I move on":
+
+            jump dining_room
+
+# label lounge_piano:
+#
+#     $ explored_lounge_piano = True
+#
+#     "The piano is pianoy"
+#
+#     jump lounge
+#
+# label lounge_window:
+#
+#     $ explored_lounge_window = True
+#
+#     "The window is windowy"
+#
+#     jump lounge
+#
+# label lounge_chair:
+#
+#     $ explored_lounge_chair = True
+#
+#     "The chair is chairy"
+#
+#     jump lounge
+
+label dining_room:
+
+    scene dining room at truecenter
+
+    "The dining room would have been host to innumerable parties, all gathered around a glass of champagne, or a late night espresso    "
+
+    menu:
+
+        "I take a seat..." if not explored_dining_room_dining_table_sit:
+
+            jump dining_room_dining_table_sit
+
+        "I examine the..." if not explored_dining_room_dining_room_dining_trappings:
+
+            jump dining_room_dining_trappings
+
+        "I move on":
+
+            jump patio
+
+label dining_room_dining_table_sit:
+
+    $ explored_dining_room_dining_table_sit = True
+
+    "I imagine Jimmy sitting at the head of the table..."
+
+    jump dining_room
+
+label dining_room_dining_trappings:
+
+    $ explored_dining_room_dining_room_dining_trappings = True
+
+    "A set of silverware, quite literally made of silver."
+
+    jump dining_room
+
+label patio:
+
+    scene patio at truecenter
+
+    "The garden patio is spacious. The wood beneath my shoes is weathered by the sun."
+
+    menu:
+
+        # "I sit and play the piano" if not explored_lounge_piano:
+        #
+        #     jump lounge_piano
+        #
+        # "I gaze out the window" if not explored_lounge_window:
+        #
+        #     jump lounge_window
+        #
+        # "I take a seat on a comfortable couch" if not explored_lounge_chair:
+        #
+        #     jump lounge_chair
+
+        "I move on":
 
             jump kitchen
 
-        "Dining Room":
-
-            jump dining_room_menu
+# label lounge_piano:
+#
+#     $ explored_lounge_piano = True
+#
+#     "The piano is pianoy"
+#
+#     jump lounge
+#
+# label lounge_window:
+#
+#     $ explored_lounge_window = True
+#
+#     "The window is windowy"
+#
+#     jump lounge
+#
+# label lounge_chair:
+#
+#     $ explored_lounge_chair = True
+#
+#     "The chair is chairy"
+#
+#     jump lounge
 
 label kitchen:
 
-    if explored_kitchen:
+    scene kitchen_1 at truecenter
 
-        "I've been here before"
+    "The kitchen is the homiest part of this house."
 
     menu:
 
-        "Pick a direction"
-
-        "Look in cupboard":
+        "Look in cupboard" if not explored_kitchen_cupboard:
 
             jump kitchen_cupboard
 
-        "Look out window":
+        "Look out window" if not explored_kitchen_window:
 
             jump kitchen_window
 
-        "Look some more" if explored_kitchen:
+        "I move on":
 
-            jump kitchen_hidden
-
-        "go back":
-
-            jump kitchen_menu
-
-label kitchen_window:
-
-    $ explored_kitchen = True
-
-    "Look out the window wow!"
-
-    jump kitchen
+            jump upstairs
 
 label kitchen_cupboard:
 
-    $ explored_kitchen = True
+    $ explored_kitchen_cupboard = True
 
     "It's full of glass and raisins"
 
     jump kitchen
 
-label kitchen_hidden:
+label kitchen_window:
 
-    "I looked inside and found some yucky olives"
+    $ explored_kitchen_window = True
+
+    "The window is windowy"
 
     jump kitchen
+
+label upstairs:
+
+    scene hallway3 at truecenter
+
+    return
+
+
+
+
+
+
+
+
 
 label upstairs_menu:
 
