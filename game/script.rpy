@@ -414,7 +414,7 @@ label library_book_1_insight_1:
 
     "He must like violence"
 
-    jump library
+    jump library_menu
 
 label library_book_1_insight_2:
 
@@ -422,7 +422,7 @@ label library_book_1_insight_2:
 
     "He must like being reminded of his leaving home"
 
-    jump library
+    jump library_menu
 
 label library_book_1_insight_3:
 
@@ -430,7 +430,7 @@ label library_book_1_insight_3:
 
     "He must still feel like a child inside"
 
-    jump library
+    jump library_menu
 
 label library_book_2:
 
