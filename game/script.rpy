@@ -14,7 +14,7 @@ default explored_kitchen = False
 
 # The game starts here.
 label start:
-    jump kitchen
+
     # Start by playing some music.
 
     scene bg lecturehall
@@ -310,8 +310,9 @@ label hallway_menu:
 
 label dining_room_menu:
 
-    # NEEDS IMAGE
-    scene stephen_king_hall at truecenter
+    scene dining room at truecenter
+
+    "It looks like it was designed with entertaining guests in mind."
 
     menu:
 
@@ -319,19 +320,38 @@ label dining_room_menu:
 
             jump dining_room
 
-        "Kitchen"
+        "Kitchen":
 
             jump kitchen_menu
 
-        "Patio"
+        "Patio":
 
             jump patio_menu
 
-        "Hallway"
+        "Hallway":
 
             jump hallway_menu
 
 label dining_room:
+
+    menu:
+
+        "I take a seat...":
+
+            jump dining_table_sit
+
+        "I examine the...":
+
+            jump dining_trappings
+
+label dining_table_sit:
+
+    "I imagine Jimmy sitting at the head of the table..."
+
+label dining_trappings:
+
+    "A set of silverware, quite literally made of silver."
+
 
     menu:
 
@@ -350,7 +370,7 @@ label patio_menu:
 
             jump patio
 
-        "Dining Room"
+        "Dining Room":
 
             jump dining_room_menu
 
@@ -374,15 +394,22 @@ label lounge_menu:
 
             jump lounge
 
-        "Library"
+        "Library":
 
             jump library_menu
 
-        "Hallway"
+        "Hallway":
 
             jump hallway_menu
 
 label lounge:
+
+    "Where he would have received his many distinguished guests."
+
+    "The grand piano is what immediately draws the eye. Did he play?"
+
+    "Sunlight pours in through a French door that offers a view into a garden patio."
+
 
     menu:
 
@@ -403,7 +430,7 @@ label library_menu:
 
             jump library
 
-        "Lounge"
+        "Lounge":
 
             jump lounge_menu
 
