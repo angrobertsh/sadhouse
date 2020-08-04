@@ -552,205 +552,89 @@ label upstairs_menu:
 
         "I move on":
 
-            jump upstairs
+            jump balcony
 
-label conservatory_menu:
+label balcony:
+
+    "The air is fresh"
+
+label balcony_menu:
+
+    menu:
+
+        "I move on":
+
+            jump salon
+
+label salon:
+
+    scene salon at truecenter
+
+    "The salon is full of sofas"
+
+label salon_menu:
+
+    menu:
+
+        "I move on":
+
+            jump conservatory
+
+
+label conservatory:
 
     # NEEDS IMAGE?
     scene conservatory at truecenter
 
     "The conservatory is full of plants"
 
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
-
-            jump conservatory
-
-        "Salon":
-
-            jump salon_menu
-
-        "Hallway":
-
-            jump upstairs_menu
-
-label conservatory:
-
-    "The antiques are shiny"
+label conservatory_menu:
 
     menu:
 
-        "Pick a direction"
+        "I move on":
 
-        "Go back":
+            jump interlude
 
-            jump conservatory_menu
+label interlude
 
-label salon_menu:
+    "Ooo interlude"
 
-    scene salon at truecenter
-
-    "The salon is full of sofas"
-
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
-
-            jump salon
-
-        "Conservatory":
-
-            jump conservatory_menu
-
-label salon:
-
-    "The sofas are comfy"
-
-    menu:
-
-        "Pick a direction"
-
-        "Go back":
-
-            jump salon_menu
-
-label balcony_menu:
-
-    # NEEDS IMAGE
-    scene salon at truecenter
-
-    "The balcony is full of air"
-
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
-
-            jump balcony
-
-        "Hallway":
-
-            jump upstairs_menu
-
-label balcony:
-
-    "The air is fresh"
-
-    menu:
-
-        "Pick a direction"
-
-        "Go back":
-
-            jump balcony_menu
-
-label study_menu:
-
-    scene study at truecenter
-
-    "The study is full of books"
-
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
-
-            jump study
-
-        "Bedroom":
-
-            jump bedroom_menu
-
-        "Hallway":
-
-            jump upstairs_menu
+    jump study
 
 label study:
 
-    "The books are musty"
+    scene study at truecenter
+
+    "The study is study-y"
+
+label study_menu:
 
     menu:
 
-        "Pick a direction"
-
-        "Go back":
-
-            jump study_menu
-
-label bedroom_menu:
-
-    # NEEDS IMAGE
-    scene bedroom at truecenter
-
-    "The bedroom is full of beds"
-
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
+        "I move on":
 
             jump bedroom
 
-        "Study":
-
-            jump study_menu
-
-        "Bathroom":
-
-            jump bathroom_menu
-
 label bedroom:
 
-    "The bed is beddy"
+    scene bedroom at truecenter
+
+    "The bedroom is bedroom-y"
+
+label bedroom_menu:
 
     menu:
 
-        "Pick a direction"
-
-        "Go back":
-
-            jump bedroom_menu
-
-label bathroom_menu:
-
-    # NEEDS IMAGE
-    scene salon at truecenter
-
-    "The bathroom is full of baths"
-
-    menu:
-
-        "Pick a direction"
-
-        "Stay here":
+        "I move on":
 
             jump bathroom
 
-        "Bedroom":
-
-            jump bedroom_menu
-
 label bathroom:
 
-    "The baths are bathy"
+    "Bathroom"
 
-    menu:
-
-        "Pick a direction"
-
-        "Go back":
-
-            jump bathroom_menu
-
-
+    return
 
     # scene bg uni
     # with fade
