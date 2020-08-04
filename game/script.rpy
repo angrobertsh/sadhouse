@@ -283,9 +283,9 @@ label front_door:
 
     "It unlocks easily enough."
 
-    scene stephen_king_hall at truecenter
-
 label hallway_menu:
+
+    scene stephen_king_hall at truecenter
 
     "The hall is airy and bright when I enter..."
 
@@ -309,6 +309,9 @@ label hallway_menu:
 
 
 label dining_room_menu:
+
+    # NEEDS IMAGE
+    scene stephen_king_hall at truecenter
 
     menu:
 
@@ -338,6 +341,9 @@ label dining_room:
 
 label patio_menu:
 
+    # NEEDS IMAGE
+    scene stephen_king_hall at truecenter
+
     menu:
 
         "Stay here":
@@ -357,6 +363,8 @@ label patio:
             jump patio_menu
 
 label lounge_menu:
+
+    scene living_2 at truecenter
 
     menu:
 
@@ -385,6 +393,8 @@ label lounge:
 
 label library_menu:
 
+    scene library at truecenter
+
     menu:
 
         "Pick a direction"
@@ -407,6 +417,8 @@ label library:
             jump library_menu
 
 label kitchen_menu:
+
+    scene kitchen_1 at truecenter
 
     menu:
 
@@ -470,6 +482,9 @@ label kitchen_hidden:
 
 label upstairs_menu:
 
+    # NEEDS IMAGE?
+    scene hallway3 at truecenter
+
     "The upstairs is hallway-y"
 
     menu:
@@ -493,6 +508,9 @@ label upstairs_menu:
             jump balcony_menu
 
 label conservatory_menu:
+
+    # NEEDS IMAGE
+    scene billiards at truecenter
 
     "The conservatory is full of antiques"
 
@@ -526,6 +544,8 @@ label conservatory:
 
 label salon_menu:
 
+    scene salon at truecenter
+
     "The salon is full of sofas"
 
     menu:
@@ -554,6 +574,9 @@ label salon:
 
 label balcony_menu:
 
+    # NEEDS IMAGE
+    scene salon at truecenter
+
     "The balcony is full of air"
 
     menu:
@@ -581,6 +604,8 @@ label balcony:
             jump balcony_menu
 
 label study_menu:
+
+    scene study at truecenter
 
     "The study is full of books"
 
@@ -614,6 +639,9 @@ label study:
 
 label bedroom_menu:
 
+    # NEEDS IMAGE
+    scene salon at truecenter
+
     "The bedroom is full of beds"
 
     menu:
@@ -646,6 +674,9 @@ label bedroom:
 
 label bathroom_menu:
 
+    # NEEDS IMAGE
+    scene salon at truecenter
+
     "The bathroom is full of baths"
 
     menu:
@@ -674,11 +705,11 @@ label bathroom:
 
 
 
-    scene bg uni
-    with fade
-
-    "When we come out of the university, I spot her right away."
-
+    # scene bg uni
+    # with fade
+    #
+    # "When we come out of the university, I spot her right away."
+    #
 #     show sylvie green normal
 #     with dissolve
 #
