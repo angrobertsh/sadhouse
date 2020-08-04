@@ -405,8 +405,7 @@ label library_book_1:
 
             jump library_book_1_insight_3
 
-
-label library_book_1_insight_1
+label library_book_1_insight_1:
 
     $ insight_1_library_book_1 = True
 
@@ -414,7 +413,7 @@ label library_book_1_insight_1
 
     jump library
 
-label library_book_1_insight_2
+label library_book_1_insight_2:
 
     $ insight_2_library_book_1 = True
 
@@ -422,7 +421,7 @@ label library_book_1_insight_2
 
     jump library
 
-label library_book_1_insight_1
+label library_book_1_insight_3:
 
     $ insight_3_library_book_1 = True
 
@@ -504,7 +503,7 @@ label kitchen:
 
     "The kitchen is the homiest part of this house."
 
-label kitchen_menu
+label kitchen_menu:
 
     menu:
 
