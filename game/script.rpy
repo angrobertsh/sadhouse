@@ -596,7 +596,7 @@ label conservatory_menu:
 
             jump interlude
 
-label interlude
+label interlude:
 
     "Ooo interlude"
 
