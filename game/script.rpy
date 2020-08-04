@@ -18,6 +18,9 @@ default explored_dining_room_dining_table_sit = False
 default explored_dining_room_dining_room_dining_trappings = False
 default explored_kitchen_cupboard = False
 default explored_kitchen_window = False
+default explored_library_book_1 = False
+default explored_library_book_2 = False
+default explored_library_book_3 = False
 
 # Insight
 default insight_1_library_book_1 = False
