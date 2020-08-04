@@ -509,10 +509,10 @@ label upstairs_menu:
 
 label conservatory_menu:
 
-    # NEEDS IMAGE
-    scene billiards at truecenter
+    # NEEDS IMAGE?
+    scene conservatory at truecenter
 
-    "The conservatory is full of antiques"
+    "The conservatory is full of plants"
 
     menu:
 
@@ -640,7 +640,7 @@ label study:
 label bedroom_menu:
 
     # NEEDS IMAGE
-    scene salon at truecenter
+    scene bedroom at truecenter
 
     "The bedroom is full of beds"
 
