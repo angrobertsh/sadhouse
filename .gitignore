@@ -1,6 +1,7 @@
 /game/audio
 /game/saves
 /game/cache
+/game/script.rpyc
 log.txt
 errors.txt
 traceback.txt
