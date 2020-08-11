@@ -10,6 +10,12 @@ default tutor = False
 default merchant = False
 default optimistic = False
 default pessimistic = False
+default rory_jimmy = False
+default rory_business_card = False
+default rory_artist = False
+default rory_friendship = False
+default rory_atford = False
+default rory_travel = False
 
 # Explored
 default explored_kitchen = False
@@ -486,7 +492,7 @@ label library_book_2:
 
     "I'm standing alone, sipping my third glass of wine when Rory approaches the bar for another drink."
 
-    "He introduces himself with a firm, jovial handshake. \"So how do you know James?\""
+    "With whiskey in one hand, he introduces himself with a firm, jovial handshake. \"So how do you know James?\""
 
     menu:
 
@@ -517,6 +523,7 @@ label good_friend:
             jump rory_admirer
 
 label rory_friend:
+    $ rory_jimmy = True
 
     "\"Jimmy?\" He lets out an amused chuckle. \"I'll have to call him that from now on.\""
 
@@ -529,14 +536,14 @@ label rory_friend:
     "\"That's right, A Noble Charade. Finally gave him a chance after all of that grunt work. We all have to pay our dues, yeah?\""
 
     "\"Then right at that moment, one of the other tenants comes storming up, accusing us of stealing his soap! As mad as it was, I'll always have fond memories of that place.\""
-    "\"And James put in a good word for me with S&S and look where we are. I'll always be grateful to him.\""
+    "\"And James put in a good word for me with S&S, and look where we are. I'll always be grateful to him.\""
 
     jump wedding_end
 
 label rory_admirer:
+    $ rory_business_card = True
 
     "Rory brightens at my words. \"Thanks, buddy. That means a lot. So then I take it that we're both admirers of James' work. Do you know that feeling, when you're witnessing somebody doing exactly what they're meant to do? That bastard was born to write.\""
-    "\"As for me, I know that I enjoy writing and I'm happy to keep doing it as long as I get paid.\""
 
     "\"Do you know what I mean? To be able to do what you love for a living. You can be good at things but not necessarily like them, you know?\""
     "\"Sometimes, I think it's good to try things you're not good at either.\" His words are slurred with drink, but his gestures become more animated. \"But then you might find something you're really, really good at and that's why you're here.\""
@@ -579,11 +586,12 @@ label schoolmates:
             jump schoolmate_lie
 
 label schoolmate_truth:
+    $ rory_artist = True
 
     "\"Beckford Academy, wasn't it? So terribly posh, I always give James a hard time about it but I'm one to talk. Don't tell anyone, but I attended Collins Prep for a moment! Hardly befitting of a starving artist, I know.\""
     "\"Speaking of which, do you agree that artists must suffer for their art? I don't think I would have sold half as many books if I had written about Heaven.\""
     "\"We spend our lives seeking happiness, aiming to eliminate pain and turmoil, but nobody wants to read a story without any drama in it. It'd be terribly dull.\""
-    "\"Yet you can't suffer too much, or else you'll lose the means the produce. Leave the suffering to your spirit, not your coffers. Need to keep the books selling.\""
+    "\"You can't suffer too much though, or else you'll lose the means to create. Leave the suffering to your spirits, not your coffers. Need to keep the books selling.\""
     "\"But I really can't complain, because now I'm able to write what I want to write. Within reason, of course. Novels aren't the only kind of writing out there.\" He tips his glass toward me."
     "\"There's script on the bottle that held this whiskey, or...lighter fare, if you will. There's a place for those things but for me, there's nothing like writing words that are truly your own.\""
 
@@ -592,12 +600,13 @@ label schoolmate_truth:
     jump wedding_end
 
 label schoolmate_lie:
+    $ rory_friendship = True
 
     "\"That's wonderful that you've remained acquainted after all this time.\""
     "\"Some of my best mates were from my school days, I think. In a way, you never have friends like that again. Back when we didn't need to worry about medical bills and the rent and all that rubbish.\""
     "\"Gosh, I don't know if we all still keep in touch like you two. I guess we'll find out at my own wedding!\""
 
-    "\"You know how James and Marian met, don't you?\""
+    "\"You know how James and Marian met, don't you? James just goes strolling out one day in the park to see the sunset and Marian just happens to be out there, on the same day doing the exact same thing. Like something out of a film.\""
 
     jump wedding_end
 
@@ -611,22 +620,25 @@ label hometown:
 
             jump hometown_truth
 
-        "Yes, Earnsworth.":
+        "Yes. Earnsworth.":
 
             jump hometown_lie
 
 label hometown_truth:
+    $ rory_atford = True
 
     "Rory raises an eyebrow. \"Atford? If I recall correctly, James came up to Lintonbury from Earnsworth after finishing school.\""
     "\"Isn't Atford up in Commerce Valley? Now that I think of it, one of my friends was talking about buying a residence there, I've heard it's rather quaint. I didn't know James had lived in Atford prior. James Atford Pryor.\" Rory laughs at his own joke."
+    "\'Did the Pryors move around much when he was a child? I imagine that could be difficult, or maybe it would be interesting to live in different places.\""
 
     jump wedding_end
 
 label hometown_lie:
+    $ rory_travel = True
 
     "\"It seemed like James couldn't wait to leave, but it must not be so bad if you've stayed. There's something comforting about the familiarity of the place you grew up in.\""
     "\"I've lived in Palace Gardens all my life. Never ventured out much in my youth, maybe to here in Hestia once in a while.\""
-    "\"It's fascinating how even one town can be so different from the next, let alone a different country.\""
+    "\"It's fascinating how even one town can be so different from the next, let alone a different country. Sometimes even neighborhoods can be quite different from each other.\""
 
     jump wedding_end
 
@@ -647,9 +659,60 @@ label wedding_end:
 
     "(I smile back. \"Congratulations again. And it was nice to finally meet you, Marian.\")"
 
-    "(Marian beams at me, giving my hand a friendly squeeze. \"It was lovely to meet you. I hope you'll come visit us sometime. Once somebody gets the renovations in order.\" She nudges Jimmy teasingly.)"
+    "(Marian beams at me, giving my hand a friendly squeeze. \"It was lovely to meet you. I hope you'll come visit us sometime. Once somebody gets the renovations in order.\" She teasingly nudges her newly wed husband."
+
+if rory_jimmy:
+
+    "\"That's right, 'Jimmy,' get your bloody house in order for chrissake,\" Rory chides with a boisterous laugh. \"What's the use of owning a mansion if you can't even live in it?\""
+    "Jimmy doesn't respond at first, and he glances at me briefly before smirking back at Rory. \"And when are you going to stop renting and finally settle down?\""
+    "\"In exchange for my freedom? No thank you, very much. No offense, Marian!\""
+
+    jump wedding_epilogue
+
+if rory_business_card:
+
+    "\"Oh right, before I forget. I'm not too far gone yet.\" Rory reaches into his inner vest and hands me a card. \"Give me a ring if you're ever in town again. You have one for me?\""
+    "I've never had a card of my own. A practice I've heard of, but never had to participate in before now."
+    "I absently fold the corners in my hand. \"Unfortunately, not on my person at the moment.\""
+    "\"Ah, that's all right. Today wasn't meant to be about business anyway. Tell you what--the next time you call on James, you'll both invite me along, yeah?\""
+
+    jump wedding_epilogue
+
+if rory_artist:
+
+    "Rory also takes my hand, shaking it firmly. \"I do hope we'll see each other again sometime. You've found a good one here, James. We both have a deep understanding of the arts.\""
+    "\"Really?\" Jimmy gives me an airy glance. \"I didn't know you were interested in the arts,\" he remarks evenly."
+    "\"Maybe there's more to me than you thought?\" I reply. He looks back at me, but says nothing."
+    "\"Yes, it's not just about the art,\" Rory intones. \"It's deeper than that. Deeper than this glass.\" He takes another swig, and we all laugh."
+
+    jump wedding_epilogue
+
+if rory_friendship:
+
+    "friendship goals"
+
+    jump wedding_epilogue
+
+if rory_atford:
+
+    "hometown stuff"
+
+    jump wedding_epilogue
+
+if rory_travel:
+
+    "travel stuff"
+
+    jump wedding_epilogue
+
+label wedding_epilogue:
+
+    "With a final word of farewell, I take my leave and the sounds and lights of the festivities begin to fade away as I reach the front gate, where I climb into a waiting car."
+    "Transportation has been arranged for the attendees, most of whom are staying at the nearby Fourth Street Hotel overnight."
+    "I'll take the car to the hotel, and then head over to the train station by foot. I'll be able to rest during the few hours of the ride, and I'll be back home by early morning."
 
     "I haven't seen Rory since, but I wish him only the best and I wonder if he has yet heard of Jimmy's passing."
+
     jump library
 
 label library_book_3:
@@ -808,7 +871,7 @@ label conservatory_menu:
 
             jump interlude
 
-label interlude
+label interlude:
 
     "Ooo interlude"
 
