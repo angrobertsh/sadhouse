@@ -40,8 +40,6 @@ label start:
 
     # Start by playing some music.
 
-    scene bg lecturehall
-
     play sound "audio/telephone_ring.ogg"
 
     with fade
@@ -73,7 +71,7 @@ label intro_carpenter:
 
     "We would need to start building in the cold of winter to finish in time. The winters were now warmer than I had remembered growing up, but cold nevertheless."
 
-    jump next
+    jump attorney
 
 label intro_tutor:
     $ tutor = True
@@ -90,7 +88,7 @@ label intro_tutor:
 
     "In the meantime, was education not the means for bettering oneself and fostering change? Perhaps."
 
-    jump next
+    jump attorney
 
 label intro_merchant:
     $ merchant = True
@@ -101,20 +99,19 @@ label intro_merchant:
 
     "Deciding what to keep in stock is both a logical and intuitive decision. No matter how tough times are, people continue to purchase goods--it's simply a matter of which goods."
 
+    jump attorney
 
-    jump next
-
-label next:
+label attorney:
 
     "The gentleman on the phone introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
 
     "\"Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away.\""
 
-    "\"He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \"natural cause.\""
+    "\"He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \'natural cause.\'\""
 
     "\"Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements.\""
 
-    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other.\""
+    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other."
 
     menu:
 
@@ -284,20 +281,20 @@ label james_letter:
 
         "As if to speak of an untold history waiting to be discovered.":
 
-            jump optimistic
+            jump optimistic_house
 
         "Ominously, to forebode those who would enter.":
 
-            jump pessmistic
+            jump pessimistic_house
 
-label optimistic:
+label optimistic_house:
     $ optimistic = True
 
     "The front yard is trim and well-kept and in the midst of neatly manicured bushes, I take in the serene lull of peace and seclusion."
 
     jump front_door
 
-label pessmistic:
+label pessimistic_house:
     $ pessimistic = True
 
     "It becomes eerily quiet once I've moved away from the street.."
@@ -414,6 +411,8 @@ label library:
     "A few volumes catch my eye:"
 
 label library_menu:
+
+    scene library at truecenter
 
     menu:
 
@@ -658,20 +657,20 @@ label hometown_lie:
 
 label wedding_end:
 
-    "(The evening passes by a little faster with Rory's company and an endless supply of libations. He introduces me to a number of other guests whose names I admittedly won't remember after tonight."
-    "(There are too many of them, and my faculties are inhibited by a combination of alcohol, nerves and the knowledge that we will never again cross paths."
+    "The evening passes by a little faster with Rory's company and an endless supply of libations. He introduces me to a number of other guests whose names I admittedly won't remember after tonight."
+    "There are too many of them, and my faculties are inhibited by a combination of alcohol, nerves and the knowledge that we will never again cross paths."
 
-    "(When the clock strikes nine, I excuse myself and let Rory know that I must be going."
+    "When the clock strikes nine, I excuse myself and let Rory know that I must be going."
 
-    "\"No, stay, stay,\" he insists but I catch Jimmy's eye and wave. He gets Marian's attention and they make their way over.)"
+    "\"No, stay, stay,\" he insists but I catch Jimmy's eye and wave. He gets Marian's attention and they make their way over."
 
-    "\"It was good to see you, but it's time for me to head back. I must get back to work first thing tomorrow morning,\" I tell them.)"
+    "\"It was good to see you, but it's time for me to head back. I must get back to work first thing tomorrow morning,\" I tell them."
 
-    "Rory claps me on the shoulder. \"You really should stick around. I'm sure James can put you up if you're too out of sorts to travel by the end of the night, I know I will be.\")"
+    "Rory claps me on the shoulder. \"You really should stick around. I'm sure James can put you up if you're too out of sorts to travel by the end of the night, I know I will be.\""
 
-    "Jimmy smiles thinly, giving me a nod. \"Trip was all right? Thanks for coming out here today.\")"
+    "Jimmy smiles thinly, giving me a nod. \"Trip was all right? Thanks for coming out here today.\""
 
-    "I smile back. \"Congratulations again. And it was nice to finally meet you, Marian.\")"
+    "I smile back. \"Congratulations again. And it was nice to finally meet you, Marian.\""
 
     "Marian beams at me, giving my hand a friendly squeeze. \"It was lovely to meet you. I hope you'll come visit us sometime. Once somebody gets the renovations in order.\" She teasingly nudges her newly wed husband."
 
@@ -737,7 +736,7 @@ label wedding_epilogue:
 
     "I haven't seen Rory since, but I wish him only the best and I wonder if he has yet heard of Jimmy's passing."
 
-    jump library
+    jump library_menu
 
 label library_book_3:
 
@@ -745,7 +744,7 @@ label library_book_3:
 
     "Book 3 is booky!"
 
-    jump library
+    jump library_menu
 
 label dining_room:
 
@@ -797,7 +796,7 @@ if optimistic:
 
     jump kitchen
 
-if pessmistic:
+if pessimistic:
 
     "Jimmy, why am I even here for him?"
 
