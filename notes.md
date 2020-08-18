@@ -10,3 +10,6 @@ define fadehold = Fade(0.5, 1.0, 0.5)
 
 # Camera flash - quickly fades to white, then back to the scene.
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+
+
+https://www.befunky.com/features/blur-image/
