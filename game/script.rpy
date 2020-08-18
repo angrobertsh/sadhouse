@@ -8,6 +8,14 @@ default book = False
 default carpenter = False
 default tutor = False
 default merchant = False
+default optimistic = False
+default pessimistic = False
+default rory_jimmy = False
+default rory_business_card = False
+default rory_artist = False
+default rory_choices = False
+default rory_atford = False
+default rory_travel = False
 
 # Explored
 default explored_kitchen = False
@@ -31,8 +39,6 @@ default insight_3_library_book_1 = False
 label start:
 
     # Start by playing some music.
-
-    scene bg lecturehall
 
     play sound "audio/telephone_ring.ogg"
 
@@ -65,7 +71,7 @@ label intro_carpenter:
 
     "We would need to start building in the cold of winter to finish in time. The winters were now warmer than I had remembered growing up, but cold nevertheless."
 
-    jump next
+    jump attorney
 
 label intro_tutor:
     $ tutor = True
@@ -82,7 +88,7 @@ label intro_tutor:
 
     "In the meantime, was education not the means for bettering oneself and fostering change? Perhaps."
 
-    jump next
+    jump attorney
 
 label intro_merchant:
     $ merchant = True
@@ -93,20 +99,19 @@ label intro_merchant:
 
     "Deciding what to keep in stock is both a logical and intuitive decision. No matter how tough times are, people continue to purchase goods--it's simply a matter of which goods."
 
+    jump attorney
 
-    jump next
-
-label next:
+label attorney:
 
     "The gentleman on the phone introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
 
     "\"Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away.\""
 
-    "\"He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \"natural cause.\""
+    "\"He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \'natural cause.\'\""
 
     "\"Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements.\""
 
-    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other.\""
+    "Upon hearing this news, a feeling of unease came over me. Truthfully, Jimmy might as well have been dead to me up until that moment. It had been years since we had last spoken or seen each other."
 
     menu:
 
@@ -123,6 +128,8 @@ label next:
             jump apathetic
 
 label accept:
+
+    "Regardless of the past, Jimmy had been a friend of mine and now he was gone forever. Surely I could take on this responsiblity on account of that."
 
     "\"Please meet me at my office this afternoon at 3pm. The address is 32 Fairview Drive, Suite B in the Palace Gardens district. We can discuss the details further in person.\""
 
@@ -264,6 +271,12 @@ label james_letter:
     "To my old friend."
     "Thomas tells me I need to plan for when I'm gone..."
 
+    "Palace Gardens is a fine place to live."
+
+    "Perhaps you'll visit one day."
+
+    # TODO this letter is unfinished
+
     scene stephen_king_mansion at truecenter
 
     "It looks like I've just arrived. It's the only mansion among all of these houses, so it's difficult to miss but I almost passed it by, being my first time here."
@@ -274,19 +287,21 @@ label james_letter:
 
         "As if to speak of an untold history waiting to be discovered.":
 
-            jump optimistic
+            jump optimistic_house
 
         "Ominously, to forebode those who would enter.":
 
-            jump pessmistic
+            jump pessimistic_house
 
-label optimistic:
+label optimistic_house:
+    $ optimistic = True
 
     "The front yard is trim and well-kept and in the midst of neatly manicured bushes, I take in the serene lull of peace and seclusion."
 
     jump front_door
 
-label pessmistic:
+label pessimistic_house:
+    $ pessimistic = True
 
     "It becomes eerily quiet once I've moved away from the street.."
 
@@ -312,7 +327,7 @@ label lounge:
 
     "Where he would have received his many distinguished guests."
 
-    "The grand piano is what immediately draws the eye. Did he play?"
+    "The grand piano is what immediately draws the eye."
 
     "Sunlight pours in through a French door that offers a view into a garden patio."
 
@@ -320,7 +335,7 @@ label lounge_menu:
 
     menu:
 
-        "I sit and play the piano" if not explored_lounge_piano:
+        "I examine the piano" if not explored_lounge_piano:
 
             jump lounge_piano
 
@@ -334,14 +349,37 @@ label lounge_menu:
 
         "I move on":
 
-            jump library
+            jump lounge_end
+
+label lounge_end:
+
+    "I suppose it's strange that I never once visited at all."
+
+if optimistic:
+
+    "Time went by and before I knew it, most of my days would pass without any thought of him"
+
+    jump library
+
+if pessimistic:
+
+    "I had begun to grow weary of his noncommittal gestures"
+
+    jump library
 
 label lounge_piano:
 
     $ explored_lounge_piano = True
 
-    "The piano is pianoy"
+    "There is a thin layer of dust atop the keys. Lowering the cover could have protected them, but the dust would have lain upon here all the same. This instrument hasn't been played in quite some time."
 
+    "Did Jimmy continue to play? Growing up, nobody we knew had a piano in the home but there had been one at the schoolhouse. We began music lessons in our third year and were made to sing carols for the headmaster and teachers during the holiday season."
+
+    "A distantly familiar tune makes its way into my head. I've since forgotten how to play bass clef or read sheet music, but I've retained some basic scales."
+    "Instinctively, I wipe away some of the dust and plunk out a crude melody."
+
+    "The trillbird sings his song\nIn a hollow grove\nWith nary a throng\nFound below or above"
+    "O sweet songbird, alight\nCalm the anger of the earth\nKeep the fire burning bright\nIn our hearts and the hearth"
     jump lounge_menu
 
 label lounge_window:
@@ -356,29 +394,48 @@ label lounge_chair:
 
     $ explored_lounge_chair = True
 
-    "The chair is chairy"
+    "Despite its plush appearance, the chair feels stiff underneath me from lack of use."
+
+if carpenter:
+
+    "some furniture ends up being more decorative than functional"
 
     jump lounge_menu
+
+if tutor:
+
+    "It feels the same as some of my client's lounges I have been in"
+
+    jump lounge_menu
+
+if merchant:
+
+    "It's all about the piano"
+
+    jump lounge_menu
+
 
 label library:
 
     scene library at truecenter
 
-    "The library is full of books. It smells like wood and laminant"
+    "Jimmy was a writer after all, so it makes sense that he would own many books, and have a room dedicated to them. The library has a scent of wood and laminant."
+
+    "A few volumes catch my eye:"
 
 label library_menu:
 
     menu:
 
-        "I examine book 1." if not explored_library_book_1:
+        "A Gentleman's Guide to Negotiation." if not explored_library_book_1:
 
             jump library_book_1
 
-        "I examine book 2" if not explored_library_book_2:
+        "Hell Exists On Earth, a novel by Rory Stuart." if not explored_library_book_2:
 
             jump library_book_2
 
-        "I examine book 3" if not explored_library_book_3:
+        "art book" if not explored_library_book_3:
 
             jump library_book_3
 
@@ -392,15 +449,15 @@ label library_book_1:
 
     $ explored_library_book_1 = True
 
-    "It's an insight book!"
+    "It's unclear how it differs from the ladies' version."
 
     menu:
 
-        "It's a violent book":
+        "He was brushing up on a useful skill.":
 
             jump library_book_1_insight_1
 
-        "It's a book about a child escaping his home":
+        "Was there something he needed to negotiate?":
 
             jump library_book_1_insight_2
 
@@ -436,9 +493,270 @@ label library_book_2:
 
     $ explored_library_book_2 = True
 
-    "Book 2 is booky!"
+    "Propped up on the shelf, this first edition is leather-bound and has a note scribbled in the very back."
 
-    jump library
+    "To James,"
+    "Through hell and back, mate. See you there again someday--"
+    "RS"
+
+    scene black
+    with fade
+
+    "I met Rory once, at Jimmy's wedding. Besides Jimmy, there wasn't a soul that I knew at the affair. Jimmy had spoken of his bride in passing, but it wasn't until the reception that I met Marian for the first time."
+    "Rory Stuart is a famous writer in his own right, but he had been the only guest with whom I had felt somewhat at ease."
+
+    scene wedding_church at truecenter
+    with fade
+
+    "I've arrived on the very day of their matrimony. The venue is located in neighboring Hestia outside of Palace Gardens, and a night in either city is beyond my means."
+    "When I step into the church, my attire feels simple in comparison to the sharp suiting and elegant dresses of the other attendants."
+
+    scene wedding_reception at truecenter
+    with fade
+
+    "After the ceremony, I manage to briefly chat with Jimmy and Marian before they move on to greeting their other guests."
+
+    "I'm standing alone, sipping my third glass of wine when Rory approaches the bar for another drink."
+
+    "With whiskey in one hand, he introduces himself with a firm, jovial handshake. \"So how do you know James?\""
+
+    menu:
+
+        "He's a good friend of mine.":
+
+            jump good_friend
+
+        "We were schoolmates.":
+
+            jump schoolmates
+
+        "We're from the same hometown.":
+
+            jump hometown
+
+label good_friend:
+
+    "\"Is that so? Pleased to meet another dear friend of his. Surprised we haven't met before.\""
+
+    menu:
+
+        "Likewise, and how did you meet Jimmy?":
+
+            jump rory_friend
+
+        "The pleasure is mine, I'm an admirer of your work.":
+
+            jump rory_admirer
+
+label rory_friend:
+    $ rory_jimmy = True
+
+    "\"Jimmy?\" He lets out an amused chuckle. \"I'll have to call him that from now on.\""
+
+    "He eagerly takes a sip of whiskey from his glass, as if about to recount a favorite tale."
+
+    "\"James and I met while living at the same cheap hostel in Lintonbury. All sorts of mad folks there like you wouldn't believe. Some strange characters, I tell you...\""
+
+    "\"So we'd been staying there for about a year--stop me if you've heard this all before. No? All right, so there was a roof terrace where we used to write together.\""
+    "\"We were up there working one day as usual, when our dear fellow tells me that he's getting published through Smith and Simmons.\""
+    "\"That's right, A Noble Charade. Finally gave him a chance after all of that grunt work. We all have to pay our dues, yeah?\""
+
+    "\"Then right at that moment, one of the other tenants comes {i}storming{/i} up, accusing us of stealing his soap! As mad as it was, I'll always have fond memories of that place.\""
+    "\"And James put in a good word for me with S&S, and look where we are. I'll always be grateful to him.\""
+
+    jump wedding_end
+
+label rory_admirer:
+    $ rory_business_card = True
+
+    "Rory brightens at my words. \"Thanks, buddy. That means a lot. So then I take it that we're both admirers of James' work. Do you know that feeling, when you're witnessing somebody doing exactly what they're meant to do? That bastard was born to write.\""
+
+    "\"Do you know what I mean? To be able to do what you love for a living. You can be good at things but not necessarily like them, you know?\""
+    "\"Sometimes, I think it's good to try things you're not good at either.\" His words are slurred with drink, but his gestures become more animated. \"But then you might find something you're really, really good at and that's why you're here.\""
+    "\"I'm rambling, aren't I? Anyway, I'm really flattered if you've enjoyed my writing. It really means a lot.\""
+    "He regards me good-naturedly."
+
+if carpenter:
+
+    "\"I've always had a respect for your craft. I purchased a new table and chair set for my parlor. I found them at an antiques shop and the quality is just fantastic.\""
+    "\"You really do get what you pay for, it's nothing like those do-it-yourself assembly pieces that are so popular these days...\""
+
+    jump wedding_end
+
+if tutor:
+
+    "\"To be honest, I've never been much for higher education. If you have it, you have it. I don't think talent can be taught.\""
+    "\"But some schooling is probably better than none. If you're going to quit the books, I suppose it better be because you're doing something more important...\""
+
+    jump wedding_end
+
+if merchant:
+
+    "\"How is business lately? They say the economy is expected to turn around soon enough, what do you think?\""
+    "\"Do you source domestically, or from overseas? We need more jobs here. Of course, they should be available to anyone regardless of background...\""
+
+    jump wedding_end
+
+label schoolmates:
+
+    "\"I see, from the academy?\""
+
+    menu:
+
+        "I beg your pardon?":
+
+            jump schoolmate_truth
+
+        "Academy? Yes...that's right.":
+
+            jump schoolmate_lie
+
+label schoolmate_truth:
+    $ rory_artist = True
+
+    "\"Beckford Academy, wasn't it? So terribly posh, I always give James a hard time about it but I'm one to talk. Don't tell anyone, but I attended Collins Prep for a moment! Hardly befitting of a starving artist, I know.\""
+    "\"Speaking of which, do you agree that artists must suffer for their art? I don't think I would have sold half as many books if I had written about Heaven.\""
+    "\"We spend our lives seeking happiness, aiming to eliminate pain and turmoil, but nobody wants to read a story without any drama in it. It'd be terribly dull.\""
+    "\"You can't suffer too much though, or else you'll lose the means to create. Leave the suffering to your spirits, not your coffers. Need to keep the books selling.\""
+    "\"But I really can't complain, because now I'm able to write what I want to write. Within reason, of course. Novels aren't the only kind of writing out there.\" He tips his glass toward me."
+    "\"There's script on the bottle that held this whiskey, or...lighter fare, if you will. There's a place for those things but for me, there's nothing like writing words that are truly your own.\""
+
+
+    jump wedding_end
+
+label schoolmate_lie:
+    $ rory_choices = True
+
+    "\"That's wonderful that you've remained acquainted after all this time.\""
+    "\"Some of my best mates were from my school days, I think. In a way, you never have friends like that again. Back when we didn't need to worry about medical bills and the rent and all that rubbish.\""
+    "\"Gosh, I don't know if we all still keep in touch like you two. I guess we'll find out at my own wedding!\""
+
+    "\"You know how James and Marian met, don't you? James just goes strolling out one day in the park to see the sunset and Marian just happens to be out there, on the same day doing the exact same thing. Like something out of a film.\""
+    "\"To think--if one of neither of them had gone to the park that day, that we all wouldn't be here.\""
+    "\"It's the age-old question of wheter our lives are predetermined, or if our choices make us who we are? Hell if I know. Was I destined to be a writer?\""
+    "\"Maybe I got lucky meeting James when I did. But it wouldn't have mattered if I hadn't picked up a pen and started writing to begin with. And I have to believe that my choices matter.\""
+
+    jump wedding_end
+
+label hometown:
+
+    "\"Nice, so you're also from Earnsworth? I'm originally from Palace Gardens myself.\""
+
+    menu:
+
+        "No, from Atford.":
+
+            jump hometown_truth
+
+        "Yes. Earnsworth.":
+
+            jump hometown_lie
+
+label hometown_truth:
+    $ rory_atford = True
+
+    "Rory raises an eyebrow. \"Atford? If I recall correctly, James came up to Lintonbury from Earnsworth after finishing school.\""
+    "\"Isn't Atford up in Commerce Valley? Now that I think of it, one of my friends was talking about buying a residence there, I've heard it's rather quaint. I didn't know James had lived in Atford prior. James Atford Pryor.\" Rory laughs at his own joke."
+    "\'Did the Pryors move around much when he was a child? I imagine that could be difficult. But I'm sure James got along just fine.\""
+
+    jump wedding_end
+
+label hometown_lie:
+    $ rory_travel = True
+
+    "\"It seemed like James couldn't wait to leave, but it must not be so bad if you've stayed. There's something comforting about the familiarity of the place you grew up in.\""
+    "\"I've lived in Palace Gardens all my life. Never ventured out much in my youth, I used to come to Hestia once in a while. Fancy lot out here, aren't they? Not too much has changed.\""
+    "\"It's fascinating how even one town can be so different from the next, let alone a different country.\""
+
+    "(is it the person or the location)"
+
+    jump wedding_end
+
+label wedding_end:
+
+    "The evening passes by a little faster with Rory's company and an endless supply of libations. He introduces me to a number of other guests whose names I admittedly won't remember after tonight."
+    "There are too many of them, and my faculties are inhibited by a combination of alcohol, nerves and the knowledge that we will never again cross paths."
+
+    "When the clock strikes nine, I excuse myself and let Rory know that I must be going."
+
+    "\"No, stay, stay,\" he insists but I catch Jimmy's eye and wave. He gets Marian's attention and they make their way over."
+
+    "\"It was good to see you, but it's time for me to head back. I must get back to work first thing tomorrow morning,\" I tell them."
+
+    "Rory claps me on the shoulder. \"You really should stick around. I'm sure James can put you up if you're too out of sorts to travel by the end of the night, I know I will be.\""
+
+    "Jimmy smiles thinly, giving me a nod. \"Trip was all right? Thanks for coming out here today.\""
+
+    "I smile back. \"Congratulations again. And it was nice to finally meet you, Marian.\""
+
+    "Marian beams at me, giving my hand a friendly squeeze. \"It was lovely to meet you. I hope you'll come visit us sometime. Once somebody gets the renovations in order.\" She teasingly nudges her newly wed husband."
+
+if rory_jimmy:
+
+    "\"That's right, 'Jimmy,' get your bloody house in order for chrissake,\" Rory chides with a boisterous laugh. \"What's the use of owning a mansion if you can't even live in it?\""
+    "Jimmy doesn't respond at first, and he glances at me briefly before smirking back at Rory. \"And when are you going to stop renting and finally settle down?\""
+    "Rory gasps in mock-indignation. \"In exchange for my freedom? No thank you, very much. No offense, Marian!\""
+    "\"Oh Rory, you're no gift yourself!\" Marian laughs. \"But to each their own.\""
+
+    jump wedding_epilogue
+
+if rory_business_card:
+
+    "\"Oh right, before I forget. I'm not too far gone yet.\" Rory reaches into his inner vest pocket and hands me a card. \"Give me a ring if you're ever in town again. You have one for me?\""
+    "I've never had a card of my own. A practice I've heard of, but never had to participate in before now."
+    "I absently fold the corners in my hand. \"Unfortunately, not on my person at the moment.\""
+    "\"Ah, that's all right. Today wasn't meant to be about business anyway. Tell you what--the next time you call on James, you'll both invite me along, yeah? We'll get up to no good.\""
+    "\"Welcome to the club,\" Marian says to me a loud, conspiratorial whisper, rolling her eyes fondly."
+
+    jump wedding_epilogue
+
+if rory_artist:
+
+    "Rory also takes my hand, shaking it fondly. \"I do hope we'll see each other again sometime. You've found a good one here, James. We both have a deep understanding of the arts.\""
+    "\"Really?\" Jimmy gives a smile. \"I didn't know you were interested in the arts,\" he remarks evenly."
+    "\"But it's not just about the art,\" Rory intones. \"It's deeper than that. Deeper than this glass.\" He takes another swig of his whiskey."
+    "\"Rory, what are you babbling on about?\" Marian shakes her head, laughing. \"I have never found art to be more truly subjective than I do now.\""
+
+    jump wedding_epilogue
+
+if rory_choices:
+
+    "\"Are you sure that you want to head out already?\" Rory asks. \"Choose wisely, your future could depend on this very moment!\""
+    "\"It's true, I could be out of a job come tomorrow if I stay much longer,\" I joke in return. In jest, there is truth."
+    "\"Fair enough. Then, here's to jobs that pay the rent.\" Rory raises his glass, then throws it back."
+    "Marian gives me a sympathetic smile. \"Thanks again for celebrating with us.\""
+    "(dialogue based on occupation)"
+    # im working on this now
+
+    jump wedding_epilogue
+
+if rory_atford:
+
+    "\"Back off to Atford, then?\" Rory says. \"Wishing you safe travels.\" Jimmy visibly starts at the mention of our hometown."
+    "\"I didn't realize you had lived in Atford *prior*, James.\" Rory repeats his joke and I give an agreeable laugh, many of which I have offered this evening."
+    "\"All prior to when I met this fair lass hither.\" Jimmy slides an arm around Marian's waist and she leans into his shoulder. \"Marian Pryor, I like the sound of that.\""
+    "\"We'll see about that,\" Marian retorts playfully, looking up at him. \"I think I like James Fairbright better.\""
+    "Jimmy gives a low chuckle. \"But it wouldn't do to reprint all of my books, would it?\""
+
+    jump wedding_epilogue
+
+if rory_travel:
+
+    "travel stuff"
+
+    jump wedding_epilogue
+
+label wedding_epilogue:
+
+    "With a final word of farewell, I take my leave and the sounds and lights of the festivities begin to fade away as I reach the front gate, where I climb into a waiting car."
+    "Transportation has been arranged for the attendees, most of whom are staying at the nearby Fourth Street Hotel overnight."
+    "I'll take the car to the hotel, and then head over to the train station by foot. I'll be able to rest during the few hours of the ride, and I'll be back home by early morning."
+
+    "I haven't seen Rory since, but I wish him only the best and I wonder if he has yet heard of Jimmy's passing."
+
+    scene library at truecenter
+    with fade
+    jump library_menu
 
 label library_book_3:
 
@@ -446,7 +764,7 @@ label library_book_3:
 
     "Book 3 is booky!"
 
-    jump library
+    jump library_menu
 
 label dining_room:
 
@@ -491,6 +809,18 @@ label patio:
     scene patio at truecenter
 
     "The garden patio is spacious. The wood beneath my shoes is weathered by the sun."
+
+if optimistic:
+
+    "What were you thinking as you sat out here, Jimmy?"
+
+    jump kitchen
+
+if pessimistic:
+
+    "Jimmy, why am I even here for him?"
+
+    jump kitchen
 
 label patio_menu:
 
@@ -630,9 +960,9 @@ label bedroom_menu:
 
             jump bathroom
 
-label bathroom:
-
-    "Bathroom"
+# label bathroom:
+#
+#     "Bathroom"
 
     return
 
