@@ -2,6 +2,7 @@
 /game/saves
 /game/cache
 /game/script.rpyc
+/game/.DS_Store
 log.txt
 errors.txt
 traceback.txt
