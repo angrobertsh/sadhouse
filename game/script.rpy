@@ -271,6 +271,12 @@ label james_letter:
     "To my old friend."
     "Thomas tells me I need to plan for when I'm gone..."
 
+    "Palace Gardens is a fine place to live."
+
+    "Perhaps you'll visit one day."
+
+    # TODO this letter is unfinished
+
     scene stephen_king_mansion at truecenter
 
     "It looks like I've just arrived. It's the only mansion among all of these houses, so it's difficult to miss but I almost passed it by, being my first time here."
@@ -349,6 +355,16 @@ label lounge_end:
 
     "I suppose it's strange that I never once visited at all."
 
+if optimistic:
+
+    "Time went by and before I knew it, most of my days would pass without any thought of him"
+
+    jump library
+
+if pessimistic:
+
+    "I had begun to grow weary of his noncommittal gestures"
+
     jump library
 
 label lounge_piano:
@@ -362,11 +378,8 @@ label lounge_piano:
     "A distantly familiar tune makes its way into my head. I've since forgotten how to play bass clef or read sheet music, but I've retained some basic scales."
     "Instinctively, I wipe away some of the dust and plunk out a crude melody."
 
-    "The trillbird sings his song"
-    "In a hollow grove"
-    "With nary a throng"
-    "Found below or above"
-
+    "The trillbird sings his song\nIn a hollow grove\nWith nary a throng\nFound below or above"
+    "O sweet songbird, alight\nCalm the anger of the earth\nKeep the fire burning bright\nIn our hearts and the hearth"
     jump lounge_menu
 
 label lounge_window:
@@ -411,8 +424,6 @@ label library:
     "A few volumes catch my eye:"
 
 label library_menu:
-
-    scene library at truecenter
 
     menu:
 
@@ -494,8 +505,14 @@ label library_book_2:
     "I met Rory once, at Jimmy's wedding. Besides Jimmy, there wasn't a soul that I knew at the affair. Jimmy had spoken of his bride in passing, but it wasn't until the reception that I met Marian for the first time."
     "Rory Stuart is a famous writer in his own right, but he had been the only guest with whom I had felt somewhat at ease."
 
+    scene wedding_church at truecenter
+    with fade
+
     "I've arrived on the very day of their matrimony. The venue is located in neighboring Hestia outside of Palace Gardens, and a night in either city is beyond my means."
     "When I step into the church, my attire feels simple in comparison to the sharp suiting and elegant dresses of the other attendants."
+
+    scene wedding_reception at truecenter
+    with fade
 
     "After the ceremony, I manage to briefly chat with Jimmy and Marian before they move on to greeting their other guests."
 
@@ -544,7 +561,7 @@ label rory_friend:
     "\"We were up there working one day as usual, when our dear fellow tells me that he's getting published through Smith and Simmons.\""
     "\"That's right, A Noble Charade. Finally gave him a chance after all of that grunt work. We all have to pay our dues, yeah?\""
 
-    "\"Then right at that moment, one of the other tenants comes {i}storming{i} up, accusing us of stealing his soap! As mad as it was, I'll always have fond memories of that place.\""
+    "\"Then right at that moment, one of the other tenants comes {i}storming{/i} up, accusing us of stealing his soap! As mad as it was, I'll always have fond memories of that place.\""
     "\"And James put in a good word for me with S&S, and look where we are. I'll always be grateful to him.\""
 
     jump wedding_end
@@ -709,6 +726,7 @@ if rory_choices:
     "\"Fair enough. Then, here's to jobs that pay the rent.\" Rory raises his glass, then throws it back."
     "Marian gives me a sympathetic smile. \"Thanks again for celebrating with us.\""
     "(dialogue based on occupation)"
+    # im working on this now
 
     jump wedding_epilogue
 
@@ -736,6 +754,8 @@ label wedding_epilogue:
 
     "I haven't seen Rory since, but I wish him only the best and I wonder if he has yet heard of Jimmy's passing."
 
+    scene library at truecenter
+    with fade
     jump library_menu
 
 label library_book_3:
@@ -940,9 +960,9 @@ label bedroom_menu:
 
             jump bathroom
 
-label bathroom:
-
-    "Bathroom"
+# label bathroom:
+#
+#     "Bathroom"
 
     return
 
