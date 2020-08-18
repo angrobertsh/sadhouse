@@ -960,9 +960,9 @@ label bedroom_menu:
 
             jump bathroom
 
-# label bathroom:
-#
-#     "Bathroom"
+label bathroom:
+
+    "Bathroom"
 
     return
 
