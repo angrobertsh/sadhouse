@@ -10,12 +10,7 @@ default tutor = False
 default merchant = False
 default optimistic = False
 default pessimistic = False
-default rory_jimmy = False
-default rory_business_card = False
-default rory_artist = False
-default rory_choices = False
-default rory_atford = False
-default rory_travel = False
+
 
 # Explored
 default explored_kitchen = False
@@ -34,6 +29,20 @@ default explored_library_book_3 = False
 default insight_1_library_book_1 = False
 default insight_2_library_book_1 = False
 default insight_3_library_book_1 = False
+
+# Insight - Rory
+default rory_jimmy = False
+default rory_business_card = False
+default rory_artist = False
+default rory_choices = False
+default rory_atford = False
+default rory_travel = False
+
+# Insight - Marian Play
+default pasiphae_author = "this unknown author"
+default marian_play_fun = False
+default marian_play_crazy = False
+default marian_play_sympathy = False
 
 # The game starts here.
 label start:
