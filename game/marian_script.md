@@ -1,12 +1,3 @@
-marian - doesn't feel seen
-everyone in the outside world trusts her husband is taking care of her but he isn't really and her sickness isn't mental
-daedelaus? helios?
-totally made up names
-
-""
-""
-"Maybe I'm who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
-
 label pasiphae_play_intro:
 
   "In the drawer I found a book with neatly penned pages. This penmanship was neat, evenly spaced, and deliberately cursive. It seemed this book may not have been meant for publishing. The lack of title, and author's name helped confirm my suspicions."
@@ -17,7 +8,7 @@ label pasiphae_play_intro:
       $ pasiphae_author = "James"
       jump pasiphae_play
 
-    "This must be someone else's work":
+    "This must have been written by someone other than James":
       jump pasiphae_play_author
 
 label pasiphae_play_author:
@@ -26,25 +17,25 @@ label pasiphae_play_author:
 
   menu:
 
-    "Someone must have left this here and forgotten about it":
-      $ pasiphae_author = "this unknown author"
+    "A guest must have left this here and forgotten about it":
       jump pasiphae_play_author_mystery
 
     "Someone must have spent a lot of time here writing it":
-      $ pasiphae_author = "Marian"
       jump pasiphae_play_author_marian
 
 label pasiphae_play_author_mystery:
+  $ pasiphae_author = "this unknown author"
 
-  "The author of this book must have thought very little of his or her work to leave it here"
+  "The author of this book must have thought very little of his or her work to leave it here."
 
-  "Probably some very drunk or very happy party guest"
+  "Probably some very drunk or very happy party guest."
 
   jump pasiphae_play
 
 label pasiphae_play_author_marian:
+  $ pasiphae_author = "Marian"
 
-  "The only other person who lived here was Marian. This was likely something she'd written"
+  "The only other person who lived here was Marian. This must have been from her hand."
 
   jump pasiphae_play
 
@@ -52,33 +43,41 @@ label pasiphae_play:
 
 if tutor:
 
-  "I began leafing through the book, immediately recognizing the names of the characters. Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and the chorus, a third party voice of reason."
+  "I began leafing through the pages, immediately recognizing the names of the characters."
+
+  "Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our morality, a voice of reason."
 
   "This seemed to be a retelling of that tale, but the details were indistinct. Poseidon was no godlike man, rising from the sea, in fact, there appeared to be no evidence of him at all."
 
-  "The story came to a head when I recognized the curse gripping her:"
+  "The story came to a head as I recognized the curse gripping her:"
 
-  "{b}Minos{/b}: Is it true that you want to fuck a bull? The guards are gossiping but I speak to you as an equal."
+  "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
 
-  "{b}Pasiphae (defensively){/b}: What do you care what I want?"
+  "{b}Pasiphae{/b}: Are you sure it is right to trust a sentry's gossip? It is they who gawk at cows, not I."
 
-  "{b}Minos{/b}: I don't understand, this isn't like you."
+  "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you look at the fields that even the crows land on you."
 
-  "{b}Pasiphae (with wild eyes){/b}: I want to fuck the bull"
+  "{b}Pasiphae (fiery){/b}: Enough of these ridiculous accusations. Why are you doing this? Since when do you care what I want, or what I do? You never have before!"
 
-  "{b}Chorus{/b}: Minos will talk some sense into her."
+  "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip, I speak to you as an equal."
 
-  "{b}Minos{/b}: Pasiphae you're crazy, stop it. There must be some explanation for this, some supernatural cause"
+  "{i}Pasiphae walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches.{/i}"
 
-  "{b}Pasiphae{/b}: I want to do one thing and you automatically assume I'm cursed?"
+  "{b}Pasiphae (calmly, with wild eyes){/b}: I simply want to make love to the bull."
 
-  "{b}Chorus{/b}: She must be cursed. Minos will definitely talk some sense into her."
+  <!-- "{b}Chorus{/b}: Minos will talk some sense into her." -->
 
-  "{b}Pasiphae{/b}: Maybe I'm who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
+  <!-- "{b}Minos{/b}: Pasiphae you're crazy, stop it. There must be some explanation for this, some supernatural cause" -->
 
-  "There was something about this Pasiphae, something more fragile than what I imagined the bewitching woman in the myths."
+  "{b}Pasiphae{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
 
-  "I didn't know if this version of Poseidon's curse included some fear of perception, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
+  <!-- "{b}Chorus{/b}: She must be cursed. Minos will definitely talk some sense into her." -->
+
+  "{b}Pasiphae{/b}: Or maybe I'm who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
+
+  "There was something about this Pasiphae, something more fragile than an immortal sorceress."
+
+  "I didn't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
 
   "In the end, Pasiphae carried out her plan against the backdrop of an uncaring world."
 
