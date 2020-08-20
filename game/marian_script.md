@@ -55,25 +55,27 @@ if tutor:
 
   "{b}Pasiphae{/b}: Are you sure it is right to trust a sentry's gossip? It is they who gawk at cows, not I."
 
-  "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you look at the fields that even the crows land on you."
+  "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you stare that even the crows land on you."
 
   "{b}Pasiphae (fiery){/b}: Enough of these ridiculous accusations. Why are you doing this? Since when do you care what I want, or what I do? You never have before!"
 
-  "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip, I speak to you as an equal."
+  "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip below you, I speak to you as an equal."
 
   "{i}Pasiphae walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches.{/i}"
 
-  "{b}Pasiphae (calmly, with wild eyes){/b}: I simply want to make love to the bull."
+  "{b}Pasiphae (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
 
-  <!-- "{b}Chorus{/b}: Minos will talk some sense into her." -->
+  "{b}Chorus{/b}: Fortunate is the man who has never felt madness in his love. Where once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
 
-  <!-- "{b}Minos{/b}: Pasiphae you're crazy, stop it. There must be some explanation for this, some supernatural cause" -->
+  "{b}Minos{/b}: So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
 
   "{b}Pasiphae{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
 
-  <!-- "{b}Chorus{/b}: She must be cursed. Minos will definitely talk some sense into her." -->
+  "{b}Chorus{/b}: What preparation does he have to draw this water? What strength has he built in his life? Some fail, some falter, and let the rope fall."
 
-  "{b}Pasiphae{/b}: Or maybe I'm who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
+  "{b}Minos{/b}: I do not know you, I do not see. I do not see this wild creature before me."
+
+  "{b}Pasiphae{/b}: Maybe I'm who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
 
   "There was something about this Pasiphae, something more fragile than an immortal sorceress."
 
@@ -87,21 +89,9 @@ if tutor:
 
     "I thought about the implications of Marian having written this."
 
-  menu:
+  jump pasiphae_author_menu
 
-    "This must be a fun and fanciful exercise of the mind":
-
-      jump pasiphae_play_fun
-
-    "This must be the product of a truly disturbed mind":
-
-      jump pasiphae_play_mad
-
-    "This must be something Marian had kept in secret" if pasiphae_author == "Marian":
-
-      jump pasiphae_play_sympathy
-
-if carpenter:
+else:
 
   "There was a play of some sort in the book. I didn't quite understand it, but it did seem to refer to some Greek myth."
 
@@ -141,15 +131,23 @@ if carpenter:
 
   "So what did this all mean?"
 
+  jump pasiphae_author_menu
+
+label pasiphae_author_menu:
+
   menu:
 
-    "It must be a fun and fanciful exercise of the mind":
+    "This must be a fun and fanciful exercise of the mind":
 
       jump pasiphae_play_fun
 
-    "It must be the product of a truly disturbed mind":
+    "This must be the product of a truly disturbed mind":
 
       jump pasiphae_play_mad
+
+    "This must be something Marian had kept in secret" if pasiphae_author == "Marian":
+
+      jump pasiphae_play_sympathy
 
 label pasiphae_play_fun:
 
@@ -197,8 +195,6 @@ label pasiphae_play_sympathy:
   "I put the book back in the drawer"
 
   jump conservatory_menu
-
-if merchant
 
 
 
