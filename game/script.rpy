@@ -1040,7 +1040,13 @@ else:
 
   "There was a play of some sort in the book. It sounded like it referred to some Greek myth."
 
-  "It wasn't one that I immediately recognized."
+  if merchant
+
+    "It wasn't one that I immediately recognized."
+
+  if carpenter
+
+    "I recognized the name Minos from a play in a town square about a labyrinth, years ago, but I didn't recognize this specific story"
 
   "As I leafed through the pages, I learned that a woman named Pasiphae was having a problem where she wanted to... fornicate with a bull."
 
