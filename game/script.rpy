@@ -982,7 +982,9 @@ if tutor:
 
   "Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our morality, a voice of reason."
 
-  "This seemed to be a retelling of that tale, but the details were indistinct. Poseidon was no godlike man, rising from the sea, in fact, there appeared to be no evidence of him at all."
+  "This seemed to be a retelling of that tale, but with some interesting artistic changes."
+
+  "Poseidon was no godlike man, rising from the sea, in fact, there appeared to be no evidence of him at all."
 
   "The story came to a head as I recognized the curse gripping her:"
 
@@ -996,7 +998,11 @@ if tutor:
 
   "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip below you, I speak to you as an equal."
 
-  "{i}Pasiphae walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches.{/i}"
+  "{b}Pasiphae{/b}: Such empty words! If you loved and trusted me you would do as you always have and leave me be! As you would and as you always have."
+
+  "{b}Minos{/b}: Enough! Command you I will not, but neither will I move. Tell me the truth of this matter, for you god-born owe it to man."
+
+  "{i}Pasiphae walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches. When she sees he won't leave, she finally faces him.{/i}"
 
   "{b}Pasiphae (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
 
@@ -1012,13 +1018,15 @@ if tutor:
 
   "{b}Pasiphae{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
 
-  "There was something about this Pasiphae, something more fragile than an immortal sorceress."
+  "There was something about this Pasiphae, something more fragile than how I imagined an immortal sorceress."
 
   "I didn't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
 
   "In the end, Pasiphae carried out her plan against the backdrop of an uncaring world."
 
-  "The consequences of her actions showed her unraveling, the play ending ultimately as she held up her bloodied child, the minotaur, her face contorting with laughter as she died."
+  "She climbed into an ornately built wooden bull, made of mahogany, bedecked in jewels, and did the deed."
+
+  "The consequences of her actions showed her unraveling, the play ending ultimately as she held up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she died."
 
   if pasiphae_author == "Marian":
 
@@ -1032,9 +1040,13 @@ else:
 
   "They certainly were a strange lot, back then."
 
-  "Strange, but fascinating."
+  "As I leafed through the pages, I learned that a woman named Pasiphae was having a problem where she wanted to... fornicate with a bull."
 
-  "As I leafed through the pages, I eventually got to a description of a wooden bull, and some rather... wild events."
+  "It wasn't clear to me why she had this dark desire. It seemed like some sort of unknown madness had taken over her."
+
+  "Her husband had attempted to speak with her and understand what was happening, but it was all for naught. He was unable to convince her to abandon her plan."
+
+  "I eventually arrived at a description of a wooden bull."
 
   "{i}{b}WOODEN BULL{/b} enters right. It is made of heavy mahogany, with wheels of iron.{/i}"
 
@@ -1044,7 +1056,7 @@ else:
 
   "{b}Pasiphae (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! The heat that burns within me cannot be quenched by mere man."
 
-  "(beat)"
+  "{i}(beat){/i}"
 
   "{b}Chorus{/b}: Lust, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless Aphrodite reels her line tightly."
 
@@ -1063,6 +1075,8 @@ else:
   "Part of me was downright leery of the mind that recreated this scene. The other part of me wondered where the air holes would be in this wooden bull."
 
   "Certainly, though, there had to be a degree of hilarity to even consider a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
+
+  "The story ended in inevitable tragedy, however, as she held up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she died."
 
   "So what did this all mean?"
 
@@ -1092,9 +1106,9 @@ label pasiphae_play_fun:
     "Literature was meant to explore ideas. I'm glad she had this outlet to express herself."
 
   else:
-    "Literature was meant to explore ideas. I'm glad the [pasiphae_author] was able to put this idea to paper."
+    "Literature was meant to explore ideas. I'm glad [pasiphae_author] was able to put this idea to paper."
 
-  "James, certainly was nothing like the characters in his books."
+  "Certainly, James was nothing like the characters in his books."
 
   "I put the book back in the drawer"
 
