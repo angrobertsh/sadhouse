@@ -978,15 +978,17 @@ label pasiphae_play:
 
 if tutor:
 
-  "I began leafing through the pages, immediately recognizing the names of the characters."
+  "I began leafing through the pages, immediately recognizing the names of the characters:"
 
-  "Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our morality, a voice of reason."
+  "Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our moral voice of reason."
 
-  "This seemed to be a retelling of that tale, but with some interesting artistic changes."
+  "This seemed to be a retelling of her story."
 
-  "Poseidon was no godlike man, rising from the sea, in fact, there appeared to be no evidence of him at all."
+  "But here, Poseidon was no godlike man, rising from the sea."
 
-  "The story came to a head as I recognized the curse gripping her:"
+  "And Pasiphae's powers of sorcery saw no manifestation."
+
+  "We, the audience, were left to watch Pasiphae unravel with only the humanity and intimacy of the stage."
 
   "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
 
@@ -1006,7 +1008,7 @@ if tutor:
 
   "{b}Pasiphae (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
 
-  "{b}Chorus{/b}: Fortunate is the man who has never felt madness in his love. Where once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
+  "{b}Chorus{/b}: Fortunate is the man who has never witnessed madness in his love. Where once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
 
   "{b}Minos{/b}: So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
 
@@ -1014,11 +1016,11 @@ if tutor:
 
   "{b}Chorus{/b}: What preparation does he have to draw this water? What strength has he built in his life? Some fail, some falter, and let the rope fall."
 
-  "{b}Minos{/b}: I do not know you, I do not see. I do not see this wild creature before me."
+  "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Surely this is not you, it never is or was or will be you. Nothing of this is like the woman I wed."
 
   "{b}Pasiphae{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
 
-  "There was something about this Pasiphae, something more fragile than how I imagined an immortal sorceress."
+  "This certainly was not how I imagined the immortal sorceress Pasiphae I'd read about."
 
   "I didn't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
 
@@ -1036,9 +1038,9 @@ if tutor:
 
 else:
 
-  "There was a play of some sort in the book. I didn't quite understand it, but it did seem to refer to some Greek myth."
+  "There was a play of some sort in the book. It sounded like it referred to some Greek myth."
 
-  "They certainly were a strange lot, back then."
+  "It wasn't one that I immediately recognized."
 
   "As I leafed through the pages, I learned that a woman named Pasiphae was having a problem where she wanted to... fornicate with a bull."
 
