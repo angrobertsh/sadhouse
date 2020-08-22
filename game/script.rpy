@@ -1042,7 +1042,7 @@ else:
 
   if merchant
 
-    "It wasn't one that I immediately recognized."
+    "It wasn't one that I immediately recognized, but I know a Greek name when I see it, all olives and the Aegean."
 
   if carpenter
 
