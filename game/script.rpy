@@ -935,7 +935,7 @@ label conservatory_menu:
 
 label pasiphae_play_intro:
 
-  "In the drawer I found a book with neatly penned pages. This penmanship was neat, evenly spaced, and deliberately cursive. It seemed this book may not have been meant for publishing. The lack of title, and author's name helped confirm my suspicions."
+  "In the drawer I find a book with neatly penned pages. This penmanship is neat, evenly spaced, and deliberately cursive. It seems this book may not have been meant for publishing. The lack of title, and author helps confirm my suspicions."
 
   menu:
 
@@ -952,7 +952,7 @@ label pasiphae_play_author:
 
   menu:
 
-    "A guest must have left this here and forgotten about it":
+    "An esteemed guest must have left this here and forgotten about it":
       jump pasiphae_play_author_mystery
 
     "Someone must have spent a lot of time here writing it":
@@ -963,7 +963,7 @@ label pasiphae_play_author_mystery:
 
   "The author of this book must have thought very little of his or her work to leave it here."
 
-  "Probably some very drunk or very happy party guest."
+  "Probably some very drunk or very happy writer, dragged off to bed after too much champagne."
 
   jump pasiphae_play
 
@@ -978,17 +978,17 @@ label pasiphae_play:
 
 if tutor:
 
-  "I began leafing through the pages, immediately recognizing the names of the characters:"
+  "I begin leafing through the pages, immediately recognizing the names of the characters:"
 
   "Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our moral voice of reason."
 
-  "This seemed to be a retelling of her story."
+  "This seems to be a retelling of her story."
 
-  "But here, Poseidon was no godlike man, rising from the sea."
+  "But here, Poseidon is no godlike man, rising from the sea."
 
-  "And Pasiphae's powers of sorcery saw no manifestation."
+  "And Pasiphae's powers of sorcery see no manifestation."
 
-  "We, the audience, were left to watch Pasiphae unravel with only the humanity and intimacy of the stage."
+  "We, the audience, are left to watch Pasiphae unravel with only the humanity and intimacy of the stage."
 
   "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
 
@@ -1020,41 +1020,41 @@ if tutor:
 
   "{b}Pasiphae{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
 
-  "This certainly was not how I imagined the immortal sorceress Pasiphae I'd read about."
+  "This certainly is not how I imagined the immortal sorceress Pasiphae I'd read about."
 
-  "I didn't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
+  "I don't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
 
-  "In the end, Pasiphae carried out her plan against the backdrop of an uncaring world."
+  "In the end, Pasiphae carries out her plan against the backdrop of an uncaring world."
 
-  "She climbed into an ornately built wooden bull, made of mahogany, bedecked in jewels, and did the deed with an actual bull on the stage."
+  "She climbs into an ornately built wooden bull, made of mahogany, bedecked in jewels, and does the deed with an actual bull on the stage."
 
-  "The consequences of her actions showed her unraveling, the play ending ultimately as she held up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she died."
+  "The consequences of her actions show her unraveling, in classic Greek Tragedy form, the play ending ultimately as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
   if pasiphae_author == "Marian":
 
-    "I thought about the implications of Marian having written this."
+    "I think about the implications of Marian having written this."
 
   jump pasiphae_author_menu
 
 else:
 
-  "There was a play of some sort in the book. It sounded like it referred to some Greek myth."
+  "There is a play of some sort in the book. It sounds like some sort of Greek myth."
 
   if merchant
 
-    "It wasn't one that I immediately recognized, but I know a Greek name when I see it, all olives and the Aegean."
+    "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
 
   if carpenter
 
-    "I recognized the name Minos from a play in a town square about a labyrinth, years ago, but I didn't recognize this specific story"
+    "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
 
-  "As I leafed through the pages, I learned that a woman named Pasiphae was having a problem where she wanted to... fornicate with a bull."
+  "As I leaf through the pages, I learn that a woman named Pasiphae is having a problem where she wants to... fornicate with a bull."
 
-  "It wasn't clear to me why she had this dark desire. It seemed like some sort of unknown madness had taken over her."
+  "It isn't clear to me why she has this dark desire. It seems like some sort of unknown madness is taking over her."
 
-  "Her husband had attempted to speak with her and understand what was happening, but it was all for naught. He was unable to convince her to abandon her plan."
+  "Her husband attempts to speak with her and understand what is happening, but it is all for naught. He is unable to convince her to abandon her plan."
 
-  "I eventually arrived at a description of a wooden bull."
+  "I eventually arrive at a description of a wooden bull."
 
   "{i}{b}WOODEN BULL{/b} enters right. It is made of heavy mahogany, with wheels of iron.{/i}"
 
@@ -1078,15 +1078,15 @@ else:
 
   "{b}Pasiphae{/b}: Alight! Yes! This is sweet madness. Witness me!"
 
-  "There was then a very graphic description about the real bull mounting the wooden bull on the stage and Pasiphae crying out in 'ecstatic pain.'"
+  "There is then a very graphic description about the real bull mounting the wooden bull on the stage and Pasiphae crying out in 'ecstatic pain.'"
 
-  "Part of me was downright leery of the mind that recreated this scene. The other part of me wondered where the air holes would be in this wooden bull."
+  "Part of me is downright leery of the mind that recreated this scene. The other part of me wonders where the air holes would be in this wooden bull."
 
-  "Certainly, though, there had to be a degree of hilarity to even consider a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
+  "Certainly, though, there is a degree of hilarity to even consider that a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
 
-  "The story ended in inevitable tragedy, however, as she held up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she died."
+  "The story ends in inevitable tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
-  "So what did this all mean?"
+  "So what does this all mean?"
 
   jump pasiphae_author_menu
 
@@ -1108,7 +1108,7 @@ label pasiphae_author_menu:
 
 label pasiphae_play_fun:
 
-  "I imagined stagehands trying to wrestle a live bull onto a stage in a theater with a smirk."
+  "I imagine stagehands trying to wrestle a live bull onto a stage in a theater with a smirk."
 
   if pasiphae_author == "Marian":
     $ marian_play_fun = True
@@ -1118,7 +1118,7 @@ label pasiphae_play_fun:
   else:
     "Literature was meant to explore ideas. I'm glad [pasiphae_author] was able to put this idea to paper."
 
-  "Certainly, James was nothing like the characters in his books."
+  "Certainly, James is... was nothing like the characters in his books."
 
   "I put the book back in the drawer"
 
@@ -1126,14 +1126,14 @@ label pasiphae_play_fun:
 
 label pasiphae_play_mad:
 
-  "There was something unsettling about rewriting an ancient play about bestiality."
+  "There is something deeply unsettling about rewriting an ancient play about bestiality."
 
   if pasiphae_author == "Marian":
     $ marian_play_crazy = True
 
     "What drew her to this story, and what made her want to express it in such graphic detail?"
 
-    "Surely this was the work of someone who was truly unwell. I hope she got the help she needed."
+    "Surely this is the work of someone who was truly unwell. I hope she got the help she needed."
 
   if pasiphae_author == "James":
     "James... some part of you must have been truly unwell. I can only hope that writing this helped bring you peace, or urged you to get the help you needed."
