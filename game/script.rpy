@@ -1026,7 +1026,7 @@ if tutor:
 
   "In the end, Pasiphae carried out her plan against the backdrop of an uncaring world."
 
-  "She climbed into an ornately built wooden bull, made of mahogany, bedecked in jewels, and did the deed."
+  "She climbed into an ornately built wooden bull, made of mahogany, bedecked in jewels, and did the deed with an actual bull on the stage."
 
   "The consequences of her actions showed her unraveling, the play ending ultimately as she held up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she died."
 
@@ -1102,6 +1102,8 @@ label pasiphae_author_menu:
 
 label pasiphae_play_fun:
 
+  "I imagined stagehands trying to wrestle a live bull onto a stage in a theater with a smirk."
+
   if pasiphae_author == "Marian":
     $ marian_play_fun = True
 
@@ -1117,6 +1119,8 @@ label pasiphae_play_fun:
   jump conservatory_menu
 
 label pasiphae_play_mad:
+
+  "There was something unsettling about rewriting an ancient play about bestiality."
 
   if pasiphae_author == "Marian":
     $ marian_play_crazy = True
@@ -1141,7 +1145,11 @@ label pasiphae_play_sympathy:
 
   "It must have taken Marian a lot of courage to write something like this."
 
-  "And to have to have hidden it in such a place in their home, it's clear this was something she couldn't speak to James about."
+  "And to have to have hidden it in a such a place in their home, it's clear this was something she couldn't speak to James about."
+
+  "Who was she? What spoke to her about this story, and how she told it? This human look at a woman with such a dark desire..."
+
+  "Maybe writing this was some sort of exorcism."
 
   "I put the book back in the drawer"
 
