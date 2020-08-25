@@ -911,8 +911,19 @@ label salon_menu:
 
         "I move on":
 
-            jump conservatory
+            jump gueuloir
 
+label gueuloir:
+
+    "The gueuloir is full of nothing"
+
+label gueuloir_menu:
+
+    menu:
+
+        "I move on":
+
+            jump conservatory
 
 label conservatory:
 
