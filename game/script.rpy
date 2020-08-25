@@ -10,12 +10,7 @@ default tutor = False
 default merchant = False
 default optimistic = False
 default pessimistic = False
-default rory_jimmy = False
-default rory_business_card = False
-default rory_artist = False
-default rory_choices = False
-default rory_atford = False
-default rory_travel = False
+
 
 # Explored
 default explored_kitchen = False
@@ -34,6 +29,20 @@ default explored_library_book_3 = False
 default insight_1_library_book_1 = False
 default insight_2_library_book_1 = False
 default insight_3_library_book_1 = False
+
+# Insight - Rory
+default rory_jimmy = False
+default rory_business_card = False
+default rory_artist = False
+default rory_choices = False
+default rory_atford = False
+default rory_travel = False
+
+# Insight - Marian Play
+default pasiphae_author = "this unknown author"
+default marian_play_fun = False
+default marian_play_crazy = False
+default marian_play_sympathy = False
 
 # The game starts here.
 label start:
@@ -814,13 +823,9 @@ if optimistic:
 
     "What were you thinking as you sat out here, Jimmy?"
 
-    jump kitchen
-
 if pessimistic:
 
     "Jimmy, why am I even here for him?"
-
-    jump kitchen
 
 label patio_menu:
 
@@ -874,8 +879,6 @@ label upstairs:
 
     "The upstairs is hallway-y"
 
-    return
-
 label upstairs_menu:
 
     menu:
@@ -908,8 +911,19 @@ label salon_menu:
 
         "I move on":
 
-            jump conservatory
+            jump gueuloir
 
+label gueuloir:
+
+    "The gueuloir is full of nothing"
+
+label gueuloir_menu:
+
+    menu:
+
+        "I move on":
+
+            jump conservatory
 
 label conservatory:
 
@@ -922,9 +936,246 @@ label conservatory_menu:
 
     menu:
 
+        "I look in the drawer":
+
+            jump pasiphae_play_intro
+
         "I move on":
 
             jump interlude
+
+label pasiphae_play_intro:
+
+  "In the drawer I find a book with neatly penned pages. This penmanship is neat, evenly spaced, and deliberately cursive. It seems this book may not have been meant for publishing. The lack of title, and author helps confirm my suspicions."
+
+  menu:
+
+    "This must be one of James' unpublished works":
+      $ pasiphae_author = "James"
+      jump pasiphae_play
+
+    "This must have been written by someone other than James":
+      jump pasiphae_play_author
+
+label pasiphae_play_author:
+
+  "But who else could it have been?"
+
+  menu:
+
+    "An esteemed guest must have left this here and forgotten about it":
+      jump pasiphae_play_author_mystery
+
+    "Someone must have spent a lot of time here writing it":
+      jump pasiphae_play_author_marian
+
+label pasiphae_play_author_mystery:
+  $ pasiphae_author = "this unknown author"
+
+  "The author of this book must have thought very little of his or her work to leave it here."
+
+  "Probably some very drunk or very happy writer, dragged off to bed after too much champagne."
+
+  jump pasiphae_play
+
+label pasiphae_play_author_marian:
+  $ pasiphae_author = "Marian"
+
+  "The only other person who lived here was Marian. This must have been from her hand."
+
+  jump pasiphae_play
+
+label pasiphae_play:
+
+# perception of others vs what she wants -- does everyone think she wants to fuck a BULL
+# she's in the fields and people think she wants to fuck one
+# she wants to become a cow not fuck one
+# believing in divinity is a way of absolving yourself from responsibility
+
+if tutor:
+
+  "I begin leafing through the pages, immediately recognizing the names of the characters:"
+
+  "Pasiphaë, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our moral voice of reason."
+
+  "This seems to be a retelling of her story."
+
+  "But here, Poseidon is no godlike man, rising from the sea."
+
+  "And Pasiphaë's powers of sorcery see no manifestation."
+
+  "We, the audience, are left to watch Pasiphaë unravel with only the humanity and intimacy of the stage."
+
+  "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
+
+  "{b}Pasiphaë{/b}: Are you sure it is right to trust a sentry's gossip? It is they who gawk at cows, not I."
+
+  "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you stare that even the crows land on you."
+
+  "{b}Pasiphaë (fiery){/b}: Enough of these ridiculous accusations. Why are you doing this? Since when do you care what I want, or what I do? You never have before!"
+
+  "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip below you, I speak to you as an equal."
+
+  "{b}Pasiphaë{/b}: Such empty words! If you loved and trusted me you would do as you always have and leave me be! As you would and as you always have."
+
+  "{b}Minos{/b}: Enough! Command you I will not, but neither will I move. Tell me the truth of this matter, for you god-born owe it to man."
+
+  "{i}Pasiphaë walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches. When she sees he won't leave, she finally faces him.{/i}"
+
+  "{b}Pasiphaë (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
+
+  "{b}Chorus{/b}: Fortunate is the man who has never witnessed madness in his love. For, once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
+
+  "{b}Minos{/b}: So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
+
+  "{b}Pasiphaë{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
+
+  "{b}Chorus{/b}: What preparation does he have to draw this water? What strength has he built in his life? Some fail, some falter, and let the rope fall."
+
+  "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Surely this is not you, it never is or was or will be you. Nothing of this is like the woman I wed."
+
+  "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
+
+  "This certainly does not sound like the immortal sorceress Pasiphaë I'd read about."
+
+  "I don't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
+
+  "In the end, Pasiphaë carries out her plan against the backdrop of an uncaring world."
+
+  "She climbs into an ornately built wooden bull, made of mahogany, bedecked in jewels, and does the deed with an actual bull on the stage."
+
+  "The consequences of her actions show her unraveling, in classic Greek Tragedy form, the play ending ultimately as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
+
+  if pasiphae_author == "Marian":
+
+    "I think about the implications of Marian having written this."
+
+  jump pasiphae_author_menu
+
+else:
+
+  "There is a play of some sort in the book. It sounds like some sort of Greek myth."
+
+  if merchant:
+
+    "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
+
+  if carpenter:
+
+    "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
+
+  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants to... fornicate with a bull."
+
+  "It isn't clear to me why she has this dark desire. It seems like some sort of unknown madness is taking over her."
+
+  "Her husband attempts to speak with her and understand what is happening, but it is all for naught. He is unable to convince her to abandon her plan."
+
+  "I eventually arrive at a description of a wooden bull."
+
+  "{i}{b}WOODEN BULL{/b} enters right. It is made of heavy mahogany, with wheels of iron.{/i}"
+
+  "{i}Inlaid are sapphires around its neck, rubies on its hooves, a pearl on its forehead shaped like a crescent moon.{/i}"
+
+  "{i}Its horns are proud, comely, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphaë.{/i}"
+
+  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! The heat that burns within me cannot be quenched by mere man."
+
+  "{i}(beat){/i}"
+
+  "{b}Chorus{/b}: Lust, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless Aphrodite reels her line tightly."
+
+  "{b}Pasiphaë{/b}: Can you not see? Aphrodite holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
+
+  "{b}Chorus{/b}: She says she is under no curse. Surely she can control herself, our mighty queen, sorceress, wise ruler. There is no sense in what she does. Where is the truth in her words? Is she mad or is she cursed?"
+
+  "{b}Pasiphaë{/b}: Do you not heed your queen? Not once, but twice you disobey my call. Behold me. I am she. There is no curse here. Bring forth the bull that I seek. You have allowed me to come this far, would you try and stop me now?"
+
+  "{i}THE KING'S BULL{/i} enters left and approaches {i}WOODEN BULL{/i}"
+
+  "{b}Pasiphaë{/b}: Alight! Yes! This is sweet madness. Witness me!"
+
+  "There is then a very graphic description about the real bull mounting the wooden bull on the stage and Pasiphaë crying out in 'ecstatic pain.'"
+
+  "Part of me is downright leery of the mind that recreated this scene. The other part of me wonders where the air holes would be in this wooden bull."
+
+  "Certainly, though, there is a degree of hilarity to even consider that a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
+
+  "The story ends in inevitable tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
+
+  "So what does this all mean?"
+
+  jump pasiphae_author_menu
+
+label pasiphae_author_menu:
+
+  menu:
+
+    "This must be a fun and fanciful exercise of the mind":
+
+      jump pasiphae_play_fun
+
+    "This must be the product of a truly disturbed mind":
+
+      jump pasiphae_play_mad
+
+    "This must be something Marian had kept in secret" if pasiphae_author == "Marian":
+
+      jump pasiphae_play_sympathy
+
+label pasiphae_play_fun:
+
+  "I imagine stagehands trying to wrestle a live bull onto a stage in a theater with a smirk."
+
+  if pasiphae_author == "Marian":
+    $ marian_play_fun = True
+
+    "Literature was meant to explore ideas. I'm glad she had this outlet to express herself."
+
+  else:
+    "Literature was meant to explore ideas. I'm glad [pasiphae_author] was able to put this idea to paper."
+
+  "Certainly, James is... was nothing like the characters in his books."
+
+  "I put the book back in the drawer"
+
+  jump conservatory_menu
+
+label pasiphae_play_mad:
+
+  "There is something deeply unsettling about rewriting an ancient play about bestiality."
+
+  if pasiphae_author == "Marian":
+    $ marian_play_crazy = True
+
+    "What drew her to this story, and what made her want to express it in such graphic detail?"
+
+    "Surely this is the work of someone who was truly unwell. I hope she got the help she needed."
+
+  if pasiphae_author == "James":
+    "James... some part of you must have been truly unwell. I can only hope that writing this helped bring you peace, or urged you to get the help you needed."
+
+  else:
+    "The author of this story must have been truly unwell. I can only hope that writing this helped bring them peace, or urged them to get the help they needed."
+
+  "I put the book back in the drawer"
+
+  jump conservatory_menu
+
+label pasiphae_play_sympathy:
+
+  $ marian_play_sympathy = True
+
+  "It must have taken Marian a lot of courage to write something like this."
+
+  "And to have to have hidden it in a such a place in their home, it's clear this was something she couldn't speak to James about."
+
+  "Who was she? What spoke to her about this story, and how she told it? This human look at a woman with such a dark desire..."
+
+  "Maybe writing this was some sort of exorcism."
+
+  "I put the book back in the drawer"
+
+  jump conservatory_menu
 
 label interlude:
 
