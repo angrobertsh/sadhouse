@@ -1104,9 +1104,11 @@ else:
 
   "{i}The wooden bull floats into the air along with the real bull. They cross paths, tangle the wires that keep them aloft. The chorus screams.{/i}"
 
-  "{i}Pasiphaë cries out in ecstatic pain as the mahogany bull shatters.{/i}"
+  "{i}{b}PASIPHAË{/b} cries out in ecstatic pain as the mahogany bull shatters. She and the bull become entwined. The lights darken. When they illumine once more, she is broken on the stage, alone{/i}"
 
-  "Part of me is downright leery of the mind that recreated this scene. The other part of me wonders where the air holes would be in this wooden bull."
+  "{b}Pasiphaë (broken){/b}: Is this what I dreamed? Am I cow? Is it me? Moo. Moo. I feel the sun, ah. See me. I feel it on me."
+
+  "Part of me is downright leery of the mind that created this scene. The other part of me wonders where the air holes would be in this wooden bull."
 
   "Certainly, though, there is a degree of hilarity to even consider that a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
 
