@@ -976,55 +976,60 @@ label pasiphae_play_author_marian:
 
 label pasiphae_play:
 
+# perception of others vs what she wants -- does everyone think she wants to fuck a BULL
+# she's in the fields and people think she wants to fuck one
+# she wants to become a cow not fuck one
+# believing in divinity is a way of absolving yourself from responsibility
+
 if tutor:
 
   "I begin leafing through the pages, immediately recognizing the names of the characters:"
 
-  "Pasiphae, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our moral voice of reason."
+  "Pasiphaë, the Greek sorceress who was cursed by Poseidon into loving a bull. Her husband, Minos, and, of course, the chorus, our moral voice of reason."
 
   "This seems to be a retelling of her story."
 
   "But here, Poseidon is no godlike man, rising from the sea."
 
-  "And Pasiphae's powers of sorcery see no manifestation."
+  "And Pasiphaë's powers of sorcery see no manifestation."
 
-  "We, the audience, are left to watch Pasiphae unravel with only the humanity and intimacy of the stage."
+  "We, the audience, are left to watch Pasiphaë unravel with only the humanity and intimacy of the stage."
 
   "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
 
-  "{b}Pasiphae{/b}: Are you sure it is right to trust a sentry's gossip? It is they who gawk at cows, not I."
+  "{b}Pasiphaë{/b}: Are you sure it is right to trust a sentry's gossip? It is they who gawk at cows, not I."
 
   "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you stare that even the crows land on you."
 
-  "{b}Pasiphae (fiery){/b}: Enough of these ridiculous accusations. Why are you doing this? Since when do you care what I want, or what I do? You never have before!"
+  "{b}Pasiphaë (fiery){/b}: Enough of these ridiculous accusations. Why are you doing this? Since when do you care what I want, or what I do? You never have before!"
 
   "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip below you, I speak to you as an equal."
 
-  "{b}Pasiphae{/b}: Such empty words! If you loved and trusted me you would do as you always have and leave me be! As you would and as you always have."
+  "{b}Pasiphaë{/b}: Such empty words! If you loved and trusted me you would do as you always have and leave me be! As you would and as you always have."
 
   "{b}Minos{/b}: Enough! Command you I will not, but neither will I move. Tell me the truth of this matter, for you god-born owe it to man."
 
-  "{i}Pasiphae walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches. When she sees he won't leave, she finally faces him.{/i}"
+  "{i}Pasiphaë walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches. When she sees he won't leave, she finally faces him.{/i}"
 
-  "{b}Pasiphae (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
+  "{b}Pasiphaë (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
 
-  "{b}Chorus{/b}: Fortunate is the man who has never witnessed madness in his love. Where once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
+  "{b}Chorus{/b}: Fortunate is the man who has never witnessed madness in his love. For, once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
 
   "{b}Minos{/b}: So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
 
-  "{b}Pasiphae{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
+  "{b}Pasiphaë{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
 
   "{b}Chorus{/b}: What preparation does he have to draw this water? What strength has he built in his life? Some fail, some falter, and let the rope fall."
 
   "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Surely this is not you, it never is or was or will be you. Nothing of this is like the woman I wed."
 
-  "{b}Pasiphae{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
+  "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
 
-  "This certainly is not how I imagined the immortal sorceress Pasiphae I'd read about."
+  "This certainly does not sound like the immortal sorceress Pasiphaë I'd read about."
 
   "I don't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
 
-  "In the end, Pasiphae carries out her plan against the backdrop of an uncaring world."
+  "In the end, Pasiphaë carries out her plan against the backdrop of an uncaring world."
 
   "She climbs into an ornately built wooden bull, made of mahogany, bedecked in jewels, and does the deed with an actual bull on the stage."
 
@@ -1040,15 +1045,15 @@ else:
 
   "There is a play of some sort in the book. It sounds like some sort of Greek myth."
 
-  if merchant
+  if merchant:
 
     "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
 
-  if carpenter
+  if carpenter:
 
     "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
 
-  "As I leaf through the pages, I learn that a woman named Pasiphae is having a problem where she wants to... fornicate with a bull."
+  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants to... fornicate with a bull."
 
   "It isn't clear to me why she has this dark desire. It seems like some sort of unknown madness is taking over her."
 
@@ -1060,25 +1065,25 @@ else:
 
   "{i}Inlaid are sapphires around its neck, rubies on its hooves, a pearl on its forehead shaped like a crescent moon.{/i}"
 
-  "{i}Its horns are proud, comely, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphae.{/i}"
+  "{i}Its horns are proud, comely, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphaë.{/i}"
 
-  "{b}Pasiphae (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! The heat that burns within me cannot be quenched by mere man."
+  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! The heat that burns within me cannot be quenched by mere man."
 
   "{i}(beat){/i}"
 
   "{b}Chorus{/b}: Lust, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless Aphrodite reels her line tightly."
 
-  "{b}Pasiphae{/b}: Can you not see? Aphrodite holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
+  "{b}Pasiphaë{/b}: Can you not see? Aphrodite holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
 
   "{b}Chorus{/b}: She says she is under no curse. Surely she can control herself, our mighty queen, sorceress, wise ruler. There is no sense in what she does. Where is the truth in her words? Is she mad or is she cursed?"
 
-  "{b}Pasiphae{/b}: Do you not heed your queen? Not once, but twice you disobey my call. Behold me. I am she. There is no curse here. Bring forth the bull that I seek. You have allowed me to come this far, would you try and stop me now?"
+  "{b}Pasiphaë{/b}: Do you not heed your queen? Not once, but twice you disobey my call. Behold me. I am she. There is no curse here. Bring forth the bull that I seek. You have allowed me to come this far, would you try and stop me now?"
 
   "{i}THE KING'S BULL{/i} enters left and approaches {i}WOODEN BULL{/i}"
 
-  "{b}Pasiphae{/b}: Alight! Yes! This is sweet madness. Witness me!"
+  "{b}Pasiphaë{/b}: Alight! Yes! This is sweet madness. Witness me!"
 
-  "There is then a very graphic description about the real bull mounting the wooden bull on the stage and Pasiphae crying out in 'ecstatic pain.'"
+  "There is then a very graphic description about the real bull mounting the wooden bull on the stage and Pasiphaë crying out in 'ecstatic pain.'"
 
   "Part of me is downright leery of the mind that recreated this scene. The other part of me wonders where the air holes would be in this wooden bull."
 
