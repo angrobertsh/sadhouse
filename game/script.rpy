@@ -1022,11 +1022,11 @@ if tutor:
 
   "{i}Pasiphaë walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches. When she sees he won't leave, she finally faces him.{/i}"
 
-  "{b}Pasiphaë (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply want to make love to him."
+  "{b}Pasiphaë (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply love him. We will be together, living as cows. Low at the moon, sleep in the grass, spend our days in the warmth of the sun."
 
   "{b}Chorus{/b}: Fortunate is the man who has never witnessed madness in his love. For, once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
 
-  "{b}Minos{/b}: So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
+  "{b}Minos{/b}: Love!? So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
 
   "{b}Pasiphaë{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
 
@@ -1036,15 +1036,21 @@ if tutor:
 
   "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
 
+  "{b}Minos{/b}: Be you god, be you mortal, be you sorceress in between. The one I wed is human. The one I wed is loyal to me."
+
+  "{b}Pasiphaë{/b}: How blind you are! How deep this ache! This human world is no place for me. The one I wed, the one I see, slays the love within me."
+
   "This certainly does not sound like the immortal sorceress Pasiphaë I'd read about."
 
   "I don't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
 
-  "In the end, Pasiphaë carries out her plan against the backdrop of an uncaring world."
+  "In the end, Pasiphaë carries out her plan against the backdrop of a helpless world."
 
-  "She climbs into an ornately built wooden bull, made of mahogany, bedecked in jewels, and does the deed with an actual bull on the stage."
+  "She climbs into an ornately built wooden bull, made of mahogany, bedecked in jewels, and gambols and lolls with an actual bull on the stage."
 
-  "The consequences of her actions show her unraveling, in classic Greek Tragedy form, the play ending ultimately as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
+  "The scene turns to horror, however, the real bull mounts the wooden bull."
+
+  "The play ends ultimately as she holds up the fruit of her actions, her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
   if pasiphae_author == "Marian":
 
@@ -1064,9 +1070,11 @@ else:
 
     "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
 
-  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants to... fornicate with a bull."
+  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants to... live as a cow."
 
-  "It isn't clear to me why she has this dark desire. It seems like some sort of unknown madness is taking over her."
+  "It's clear to me that she isn't happy with her life as a queen... empress... whatever they called them."
+
+  "But being a cow... it seems like some sort of unknown madness is taking over her."
 
   "Her husband attempts to speak with her and understand what is happening, but it is all for naught. He is unable to convince her to abandon her plan."
 
@@ -1078,13 +1086,13 @@ else:
 
   "{i}Its horns are proud, comely, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphaë.{/i}"
 
-  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! The heat that burns within me cannot be quenched by mere man."
+  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! My final transformation is nigh!"
 
   "{i}(beat){/i}"
 
-  "{b}Chorus{/b}: Lust, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless Aphrodite reels her line tightly."
+  "{b}Chorus{/b}: Desire, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless the gods reel in the line tightly."
 
-  "{b}Pasiphaë{/b}: Can you not see? Aphrodite holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
+  "{b}Pasiphaë{/b}: Can you not see? The gods holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
 
   "{b}Chorus{/b}: She says she is under no curse. Surely she can control herself, our mighty queen, sorceress, wise ruler. There is no sense in what she does. Where is the truth in her words? Is she mad or is she cursed?"
 
@@ -1094,9 +1102,13 @@ else:
 
   "{b}Pasiphaë{/b}: Alight! Yes! This is sweet madness. Witness me!"
 
-  "There is then a very graphic description about the real bull mounting the wooden bull on the stage and Pasiphaë crying out in 'ecstatic pain.'"
+  "{i}The wooden bull floats into the air along with the real bull. They cross paths, tangle the wires that keep them aloft. The chorus screams.{/i}"
 
-  "Part of me is downright leery of the mind that recreated this scene. The other part of me wonders where the air holes would be in this wooden bull."
+  "{i}{b}PASIPHAË{/b} cries out in ecstatic pain as the mahogany bull shatters. She and the bull become entwined. The lights darken. When they illumine once more, she is broken on the stage, alone{/i}"
+
+  "{b}Pasiphaë (broken){/b}: Is this what I dreamed? Am I cow? Is it me? Moo. Moo. I feel the sun, ah. See me. I feel it on me."
+
+  "Part of me is downright leery of the mind that created this scene. The other part of me wonders where the air holes would be in this wooden bull."
 
   "Certainly, though, there is a degree of hilarity to even consider that a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
 
