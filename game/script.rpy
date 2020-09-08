@@ -1000,57 +1000,55 @@ if tutor:
 
   "This seems to be a retelling of her story."
 
-  "But here, Poseidon is no godlike man, rising from the sea."
+  "But here, Poseidon is no godlike man, cursing thunderous madness from the sea."
 
-  "And Pasiphaë's powers of sorcery see no manifestation."
-
-  "We, the audience, are left to watch Pasiphaë unravel with only the humanity and intimacy of the stage."
+  "As in life, he never appears. His curse is quiet, and we, the audience, are left watching Pasiphaë unravel, seemingly all by herself, within the humanity and intimacy of the stage."
 
   "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
 
   "{b}Pasiphaë{/b}: Are you sure it is right to trust a sentry's gossip? It is they who gawk at cows, not I."
 
-  "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you stare that even the crows land on you."
+  "{b}Minos{/b}: Gawk they may, but they are not you. Fever is the youth of madness, they say. So steadfastly you stare that even crows might land on you."
 
   "{b}Pasiphaë (fiery){/b}: Enough of these ridiculous accusations. Why are you doing this? Since when do you care what I want, or what I do? You never have before!"
 
   "{b}Minos (defensively){/b}: I don't understand, this isn't like you. I love and trust you, and want only the best. While the sentries may gossip below you, I speak to you as an equal."
 
-  "{b}Pasiphaë{/b}: Such empty words! If you loved and trusted me you would do as you always have and leave me be! As you would and as you always have."
+  "{b}Pasiphaë{/b}: Such empty words! If you loved and trusted me you would do as you always have and leave me be! As you will and as you always have."
 
   "{b}Minos{/b}: Enough! Command you I will not, but neither will I move. Tell me the truth of this matter, for you god-born owe it to man."
 
   "{i}Pasiphaë walks in a circle, increasingly agitated. She busies herself with a dish, then a towel. Minos watches. When she sees he won't leave, she finally faces him.{/i}"
 
-  "{b}Pasiphaë (calmly, but with wild eyes){/b}: It is no great thing that draws my eyes to that fine bull. I simply love him. We will be together, living as cows. Low at the moon, sleep in the grass, spend our days in the warmth of the sun."
+  "{b}Pasiphaë (calmly, but with wild eyes){/b}: Why would Poseidon choose you to bestow such a wondrous creature? Why not I? Daughter of Helios that I am, sorceress divine, do I not deserve the adoration of the sea?"
 
-  "{b}Chorus{/b}: Fortunate is the man who has never witnessed madness in his love. For, once the humanity of woman is felt, that house is shaken forever. The strength he must draw now like water from a well, inch by inch he must pull the rope."
+  "{b}Minos{/b}: You covet my bull? The mighty bull of Poseidon?"
 
-  "{b}Minos{/b}: Love!? So light a thing you think to say! There must be some explanation for this, some supernatural cause. Some curse has come upon your mind."
+  "{b}Pasiphaë{/b}: King you are, but queen am I, what great {i}blessings{/i} have been {i}showered{/i} upon you. What {i}great fortune{/i}. Never have I received anything I have not grasped with my own two hands."
 
-  "{b}Pasiphaë{/b}: Should I want but a single thing and you assume I am cursed? On what grounds? What law? What word? Am I so strange that you would not allow me this one thing?"
+  "{b}Chorus{/b}: A house quiet sits in balance with the gods. Fortunate are they who can remain content. But when that quiet is broken, that house is shaken forever."
 
-  "{b}Chorus{/b}: What preparation does he have to draw this water? What strength has he built in his life? Some fail, some falter, and let the rope fall."
+  "{b}Minos{/b}: What fearsome jealousy! It twists the woman before me. So sudden it rises. How has this evil taken hold?"
 
-  "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Surely this is not you, it never is or was or will be you. Nothing of this is like the woman I wed."
+  "{b}Pasiphaë{/b}: Sudden? Was it not I who cursed your seed to serpents? When a woman dresses her desires as lover's envy, her husband sees nothing. Yet when she wishes power, she is now jealous?"
 
-  "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. Who I wasn't letting myself become. You never saw me. You saw who you wanted me to be."
+  "{b}Chorus{/b}: Love is the lightless cave man walks down, blind to every stone in his path. Cut and bruised he can't see who assaults him, deeper in he goes, following only the promise of a soft-faced girl."
 
-  "{b}Minos{/b}: Be you god, be you mortal, be you sorceress in between. The one I wed is human. The one I wed is loyal to me."
+  "{b}Pasiphaë{/b}: Give me your bull, or I shall take it. You cannot keep a god's gift for yourself. It is I who have just as much right to it as you."
 
-  "{b}Pasiphaë{/b}: How blind you are! How deep this ache! This human world is no place for me. The one I wed, the one I see, slays the love within me."
+  "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Be you god, be you mortal, be you sorceress in between. Nothing of this is like the woman I wed. The one I wed is content with me."
 
-  "This certainly does not sound like the immortal sorceress Pasiphaë I'd read about."
+  "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. You never saw me. You saw who you wanted me to be. The one I wed, the one I see, slays the love within me."
 
-  "I don't know if this version of Poseidon's curse included some heightened reflection, some self-consciousness that brought her to her knees more than any sort of bestial lust could."
+  "Poseidon's curse here was insidious, it wasn't simply some bestial lust, it was an envy that grew and destroyed everything in its path."
 
-  "In the end, Pasiphaë carries out her plan against the backdrop of a helpless world."
+  "Ultimately, Pasiphaë carries out a plan to lure the bull to her. As I expect, it goes terribly wrong."
 
   "She climbs into an ornately built wooden bull, made of mahogany, bedecked in jewels, and gambols and lolls with an actual bull on the stage."
 
   "The scene turns to horror, however, the real bull mounts the wooden bull."
 
-  "The play ends ultimately as she holds up the fruit of her actions, her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
+  "Pasiphaë never acquires the bull, and its pursuit punishes her harshly. She holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
   if pasiphae_author == "Marian":
 
@@ -1070,49 +1068,47 @@ else:
 
     "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
 
-  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants to... live as a cow."
+  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants her husband's prize bull."
 
-  "It's clear to me that she isn't happy with her life as a queen... empress... whatever they called them."
+  "It seems at once a little irrational, and a little sympathetic. She's a sorceress, a powerful queen, yet she gets nothing from the gods, and it's her husband that gets the fancy bull."
 
-  "But being a cow... it seems like some sort of unknown madness is taking over her."
+  "Her husband attempts to speak with her and understand what she's feeling, but he seems to say all the wrong things."
 
-  "Her husband attempts to speak with her and understand what is happening, but it is all for naught. He is unable to convince her to abandon her plan."
-
-  "I eventually arrive at a description of a wooden bull."
+  "She's convinced she can steal the bull by luring it away, dressed in a wooden bull. I eventually arrive at the point where she tries to execute her plan."
 
   "{i}{b}WOODEN BULL{/b} enters right. It is made of heavy mahogany, with wheels of iron.{/i}"
 
   "{i}Inlaid are sapphires around its neck, rubies on its hooves, a pearl on its forehead shaped like a crescent moon.{/i}"
 
-  "{i}Its horns are proud, comely, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphaë.{/i}"
+  "{i}Its horns are proud, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphaë.{/i}"
 
-  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! I can stand it no longer! Thus is the decree of your queen! See me! My final transformation is nigh!"
+  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! Thus is the decree of your queen! I will prove I am more worthy, more fit to possess his bull heart. See me!"
 
   "{i}(beat){/i}"
 
-  "{b}Chorus{/b}: Desire, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless the gods reel in the line tightly."
+  "{b}Chorus{/b}: Jealousy, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless the gods reel in the line tightly."
 
   "{b}Pasiphaë{/b}: Can you not see? The gods holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
 
-  "{b}Chorus{/b}: She says she is under no curse. Surely she can control herself, our mighty queen, sorceress, wise ruler. There is no sense in what she does. Where is the truth in her words? Is she mad or is she cursed?"
+  "{b}Chorus{/b}: She says she is under no curse. Our mighty queen, sorceress, wise ruler. There is no sense in what she does. Where is the truth in her words? Is she mad or is she cursed?"
 
   "{b}Pasiphaë{/b}: Do you not heed your queen? Not once, but twice you disobey my call. Behold me. I am she. There is no curse here. Bring forth the bull that I seek. You have allowed me to come this far, would you try and stop me now?"
 
   "{i}THE KING'S BULL{/i} enters left and approaches {i}WOODEN BULL{/i}"
 
-  "{b}Pasiphaë{/b}: Alight! Yes! This is sweet madness. Witness me!"
+  "{b}Pasiphaë{/b}: Alight! Yes! I swing my comely tail! Come! Be mine!"
 
-  "{i}The wooden bull floats into the air along with the real bull. They cross paths, tangle the wires that keep them aloft. The chorus screams.{/i}"
+  "{i}The wooden bull begins to try and lure the real bull away. But it is too slow. The real bull rushes and mounts it. They float into the air together, and when they cross paths, they tangle the wires that keep them aloft. The chorus screams.{/i}"
 
-  "{i}{b}PASIPHAË{/b} cries out in ecstatic pain as the mahogany bull shatters. She and the bull become entwined. The lights darken. When they illumine once more, she is broken on the stage, alone{/i}"
+  "{i}{b}PASIPHAË{/b} cries out in pain as the mahogany bull shatters. She and the bull become entwined. The lights darken. When they illumine once more, she is broken on the stage, alone{/i}"
 
-  "{b}Pasiphaë (broken){/b}: Is this what I dreamed? Am I cow? Is it me? Moo. Moo. I feel the sun, ah. See me. I feel it on me."
+  "{b}Pasiphaë (broken){/b}: Is this what I dreamed? Is it mine? Have I taken what is truly deserved to me?"
 
   "Part of me is downright leery of the mind that created this scene. The other part of me wonders where the air holes would be in this wooden bull."
 
   "Certainly, though, there is a degree of hilarity to even consider that a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
 
-  "The story ends in inevitable tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
+  "The story ends in tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
   "So what does this all mean?"
 
