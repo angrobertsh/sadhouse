@@ -782,7 +782,7 @@ label dining_room:
     "The dining room would have been host to innumerable parties, all gathered around a glass of champagne, or a late night espresso    "
 
 label dining_room_menu:
-
+    scene dining room at truecenter
     menu:
 
         "I take a seat..." if not explored_dining_room_dining_table_sit:
@@ -831,6 +831,9 @@ if merchant:
     jump silverware_memory
 
 label silverware_memory:
+
+    scene dining room_memory at truecenter
+    with ease
 
     "{i}Once I am rich, I shall acquire all of the silver spoons that money can buy.{/i}"
 
@@ -1073,7 +1076,7 @@ if tutor:
 
   "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Be you god, be you mortal, be you sorceress in between. Nothing of this is like the woman I wed. The one I wed is content with me."
 
-  "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. You never saw me. You saw who you wanted me to be. The one I wed, the one I see, slays the love within me."
+  "{b}Pasiphaë{/b}: The one I wed, the one I see, slays the love within me."
 
   "Poseidon's curse here was insidious, it wasn't simply some bestial lust, it was an envy that grew and destroyed everything in its path."
 
