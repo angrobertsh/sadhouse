@@ -811,6 +811,41 @@ label dining_room_dining_trappings:
 
     "A set of silverware, quite literally made of silver."
 
+if carpenter:
+
+    "I always thought pure silver looked surprisingly dull in comparison to the cheaper imitations that many of us are accustomed to."
+    "It also bends quite easily, not that I'm about to tamper with Jimmy's valuable spoons and forks."
+
+    jump silverware_memory
+
+if tutor:
+
+    "It appears I have stumbled upon Jimmy's very own Mildenhall Treasure. No inscriptions to be found, but..."
+
+    jump silverware_memory
+
+if merchant:
+
+    "This collection looks to be in fairly good condition, if only from lack of use rather than deliberate maintenance, and it plainly exceeds sterling grade."
+
+    jump silverware_memory
+
+label silverware_memory:
+
+    "{i}Once I am rich, I shall acquire all of the silver spoons that money can buy.{/i}"
+
+    "We were nearing the end of secondary school when Jimmy first told me that he wanted to be a writer."
+
+if optimistic:
+
+    "he has achieved his goal"
+
+    jump dining_room_menu
+
+if pessimistic:
+
+    "rich snob"
+
     jump dining_room_menu
 
 label patio:
