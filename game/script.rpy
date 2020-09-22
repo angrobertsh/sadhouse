@@ -1,3 +1,12 @@
+label splashscreen:
+    scene black
+    with Pause(1)
+    with Pause(1)
+
+    return
+
+
+
 # Declare characters used by this game.
 define s = Character(_("Sylvie"), color="#c8ffc8")
 define m = Character(_("Me"), color="#c8c8ff")
@@ -389,6 +398,9 @@ label lounge_piano:
 
     "The trillbird sings his song\nIn a hollow grove\nWith nary a throng\nFound below or above"
     "O sweet songbird, alight\nCalm the anger of the earth\nKeep the fire burning bright\nIn our hearts and the hearth"
+
+    play music "audio/The Trillbird.mp3" fadein 10.0
+
     jump lounge_menu
 
 label lounge_window:
@@ -425,6 +437,8 @@ if merchant:
 
 
 label library:
+
+    stop music fadeout 1.0
 
     scene library at truecenter
 
