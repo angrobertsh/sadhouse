@@ -13,3 +13,17 @@ define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 
 https://www.befunky.com/features/blur-image/
+
+
+screen disableclick(time):
+    timer time action Hide("disableclick")
+    key "mouseup_1" action NullAction()
+
+label start:
+    "dialogue"
+    show screen disableclick(3) # pause for three seconds
+    "DIALOGUE! {w=3.0}"
+    "dialogue"
+    
+    
+I only included left click because I'm lazy, but by default, left click, enter, space, and return are bound to CTC. http://www.renpy.org/doc/html/keymap.html#keymap

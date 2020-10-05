@@ -1,3 +1,8 @@
+label splashscreen:
+    scene black
+    with Pause(2)
+    return
+
 # Declare characters used by this game.
 define s = Character(_("Sylvie"), color="#c8ffc8")
 define m = Character(_("Me"), color="#c8c8ff")
@@ -389,6 +394,9 @@ label lounge_piano:
 
     "The trillbird sings his song\nIn a hollow grove\nWith nary a throng\nFound below or above"
     "O sweet songbird, alight\nCalm the anger of the earth\nKeep the fire burning bright\nIn our hearts and the hearth"
+
+    play music "audio/The Trillbird.mp3" fadein 10.0
+
     jump lounge_menu
 
 label lounge_window:
@@ -425,6 +433,8 @@ if merchant:
 
 
 label library:
+
+    stop music fadeout 1.0
 
     scene library at truecenter
 
@@ -782,7 +792,7 @@ label dining_room:
     "The dining room would have been host to innumerable parties, all gathered around a glass of champagne, or a late night espresso    "
 
 label dining_room_menu:
-
+    scene dining room at truecenter
     menu:
 
         "I take a seat..." if not explored_dining_room_dining_table_sit:
@@ -810,6 +820,44 @@ label dining_room_dining_trappings:
     $ explored_dining_room_dining_room_dining_trappings = True
 
     "A set of silverware, quite literally made of silver."
+
+if carpenter:
+
+    "I always thought pure silver looked surprisingly dull in comparison to the cheaper imitations that many of us are accustomed to."
+    "It also bends quite easily, not that I'm about to tamper with Jimmy's valuable spoons and forks."
+
+    jump silverware_memory
+
+if tutor:
+
+    "It appears I have stumbled upon Jimmy's very own Mildenhall Treasure. No inscriptions to be found, but..."
+
+    jump silverware_memory
+
+if merchant:
+
+    "This collection looks to be in fairly good condition, if only from lack of use rather than deliberate maintenance, and it plainly exceeds sterling grade."
+
+    jump silverware_memory
+
+label silverware_memory:
+
+    scene dining room_memory at truecenter
+    with ease
+
+    "{i}Once I am rich, I shall acquire all of the silver spoons that money can buy.{/i}"
+
+    "We were nearing the end of secondary school when Jimmy first told me that he wanted to be a writer."
+
+if optimistic:
+
+    "he has achieved his goal"
+
+    jump dining_room_menu
+
+if pessimistic:
+
+    "rich snob"
 
     jump dining_room_menu
 
@@ -987,11 +1035,6 @@ label pasiphae_play_author_marian:
 
 label pasiphae_play:
 
-# perception of others vs what she wants -- does everyone think she wants to fuck a BULL
-# she's in the fields and people think she wants to fuck one
-# she wants to become a cow not fuck one
-# believing in divinity is a way of absolving yourself from responsibility
-
 if tutor:
 
   "I begin leafing through the pages, immediately recognizing the names of the characters:"
@@ -1003,6 +1046,36 @@ if tutor:
   "But here, Poseidon is no godlike man, cursing thunderous madness from the sea."
 
   "As in life, he never appears. His curse is quiet, and we, the audience, are left watching Pasiphaë unravel, seemingly all by herself, within the humanity and intimacy of the stage."
+
+  jump pasiphae_play_body
+
+if merchant:
+
+  "There is a play of some sort in the book. It sounds like some sort of Greek myth."
+
+  "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
+
+  "This woman, Pasiphae seems to be pretty mad that her husband has a magic cow and she doesn't."
+
+  "And I get it, there's a reason why 'his' and 'hers' lines sell so well. It seems like the ancient Greeks didn't quite experience the same slick equality like we have these days."
+
+  "I knew they'd end up in trouble, and I was right."
+
+  jump pasiphae_play_body
+
+if carpenter:
+
+  "In this book is a play."
+
+  "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
+
+  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants her husband's prize bull."
+
+  "Ah, this must be some sort of prequel to the labyrinth story. I certainly don't remember {i}that{/i} ending well."
+
+  jump pasiphae_play_body
+
+label pasiphae_play_body:
 
   "{b}Minos{/b}: The sentries see you face the bull in the fields. You cannot hide it from them. They say there is a feverish look in your eyes."
 
@@ -1038,7 +1111,9 @@ if tutor:
 
   "{b}Minos{/b}: I do not know you, I do not see. It is not one, but two wild creatures before me. Be you god, be you mortal, be you sorceress in between. Nothing of this is like the woman I wed. The one I wed is content with me."
 
-  "{b}Pasiphaë{/b}: And what would you know what I am like? Maybe I am who I always was. You never saw me. You saw who you wanted me to be. The one I wed, the one I see, slays the love within me."
+  "{b}Pasiphaë{/b}: The one I wed, the one I see, slays the love within me."
+
+if tutor:
 
   "Poseidon's curse here was insidious, it wasn't simply some bestial lust, it was an envy that grew and destroyed everything in its path."
 
@@ -1056,61 +1131,47 @@ if tutor:
 
   jump pasiphae_author_menu
 
-else:
+if merchant:
 
-  "There is a play of some sort in the book. It sounds like some sort of Greek myth."
+  "Ultimately, Pasiphaë carries out a plan to lure the bull to her, dressed as a bull."
 
-  if merchant:
+  "Not the plan I'd have come up with, but I'm not the sorceress queen here, I suppose. Envy makes us do strange things."
 
-    "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
+  "The wooden bull she constructs is 'made of mahogany. Inlaid are sapphires around its neck, rubies on its hooves, a pearl on its forehead shaped like a crescent moon.'"
 
-  if carpenter:
+  "Kind of beautiful. Fairly impractical. Definitely out of budget for any theater that would play Greek plays, certainly."
 
-    "I recognize the name Minos from a play in a town square about a labyrinth, years ago, but I don't recognize this specific story"
-
-  "As I leaf through the pages, I learn that a woman named Pasiphaë is having a problem where she wants her husband's prize bull."
-
-  "It seems at once a little irrational, and a little sympathetic. She's a sorceress, a powerful queen, yet she gets nothing from the gods, and it's her husband that gets the fancy bull."
-
-  "Her husband attempts to speak with her and understand what she's feeling, but he seems to say all the wrong things."
-
-  "She's convinced she can steal the bull by luring it away, dressed in a wooden bull. I eventually arrive at the point where she tries to execute her plan."
-
-  "{i}{b}WOODEN BULL{/b} enters right. It is made of heavy mahogany, with wheels of iron.{/i}"
-
-  "{i}Inlaid are sapphires around its neck, rubies on its hooves, a pearl on its forehead shaped like a crescent moon.{/i}"
-
-  "{i}Its horns are proud, its udders hang heavily. Its tail is goldenrod braided silk. Clearly visible on its side is a hinged entrance. Within is Pasiphaë.{/i}"
-
-  "{b}Pasiphaë (booming, within the wooden bull){/b}: Bring him! Bring the mighty bull! Thus is the decree of your queen! I will prove I am more worthy, more fit to possess his bull heart. See me!"
-
-  "{i}(beat){/i}"
-
-  "{b}Chorus{/b}: Jealousy, a curse, only ruination it brings. The weak, the strong, all tremble beneath it. The powerful dive in, and they leave a ripple, deeper in, the stronger they are. Merciless the gods reel in the line tightly."
-
-  "{b}Pasiphaë{/b}: Can you not see? The gods holds no sway over me. Hear me. The sound of my voice is my own. You look at me and see a daughter of Helios. Is that not proof enough?"
-
-  "{b}Chorus{/b}: She says she is under no curse. Our mighty queen, sorceress, wise ruler. There is no sense in what she does. Where is the truth in her words? Is she mad or is she cursed?"
-
-  "{b}Pasiphaë{/b}: Do you not heed your queen? Not once, but twice you disobey my call. Behold me. I am she. There is no curse here. Bring forth the bull that I seek. You have allowed me to come this far, would you try and stop me now?"
-
-  "{i}THE KING'S BULL{/i} enters left and approaches {i}WOODEN BULL{/i}"
-
-  "{b}Pasiphaë{/b}: Alight! Yes! I swing my comely tail! Come! Be mine!"
-
-  "{i}The wooden bull begins to try and lure the real bull away. But it is too slow. The real bull rushes and mounts it. They float into the air together, and when they cross paths, they tangle the wires that keep them aloft. The chorus screams.{/i}"
-
-  "{i}{b}PASIPHAË{/b} cries out in pain as the mahogany bull shatters. She and the bull become entwined. The lights darken. When they illumine once more, she is broken on the stage, alone{/i}"
-
-  "{b}Pasiphaë (broken){/b}: Is this what I dreamed? Is it mine? Have I taken what is truly deserved to me?"
-
-  "Part of me is downright leery of the mind that created this scene. The other part of me wonders where the air holes would be in this wooden bull."
-
-  "Certainly, though, there is a degree of hilarity to even consider that a theater production could afford mahogany, sapphires, and rubies, and a real, raging bull."
+  "Then of course was the trouble I'd seen from a mile away. The real bull... mounts the wooden cow."
 
   "The story ends in tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
   "So what does this all mean?"
+
+  if pasiphae_author == "Marian":
+
+    "I think about the implications of Marian having written this."
+
+  jump pasiphae_author_menu
+
+if carpenter:
+
+  "Ultimately, Pasiphaë carries out a plan to lure the bull to her, dressed as a bull."
+
+  "The minotaur... the labyrinth... ah."
+
+  "The wooden bull she constructs is 'made of mahogany. Inlaid are sapphires around its neck, rubies on its hooves, a pearl on its forehead shaped like a crescent moon.'"
+
+  "Mahogany. Wow, what a heavy and expensive wood to be wheeling out onto the stage. Also not one that would have been available in Greece."
+
+  "When Pasiphae climbs in, the real bull... mounts the wooden cow."
+
+  "The story ends in tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
+
+  "So what does this all mean?"
+
+  if pasiphae_author == "Marian":
+
+    "I think about the implications of Marian having written this."
 
   jump pasiphae_author_menu
 
