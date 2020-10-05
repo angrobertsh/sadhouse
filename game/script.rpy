@@ -1,11 +1,7 @@
 label splashscreen:
     scene black
-    with Pause(1)
-    with Pause(1)
-
+    with Pause(2)
     return
-
-
 
 # Declare characters used by this game.
 define s = Character(_("Sylvie"), color="#c8ffc8")
