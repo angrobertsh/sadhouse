@@ -449,11 +449,11 @@ if merchant:
 
     "It's all about the piano."
 
-    "Esteemed guests would have crowded around, standing and craning their necks to hear the latest jingle be played. There would be no room for sitting, lest you miss a single note or tune."
+    "Esteemed guests would have crowded around, standing and craning their necks to hear the latest jingle be played. There would be no room for sitting, lest you miss a single note."
 
-    "That's just how people are. Too much excitement to sit with such a beautiful instrument in front of them. No wonder these chairs were stiff!"
+    "That's just how people are. Too much excitement with such a beautiful instrument in front of them. No wonder these chairs were stiff!"
 
-    "No use sitting down, there's too much to see, too much afoot."
+    "No need for me to sit, either. There's too much to see, too much afoot."
 
     jump lounge_menu
 
