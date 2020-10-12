@@ -14,14 +14,30 @@ default merchant = False
 default optimistic = False
 default pessimistic = False
 
-# no college
-# straight out of high school, went to a BIG  city
-# prestigious city + seediness
-# Lintonbury where he met rory
-# they would write together
-# mailroom stuff
-# james got a big  break  one day, according to rory and then put in good word for rory
-# lintonbury -> palace gardens around late  20s early 30s because he made  it
+# "From my vantage point, it seemed that James's life had unfolded like a dream."
+#
+# "When we weree at school together, he'd spoken of leaving, writing the next great novel, and making a name for himself."
+#
+# "A man of his word, after escaping as fast as he could from Atford, he'd went to Lintonbury, where he took a job in a mailroom at a big publishing company."
+#
+# "He'd filled me in on the broad strokes, and I was left to imagine his life there."
+#
+# "Working in the mailroom, thinking of the next plotline in his novel, then getting it all down onto paper at night, as soon as he could."
+#
+# "Presumably he'd met Rory, and Marian, as well, somewhere in those youthful days."
+#
+# "Eventually he got his big break, his first novel published, 'A Nobel Charade', and everything just went from there."
+#
+# "The fame, the wife, then the home, he'd made it and settled into the life of his dreams in his early 30s, in this house, in Palace Gardens."
+#
+# # no college
+# # straight out of high school, went to a BIG  city
+# # prestigious city + seediness
+# # Lintonbury where he met rory
+# # they would write together
+# # mailroom stuff
+# # james got a big  break  one day, according to rory and then put in good word for rory
+# # lintonbury -> palace gardens around late  20s early 30s because he made  it
 
 # Explored
 default explored_kitchen = False
@@ -540,6 +556,10 @@ label library_book_1_insight_2:
     "\"Your wardrobe on your best night out should layer your accent pieces. They are sure to attract attention, and after all, all attention is good attention.\""
 
     "James, strutting about with handfuls of rings, acid green shoelaces, and a bowler hat. I could think of nothing funnier!"
+
+    "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
+
+    "I imagined him trying to 'put Marian in her place.' There was no way she would let anything of the sort pass."
 
     "He must have received this book as a gag gift. I chuckled as I put it back on the shelf."
 
