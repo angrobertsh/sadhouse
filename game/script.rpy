@@ -7,15 +7,37 @@ label splashscreen:
 define s = Character(_("Sylvie"), color="#c8ffc8")
 define m = Character(_("Me"), color="#c8c8ff")
 
-# This is a variable that is True if you've compared a VN to a book, and False
-# otherwise.
-default book = False
+# Qualities/attributes
 default carpenter = False
 default tutor = False
 default merchant = False
 default optimistic = False
 default pessimistic = False
 
+# "From my vantage point, it seemed that James's life had unfolded like a dream."
+#
+# "When we were at school together, he'd spoken of leaving, writing the next great novel, and making a name for himself."
+#
+# "A man of his word, after escaping as fast as he could from Atford, he'd went to Lintonbury, where he took a job in a mailroom at a big publishing company."
+#
+# "He'd filled me in on the broad strokes, and I was left to imagine his life there."
+#
+# "Working in the mailroom, thinking of the next plotline in his novel, then getting it all down onto paper at night, as soon as he could."
+#
+# "Presumably he'd met Rory, and Marian, as well, somewhere in those youthful days."
+#
+# "Eventually he got his big break, his first novel published, 'A Nobel Charade', and everything just went from there."
+#
+# "The fame, the wife, then the home, he'd made it and settled into the life of his dreams in his early 30s, in this house, in Palace Gardens."
+#
+# # no college
+# # straight out of high school, went to a BIG  city
+# # prestigious city + seediness
+# # Lintonbury where he met rory
+# # they would write together
+# # mailroom stuff
+# # james got a big  break  one day, according to rory and then put in good word for rory
+# # lintonbury -> palace gardens around late  20s early 30s because he made  it
 
 # Explored
 default explored_kitchen = False
@@ -357,7 +379,7 @@ label lounge_menu:
 
             jump lounge_window
 
-        "I take a seat on a comfortable couch" if not explored_lounge_chair:
+        "I take a seat on a nearby chair" if not explored_lounge_chair:
 
             jump lounge_chair
 
@@ -403,7 +425,13 @@ label lounge_window:
 
     $ explored_lounge_window = True
 
-    "The window is windowy"
+    "The grand windows allow the sun to shine beautifully into this room."
+
+    "I look out towards the path I'd taken to enter the home and am struck by just how lovely a neighborhood this is."
+
+    "Greenery all around, a lawn for dogs or kids, gentle shade from trees in the summer, curtains for coziness in winter."
+
+    "I wonder if James knew what a lovely home he had."
 
     jump lounge_menu
 
@@ -415,22 +443,35 @@ label lounge_chair:
 
 if carpenter:
 
-    "some furniture ends up being more decorative than functional"
+    "Some furniture ends up being more decorative than functional."
+
+    "Though, if that were the case, I would have picked a lower quality leather to upholster. This burnished full-grain has been left in the sun to get crisp, like an old pencil eraser. Such a shame."
+
+    "James himself must have spent most of his time in more private areas. In such a large house, I could easily see him picking several favorite nooks to curl into. Just not here."
 
     jump lounge_menu
 
 if tutor:
 
-    "It feels the same as some of my client's lounges I have been in"
+    "It feels the same as some of my client's lounges I have been in."
+
+    "I imagine the homes that love could have built. A child playing the piano while his doting parents watch on, or a favored guest entertaining her hosts with a newfound talent."
+
+    "I feel a moment of warmth, but it is gone when I remember my sad business here."
 
     jump lounge_menu
 
 if merchant:
 
-    "It's all about the piano"
+    "It's all about the piano."
+
+    "Esteemed guests would have crowded around, standing and craning their necks to hear the latest jingle be played. There would be no room for sitting, lest you miss a single note."
+
+    "That's just how people are. Too much excitement with such a beautiful instrument in front of them. No wonder these chairs were stiff!"
+
+    "No need for me to sit, either. There's too much to see, too much afoot."
 
     jump lounge_menu
-
 
 label library:
 
@@ -468,11 +509,15 @@ label library_book_1:
 
     $ explored_library_book_1 = True
 
-    "It's unclear how it differs from the ladies' version."
+    "It's immediately clear how this would differ from a ladies' version."
+
+    "I glance over a few pages and see a section about good posture ('keep an erect carriage,' it says)."
+
+    "Next is a section on a lady's favorite drinks and what they might mean ('avoid {i}desmoiselles{/i} who indulge in beverages served by the pint')."
 
     menu:
 
-        "He was brushing up on a useful skill.":
+        "He was brushing up on a useful skill":
 
             jump library_book_1_insight_1
 
@@ -480,7 +525,7 @@ label library_book_1:
 
             jump library_book_1_insight_2
 
-        "It's a book about the weak becoming strong":
+        "This is a book about how the weak becoming strong":
 
             jump library_book_1_insight_3
 
@@ -488,7 +533,15 @@ label library_book_1_insight_1:
 
     $ insight_1_library_book_1 = True
 
-    "He must like violence"
+    "While certainly painting in broad strokes, I could imagine James using some of these tips and tricks, so to speak, to meet and identify with people."
+
+    "Ever the gentleman, he could refine some of the more coarse lessons here, clothe them in  manners, and serve them to guests like fine hors d'oeuvres."
+
+    "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
+
+    "I smiled as I imagined James practicing this one, gliding a lady friend down a hallway, making her heart flutter in a pool of moonlight."
+
+    "I considered a moment pocketing the book, but decided better of it. Back on the shelf it went."
 
     jump library_menu
 
@@ -496,7 +549,19 @@ label library_book_1_insight_2:
 
     $ insight_2_library_book_1 = True
 
-    "He must like being reminded of his leaving home"
+    "This seemed like a book made for a young, insecure man, of which James was nothing of the sort."
+
+    "Besides, he'd been happily married to Marian for... decades surely."
+
+    "\"Your wardrobe on your best night out should layer your accent pieces. They are sure to attract attention, and after all, all attention is good attention.\""
+
+    "James, strutting about with handfuls of rings, acid green shoelaces, and a bowler hat. I could think of nothing funnier!"
+
+    "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
+
+    "I imagined him trying to 'put Marian in her place.' There was no way she would let anything of the sort pass."
+
+    "He must have received this book as a gag gift. I chuckled as I put it back on the shelf."
 
     jump library_menu
 
@@ -504,7 +569,21 @@ label library_book_1_insight_3:
 
     $ insight_3_library_book_1 = True
 
-    "He must still feel like a child inside"
+    "Knowledge is power. And if I knew anything about James, it was that he wanted to know everything about the people around him."
+
+    "I think one of his greatest talents was making enemies, friends, and understanding how he could get what he wanted from you."
+
+    "Some tips in this guide seemed helpful and fairly innocuous:"
+
+    "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
+
+    "But, there was a decidedly metallic edge to others:"
+
+    "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
+
+    "I remembered some of the women in his life, his mother, his wife, and wondered what in him needed to be hardened to survive this world."
+
+    "I put the book back on the shelf."
 
     jump library_menu
 
@@ -652,7 +731,7 @@ label schoolmate_lie:
 
     "\"You know how James and Marian met, don't you? James just goes strolling out one day in the park to see the sunset and Marian just happens to be out there, on the same day doing the exact same thing. Like something out of a film.\""
     "\"To think--if one of neither of them had gone to the park that day, that we all wouldn't be here.\""
-    "\"It's the age-old question of wheter our lives are predetermined, or if our choices make us who we are? Hell if I know. Was I destined to be a writer?\""
+    "\"It's the age-old question of whether our lives are predetermined, or if our choices make us who we are? Hell if I know. Was I destined to be a writer?\""
     "\"Maybe I got lucky meeting James when I did. But it wouldn't have mattered if I hadn't picked up a pen and started writing to begin with. And I have to believe that my choices matter.\""
 
     jump wedding_end
