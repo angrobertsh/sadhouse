@@ -16,7 +16,7 @@ default pessimistic = False
 
 # "From my vantage point, it seemed that James's life had unfolded like a dream."
 #
-# "When we weree at school together, he'd spoken of leaving, writing the next great novel, and making a name for himself."
+# "When we were at school together, he'd spoken of leaving, writing the next great novel, and making a name for himself."
 #
 # "A man of his word, after escaping as fast as he could from Atford, he'd went to Lintonbury, where he took a job in a mailroom at a big publishing company."
 #
