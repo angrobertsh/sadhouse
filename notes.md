@@ -24,6 +24,16 @@ label start:
     show screen disableclick(3) # pause for three seconds
     "DIALOGUE! {w=3.0}"
     "dialogue"
-    
-    
+
+
 I only included left click because I'm lazy, but by default, left click, enter, space, and return are bound to CTC. http://www.renpy.org/doc/html/keymap.html#keymap
+
+
+- Marian - you don't want to have the perfect house? how are we so on different pages
+- a noble charade, we always put up a face to get by in the world
+- the nature of "hospitality"
+- "it was difficult to call it deceit if it was so earnest"
+- upstairs before you get to marian's writing
+- or just one of the other books in the library
+- mother irritable, stressed, lashing out as kids, outwardly nice to everyone else
+  - protagonist remembers mother as nice person of the few times he saw her, but maybe he didn't realize that "oh yeah, james was always over at my place, I never went to his" realizing that there was a reason for that

@@ -11,8 +11,8 @@ define m = Character(_("Me"), color="#c8c8ff")
 default carpenter = False
 default tutor = False
 default merchant = False
-default optimistic = False
-default pessimistic = False
+default mood = 0
+default likes_alcohol = False
 
 # "From my vantage point, it seemed that James's life had unfolded like a dream."
 #
@@ -330,14 +330,14 @@ label james_letter:
             jump pessimistic_house
 
 label optimistic_house:
-    $ optimistic = True
+    $ mood = mood + 1
 
     "The front yard is trim and well-kept and in the midst of neatly manicured bushes, I take in the serene lull of peace and seclusion."
 
     jump front_door
 
 label pessimistic_house:
-    $ pessimistic = True
+    $ mood = mood - 1
 
     "It becomes eerily quiet once I've moved away from the street.."
 
@@ -391,13 +391,13 @@ label lounge_end:
 
     "I suppose it's strange that I never once visited at all."
 
-if optimistic:
+if mood > 0:
 
     "Time went by and before I knew it, most of my days would pass without any thought of him"
 
     jump library
 
-if pessimistic:
+if mood < 1:
 
     "I had begun to grow weary of his noncommittal gestures"
 
@@ -495,7 +495,7 @@ label library_menu:
 
             jump library_book_2
 
-        "art book" if not explored_library_book_3:
+        "A Noble Charade, James's own work" if not explored_library_book_3:
 
             jump library_book_3
 
@@ -928,13 +928,13 @@ label silverware_memory:
 
     "We were nearing the end of secondary school when Jimmy first told me that he wanted to be a writer."
 
-if optimistic:
+if mood > 0:
 
     "he has achieved his goal"
 
     jump dining_room_menu
 
-if pessimistic:
+if mood < 1:
 
     "rich snob"
 
@@ -946,11 +946,11 @@ label patio:
 
     "The garden patio is spacious. The wood beneath my shoes is weathered by the sun."
 
-if optimistic:
+if mood > 0:
 
     "What were you thinking as you sat out here, Jimmy?"
 
-if pessimistic:
+if mood < 1:
 
     "Jimmy, why am I even here for him?"
 
@@ -980,6 +980,10 @@ label kitchen_menu:
 
             jump kitchen_window
 
+        "The bar" if not explored_kitchen_bar:
+
+            jump kitchen_bar
+
         "I move on":
 
             jump upstairs
@@ -997,6 +1001,44 @@ label kitchen_window:
     $ explored_kitchen_window = True
 
     "The window is windowy"
+
+    jump kitchen_menu
+
+label kitchen_bar:
+
+    $ explored_kitchen_bar = True
+
+    "James, James, James, always the entertainer."
+
+    "When I open the bar, I see bottles of whiskey old enough to vote, angled champagnes labeled with dates when they needed to be turned, and finally some truly, utterly unpronounceable wines."
+
+    "I know for a fact that James himself didn't drink. He never told me why, but I think he felt like he'd lose his edge if he wasn't always 100% there."
+
+    "Of course, that didn't stop him from stocking the good stuff. I'm sure he wanted his guests completely at ease."
+
+    menu:
+
+        "A toast, to James":
+
+            jump kitchen_bar_have_a_drink
+
+        "I close the bar":
+
+            jump kitchen_menu
+
+label kitchen_bar_have_a_drink:
+
+    $ likes_alcohol = True
+
+    "I reach for an open bottle. It's a scotch from somewhere called Kirkwall."
+
+    "I pour myself a glass. Holding it to the light, I see it's the color of varnish."
+
+    "\"James, my friend, thinking of you, thinking of us from beyond. Thank you.\""
+
+    "{i}gulp{/i}"
+
+    "What a lovely burn. I tell myself I'll wash the glass before I go, but not too soon, in case I feel the urge to give James another toast."
 
     jump kitchen_menu
 
@@ -1134,7 +1176,7 @@ if merchant:
 
   "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
 
-  "This woman, Pasiphae seems to be pretty mad that her husband has a magic cow and she doesn't."
+  "This woman, Pasiphaë seems to be pretty mad that her husband has a magic cow and she doesn't."
 
   "And I get it, there's a reason why 'his' and 'hers' lines sell so well. It seems like the ancient Greeks didn't quite experience the same slick equality like we have these days."
 
@@ -1242,7 +1284,7 @@ if carpenter:
 
   "Mahogany. Wow, what a heavy and expensive wood to be wheeling out onto the stage. Also not one that would have been available in Greece."
 
-  "When Pasiphae climbs in, the real bull... mounts the wooden cow."
+  "When Pasiphaë climbs in, the real bull... mounts the wooden cow."
 
   "The story ends in tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
