@@ -24,6 +24,6 @@ label start:
     show screen disableclick(3) # pause for three seconds
     "DIALOGUE! {w=3.0}"
     "dialogue"
-    
-    
+
+
 I only included left click because I'm lazy, but by default, left click, enter, space, and return are bound to CTC. http://www.renpy.org/doc/html/keymap.html#keymap
