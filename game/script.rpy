@@ -495,7 +495,7 @@ label library_menu:
 
             jump library_book_2
 
-        "art book" if not explored_library_book_3:
+        "A Noble Charade, James's own work" if not explored_library_book_3:
 
             jump library_book_3
 
@@ -980,6 +980,10 @@ label kitchen_menu:
 
             jump kitchen_window
 
+        "The bar" if not explored_kitchen_bar:
+
+            jump kitchen_bar
+
         "I move on":
 
             jump upstairs
@@ -997,6 +1001,14 @@ label kitchen_window:
     $ explored_kitchen_window = True
 
     "The window is windowy"
+
+    jump kitchen_menu
+
+label kitchen_bar:
+
+    $ explored_kitchen_bar = True
+
+    "The bar is barry"
 
     jump kitchen_menu
 
@@ -1134,7 +1146,7 @@ if merchant:
 
   "It isn't one that I immediately recognize, but I know a Greek name when I see it, all olives and the Aegean."
 
-  "This woman, Pasiphae seems to be pretty mad that her husband has a magic cow and she doesn't."
+  "This woman, Pasiphaë seems to be pretty mad that her husband has a magic cow and she doesn't."
 
   "And I get it, there's a reason why 'his' and 'hers' lines sell so well. It seems like the ancient Greeks didn't quite experience the same slick equality like we have these days."
 
@@ -1242,7 +1254,7 @@ if carpenter:
 
   "Mahogany. Wow, what a heavy and expensive wood to be wheeling out onto the stage. Also not one that would have been available in Greece."
 
-  "When Pasiphae climbs in, the real bull... mounts the wooden cow."
+  "When Pasiphaë climbs in, the real bull... mounts the wooden cow."
 
   "The story ends in tragedy as she holds up her bloodied child, the minotaur, her face contorting with joy, fear, and disgust as she dies."
 
