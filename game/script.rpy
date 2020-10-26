@@ -1030,7 +1030,7 @@ label kitchen_bar_have_a_drink:
 
     $ likes_alcohol = True
 
-    "I reach for an open bottle. It's a scotch from somewhere called Kirkwall."
+    "I reach for an open bottle. Here's one, it's a scotch from somewhere called Kirkwall."
 
     "I pour myself a glass. Holding it to the light, I see it's the color of varnish."
 
