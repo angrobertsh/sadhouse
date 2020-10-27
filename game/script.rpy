@@ -860,21 +860,23 @@ label library_book_3:
 
     $ explored_library_book_3 = True
 
-    "This is the book that made James Pryor. After publishing \"A Noble Charade\", Jimmy from Atford summarily vanished, and in his place stood the author, James Pryor."
+    # RACHEL TODO
 
-    "Holding it now in my hands, I'm remembering now the first time I'd read it. It must have been decades ago."
-
-    "James told the story of a man who "
-
-    "There was love, there was loss, there deception, the primary of which seemed to be the face he put up that let him get by in the world, as his shadow self loathed those closest to him."
-
-    "It was difficult to call it deceit if it was so earnest."
-
-    "I remembered James's mother as a nice person of the few times I'd seen her."
-
-    "But I put the pieces together much later, \"oh yeah, james was always over at my place, I never went to his\" realizing that there was a reason for that"
-
-    "A single mother, a broken home, she was likely had a much more turbulent inner life than her outward grace may have presented"
+    # "This is the book that made James Pryor. After publishing \"A Noble Charade\", Jimmy from Atford summarily vanished, and in his place stood the author, James Pryor."
+    #
+    # "Holding it now in my hands, I'm remembering now the first time I'd read it. It must have been decades ago."
+    #
+    # "James told the story of a man who "
+    #
+    # "There was love, there was loss, there deception, the primary of which seemed to be the face he put up that let him get by in the world, as his shadow self loathed those closest to him."
+    #
+    # "It was difficult to call it deceit if it was so earnest."
+    #
+    # "I remembered James's mother as a nice person of the few times I'd seen her."
+    #
+    # "But I put the pieces together much later, \"oh yeah, james was always over at my place, I never went to his\" realizing that there was a reason for that"
+    #
+    # "A single mother, a broken home, she was likely had a much more turbulent inner life than her outward grace may have presented"
 
     jump library_menu
 
