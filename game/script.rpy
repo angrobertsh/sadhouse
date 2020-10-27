@@ -1,4 +1,5 @@
 label splashscreen:
+    play sound "audio/A Noble Charade theme MIX_2.mp3"
     scene black
     with Pause(1)
     with Pause(1)
@@ -55,6 +56,10 @@ default marian_play_sympathy = False
 
 # The game starts here.
 label start:
+
+    stop sound fadeout 3.0
+    with Pause(3)
+
 
     # Start by playing some music.
 
@@ -656,7 +661,7 @@ label schoolmate_lie:
 
     "\"You know how James and Marian met, don't you? James just goes strolling out one day in the park to see the sunset and Marian just happens to be out there, on the same day doing the exact same thing. Like something out of a film.\""
     "\"To think--if one of neither of them had gone to the park that day, that we all wouldn't be here.\""
-    "\"It's the age-old question of wheter our lives are predetermined, or if our choices make us who we are? Hell if I know. Was I destined to be a writer?\""
+    "\"It's the age-old question of whether our lives are predetermined, or if our choices make us who we are? Hell if I know. Was I destined to be a writer?\""
     "\"Maybe I got lucky meeting James when I did. But it wouldn't have mattered if I hadn't picked up a pen and started writing to begin with. And I have to believe that my choices matter.\""
 
     jump wedding_end
