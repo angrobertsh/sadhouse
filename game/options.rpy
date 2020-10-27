@@ -61,7 +61,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/a_life_well_lived.wav"
+define config.main_menu_music = ""
 
 
 ## Transitions #################################################################
@@ -79,7 +79,7 @@ define config.exit_transition = dissolve
 ## Between screens of the game menu.
 
 define config.intra_transition = dissolve
-define config.end_splash_transition = dissolve 
+define config.end_splash_transition = dissolve
 
 
 ## A transition that is used after a game has been loaded.

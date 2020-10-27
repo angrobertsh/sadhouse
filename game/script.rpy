@@ -1,4 +1,5 @@
 label splashscreen:
+    play sound "audio/A Noble Charade theme MIX_2.mp3"
     scene black
     with Pause(2)
     return
@@ -73,6 +74,10 @@ default marian_play_sympathy = False
 
 # The game starts here.
 label start:
+
+    stop sound fadeout 3.0
+    with Pause(3)
+
 
     # Start by playing some music.
 
