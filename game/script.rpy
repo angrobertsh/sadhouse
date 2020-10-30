@@ -1,7 +1,14 @@
 label splashscreen:
     play sound "audio/A Noble Charade theme MIX_2.mp3"
     scene black
+    with Pause(1)
+
+    show text "Rachel Company presents..." with dissolve
     with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
     return
 
 # Declare characters used by this game.
