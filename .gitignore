@@ -2,6 +2,8 @@
 /game/saves
 /game/cache
 /game/script.rpyc
+/game/options.rpyc
+/game/screens.rpyc
 /game/.DS_Store
 log.txt
 errors.txt

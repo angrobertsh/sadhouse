@@ -1,7 +1,14 @@
 label splashscreen:
-    play sound "audio/A Noble Charade theme MIX_2.mp3"
+    play sound "audio/illurock.opus"
     scene black
-    with Pause(2)
+    with Pause(1)
+
+    show text "Rachel Company presents..." with dissolve
+    with Pause(1)
+
+    hide text with dissolve
+    with Pause(1)
+
     return
 
 # Declare characters used by this game.
@@ -74,16 +81,16 @@ default marian_play_sympathy = False
 
 # The game starts here.
 label start:
+    scene main_menu at topleft
 
     stop sound fadeout 3.0
-    with Pause(3)
-
-
-    # Start by playing some music.
+    with Pause(1)
+    scene black with fade
+    with Pause(2)
 
     play sound "audio/telephone_ring.ogg"
 
-    with fade
+    scene black with fade
 
     "I had received a call in the morning from an unfamiliar voice, while I was..."
 
