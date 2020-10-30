@@ -171,12 +171,12 @@ label attorney:
 
             jump ambivalent
 
-        "I haven't spoken to Jim in years, I'm not sure what this has to do with me.":
+        "I haven't spoken to Jimmy in years, I'm not sure what this has to do with me.":
 
             jump apathetic
 
 label accept:
-
+    $ mood = mood + 1
     "Regardless of the past, Jimmy had been a friend of mine and now he was gone forever. Surely I could take on this responsiblity on account of that."
 
     "\"Please meet me at my office this afternoon at 3pm. The address is 32 Fairview Drive, Suite B in the Palace Gardens district. We can discuss the details further in person.\""
@@ -216,7 +216,7 @@ label curious:
             jump do_nothing
 
 label cautious:
-
+    $ mood = mood - 1
     "\"By all means, this will require no small effort on your part. Mr. Pryor has only one property that I know of, but...\""
 
     menu:
@@ -872,23 +872,18 @@ label library_book_3:
 
     $ explored_library_book_3 = True
 
-    # RACHEL TODO
+    "I remember it being somewhat fascinating at the time when Jimmy was first published, that he had now written a book like the ones we were obligated to read when we were students."
+    "Looking back on it now, I can better acknowledge and appreciate the impressiveness of this feat."
 
-    # "This is the book that made James Pryor. After publishing \"A Noble Charade\", Jimmy from Atford summarily vanished, and in his place stood the author, James Pryor."
-    #
-    # "Holding it now in my hands, I'm remembering now the first time I'd read it. It must have been decades ago."
-    #
-    # "James told the story of a man who "
-    #
-    # "There was love, there was loss, there deception, the primary of which seemed to be the face he put up that let him get by in the world, as his shadow self loathed those closest to him."
-    #
-    # "It was difficult to call it deceit if it was so earnest."
-    #
-    # "I remembered James's mother as a nice person of the few times I'd seen her."
-    #
-    # "But I put the pieces together much later, \"oh yeah, james was always over at my place, I never went to his\" realizing that there was a reason for that"
-    #
-    # "A single mother, a broken home, she was likely had a much more turbulent inner life than her outward grace may have presented"
+    "He had gifted me a copy back then, and I had congratulated him and told him that I enjoyed it very much. I'm certain it's sitting on my bookshelf, which I admit I have perused much more rarely of late."
+
+    "To be honest, some of the details elude me when I attempt to recollect the events of the story. Is it still fair to say that I once read it?"
+    "But I know the main plot--Kurt Candon, the protagonist, is a skilled practitioner who at the height of his celebrated career is discovered to be a fraud."
+    "One passage stands out in my mind, the one that his debut novel remains most famous for. I turn to the last section of the novel (where most important things occur) and manage to find it:"
+
+    "{i}It was then that I knew it mattered not who I was, but who others would perceive me to be. And so that was who I became. Day in and night out, I played the best version of myself upon society's stage.{/i}"
+    "{i}As much as they insisted otherwise, the audience did not care to see or know of the toil and turmoil behind weighted curtains, nor did I wish to show any of it. {/i}"
+    "{i}The world only desired to witness a polished performance which I fully intended to deliver until the day I died. T'was a noble charade. But it is difficult to call it deceit, when it was so very earnest. {/i}"
 
     jump library_menu
 
@@ -955,10 +950,24 @@ label silverware_memory:
     "{i}Once I am rich, I shall acquire all of the silver spoons that money can buy.{/i}"
 
     "We were nearing the end of secondary school when Jimmy first told me that he wanted to be a writer."
+    "At the time, I had taken it to mean that he wished to be successful, much in the way that some of our peers aspired to the life of actors, musicians, athletes."
+    "After all, Jimmy had been one to grumble about lessons spent deciphering what were deemed to be the classics."
+
+    "\"Why couldn't they just write what they mean?\" He had asked once. \"They'd need to write another book just to explain the first.\""
+
+    "After that, the idea would come up every so often in passing conversation."
+
+    "\"The greats often have a pen name that they stand behind. It separates them from their craft, and allows the work to speak for itself.\""
+
+    "\"So you're one of the greats now, are you?\""
+
+    "\"The greats are rarely recognized in their time.\""
 
 if mood > 0:
 
     "he has achieved his goal"
+
+    "Jimmy was fortunate to be recognized during his lifetime"
 
     jump dining_room_menu
 
@@ -979,6 +988,17 @@ if mood > 0:
     "What were you thinking as you sat out here, Jimmy?"
 
 if mood < 1:
+
+    "I take moment to rest outside in the patio."
+    "A calm wind rustles through, softly animating the surrounding grass"
+    "Every so often, when we were still familiar, he would speak of having me over but nothing ever came of it. He certainly didn't need to extend himself if he didn't have the time, and I would have understood."
+    "So while I responded in accord, I had become somewhat skeptical of his gestures."
+
+    "Perhaps I could have taken the initiative and held him to a specific time and date. And then we could have sat here together, after he had politely offered me a drink, gazing upon the garden and reminiscing upon our childhood."
+    "Speaking of both past and present until we had exhausted both, and then settling into a silence while sipping our respective glasses (wine in mine, and plain water in his)."
+    "And then we would have done it, what he always said we should do. Would we have been better for it in the end?"
+
+    "Better than to acknowledge my skepticism or to outright refuse his invitations, I suppose."
 
     "Jimmy, why am I even here for him?"
 
@@ -1036,13 +1056,13 @@ label kitchen_bar:
 
     $ explored_kitchen_bar = True
 
-    "James, James, James, always the entertainer."
+    "Jimmy, always the entertainer."
 
     "When I open the bar, I see bottles of whiskey old enough to vote, angled champagnes labeled with dates when they needed to be turned, and finally some truly, utterly unpronounceable wines."
 
-    "I know for a fact that James himself didn't drink. He never told me why, but I think he felt like he'd lose his edge if he wasn't always 100% there."
+    "I know for a fact that James himself didn't drink."
 
-    "Of course, that didn't stop him from stocking the good stuff. I'm sure he wanted his guests completely at ease."
+    "Of course, that didn't stop him from stocking the good stuff."
 
     menu:
 
