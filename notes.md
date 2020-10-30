@@ -27,3 +27,8 @@ label start:
 
 
 I only included left click because I'm lazy, but by default, left click, enter, space, and return are bound to CTC. http://www.renpy.org/doc/html/keymap.html#keymap
+
+
+The characters per second tag sets the speed of text display, for text between the tag and its closing tag. If the argument begins with an asterisk, it's taken as a multiplier to the current text speed. Otherwise, the argument gives the speed to show the text at, in characters per second.
+
+"{cps=20}Fixed Speed{/cps} {cps=*2}Double Speed{/cps}

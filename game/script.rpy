@@ -365,7 +365,11 @@ label hallway_menu:
 
     scene stephen_king_hall at truecenter
 
-    "The hall is airy and bright when I enter..."
+    "When I enter, I am greeted by warmth and sun. The home is colored in cream tones and wood. There is immediate room to spread my arms."
+
+    "But the absence of habitation is felt. Dust motes swirl in a shaft of sunlight. The scent of wood in the air faintly musky."
+
+    "This home would been easy to build a life in."
 
     "To my right is the lounge. I move beyond and enter."
 
