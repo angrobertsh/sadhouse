@@ -1082,6 +1082,16 @@ label kitchen_drawer:
 
     "I find pedestrian cutlery, some knives and their whetstones, and a few rusty peelers."
 
+    "Another drawer holds a set of appliance accessories. I see attachments for a large beater, some doodads to screw in, and some, perhaps, extra things to cut with."
+
+if merchant
+
+    "Most of these belong to an older model of stand mixer, though I could hardly call them old."
+
+    "A mere decade ago, the only way to beat an egg was with a beater and some elbow grease. Having an automatic mixer in your home was considered very \"À là mode\"."
+
+    "Since coming to market, each year, new improved automatic mixers have been clamoring for space in everyone's homes and cabinets. Nutty! I'd never seen technology move so fast."
+
     jump kitchen_menu
 
 label kitchen_bar:
