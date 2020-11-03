@@ -61,7 +61,6 @@ default explored_kitchen_bar = False
 default explored_library_book_1 = False
 default explored_library_book_2 = False
 default explored_library_book_3 = False
-default explored_kitchen_bar = False
 default explored_salon_painting = False
 
 # Insight
