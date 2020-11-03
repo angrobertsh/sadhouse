@@ -1,5 +1,5 @@
 label splashscreen:
-    play sound "audio/illurock.opus"
+    play sound "audio/A Noble Charade theme MIX_2.mp3"
     scene black
     with Pause(1)
 
@@ -59,6 +59,8 @@ default explored_kitchen_window = False
 default explored_library_book_1 = False
 default explored_library_book_2 = False
 default explored_library_book_3 = False
+default explored_kitchen_bar = False
+default explored_salon_painting = False
 
 # Insight
 default insight_1_library_book_1 = False
@@ -1098,7 +1100,7 @@ label upstairs:
 
     scene hallway3 at truecenter
 
-    "The upstairs is hallway-y"
+    "It's darker up here than when I first entered the house."
 
 label upstairs_menu:
 
@@ -1110,7 +1112,7 @@ label upstairs_menu:
 
 label balcony:
 
-    "The air is fresh"
+    "A faintly musky scent that was not present downstairs"
 
 label balcony_menu:
 
@@ -1124,19 +1126,45 @@ label salon:
 
     scene salon at truecenter
 
-    "The salon is full of sofas"
+    "Where Jimmy might have retired after a long day's work, and Marian might have joined him."
+    "These couches feel much more comfortable than the ones in the living room."
+    "Suitable for reading and pleasant conversation."
 
 label salon_menu:
 
     menu:
 
+        "A large painting on the wall, depicting various fruits." if not explored_salon_painting:
+
+            jump salon_painting
+
         "I move on":
 
             jump gueuloir
 
+label salon_painting:
+    $ explored_salon_painting = True
+
+    "The grapes look realistic enough to eat."
+
+    jump salon_menu
+
+
 label gueuloir:
 
-    "The gueuloir is full of nothing"
+    "A hidden enclosed room"
+
+if carpenter:
+
+    "The room is acoustically designed to resonate pleasantly"
+
+if tutor:
+
+    "Is this a gueloir?"
+
+if merchant:
+
+    "A vintage phonograph"
 
 label gueuloir_menu:
 
@@ -1429,7 +1457,7 @@ label study:
 
     scene study at truecenter
 
-    "The study is study-y"
+    "Where Jimmy would sit and write the next great novel"
 
 label study_menu:
 
@@ -1443,7 +1471,7 @@ label bedroom:
 
     scene bedroom at truecenter
 
-    "The bedroom is bedroom-y"
+    "The scent is quite strong"
 
 label bedroom_menu:
 
