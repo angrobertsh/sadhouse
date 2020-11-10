@@ -63,7 +63,7 @@ default explored_library_book_2 = False
 default explored_library_book_3 = False
 default explored_salon_painting = False
 default explored_conservatory_drawer = False
-default explored_study_drawer = False
+default explored_study_safe = False
 default explored_study_picture = False
 default explored_study_papers = False
 
@@ -1504,11 +1504,13 @@ label study:
 
 label study_menu:
 
+    scene study at truecenter
+
     menu:
 
-        "I open the desk drawer" if not explored_study_drawer:
+        "I see a large, imposing safe that looks like it hasn't been opened in ages" if not explored_study_safe:
 
-            jump study_drawer
+            jump study_safe
 
         "I examine the mess upon the desk" if not explored_study_papers:
 
@@ -1522,9 +1524,27 @@ label study_menu:
 
             jump bedroom
 
-label study_drawer:
+label study_safe:
 
-    $ explored_study_drawer = True
+    scene safe at truecenter
+
+    $ explored_study_safe = True
+
+if carpenter:
+
+    jump study_safe_open
+
+if merchant:
+
+    jump study_safe_open
+
+if tutor:
+
+    jump study_safe_open
+
+label study_safe_open:
+
+    # Blackmail thing
 
     jump study_menu
 
