@@ -62,6 +62,10 @@ default explored_library_book_1 = False
 default explored_library_book_2 = False
 default explored_library_book_3 = False
 default explored_salon_painting = False
+default explored_conservatory_drawer = False
+default explored_study_safe = False
+default explored_study_picture = False
+default explored_study_papers = False
 
 # Insight
 default insight_1_library_book_1 = False
@@ -1222,7 +1226,7 @@ label conservatory_menu:
 
     menu:
 
-        "I look in the drawer":
+        "I look in the drawer" if not explored_conservatory_drawer:
 
             jump pasiphae_play_intro
 
@@ -1231,6 +1235,8 @@ label conservatory_menu:
             jump interlude
 
 label pasiphae_play_intro:
+
+  $ explored_conservatory_drawer = True
 
   "In the drawer I find a book with neatly penned pages. This penmanship is neat, evenly spaced, and deliberately cursive. It seems this book may not have been meant for publishing. The lack of title, and author helps confirm my suspicions."
 
@@ -1498,11 +1504,81 @@ label study:
 
 label study_menu:
 
+    scene study at truecenter
+
     menu:
+
+        "I see a large, imposing safe that looks like it hasn't been opened in ages" if not explored_study_safe:
+
+            jump study_safe
+
+        "I examine the mess upon the desk" if not explored_study_papers:
+
+            jump study_papers
+
+        "A picture catches my eye" if not explored_study_picture:
+
+            jump study_pictures
 
         "I move on":
 
             jump bedroom
+
+label study_safe:
+
+    scene safe at truecenter
+
+    $ explored_study_safe = True
+
+    "The safe looks locked tight."
+
+if carpenter:
+
+    "This material is corroded, looks like it could collapse with just a good thwack..."
+
+    jump study_safe_open
+
+if merchant:
+
+    "I bet there are a few release mechanisms somewhere though. Safes like these always have one."
+
+    jump study_safe_open
+
+if tutor:
+
+    "Structurally, having something here, for this long would put stress on parts of the safe that could weaken its supports."
+
+    jump study_safe_open
+
+label study_safe_open:
+
+    # Blackmail thing
+
+    jump study_menu
+
+label study_picture:
+
+    $ explored_study_picture = True
+
+    # Memory with visit to Lintonbury with his brother who was left behind here
+
+    jump study_menu
+
+label study_papers:
+
+    $ explored_study_papers = True
+
+    "I find what I'd expect of Jimmy. A whirlwind of papers covered in varying levels of dust. A grand screed of ideas that span time and history, illegible scrolls of unfinished thoughts."
+
+    "I am saddened when I understand that nobody will ever be able to piece this story together."
+
+    "But, maybe this is my job."
+
+    "I fruitlessly rummage through James's mind. My fingers line up pages as if they'll fit together like a puzzle. There's a short story about a minstrel. A few paragraphs about an installation he'd gone to at a museum, maybe a review? The papers are now in thorough disarray. There's a description of what he says is the last perfect peach he'll ever have."
+
+    "I take this moment, then, to put this burden down. There will only ever be one Jimmy Pryor, and he is gone now."
+
+    jump study_menu
 
 label bedroom:
 
