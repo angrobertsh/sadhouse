@@ -1534,7 +1534,7 @@ label study_safe:
 
 if carpenter:
 
-    "This material is corroded, looks like it could collapse with just a good whack..."
+    "This material is corroded, looks like it could collapse with just a good thwack..."
 
     jump study_safe_open
 
