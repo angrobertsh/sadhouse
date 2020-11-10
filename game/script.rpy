@@ -912,7 +912,7 @@ label dining_room_menu:
 
             jump dining_room_dining_trappings
 
-        "I look at the lively painting adorning the wall" if not explored_dining_room_dining_room_painting
+        "I look at the lively painting adorning the wall" if not explored_dining_room_dining_room_painting:
 
             jump dining_room_dining_room_painting
 
@@ -1000,7 +1000,7 @@ label dining_room_dining_room_painting:
 
     "What a fun piece. I'm sure Jimmy curated it himself, thought about how to make a piece of art hold its own in such a lively, busy room."
 
-if merchant
+if merchant:
 
     "The work is seemingly unsigned. Although well crafted, it is likely to be a piece of highly reproduced art."
 
@@ -1071,9 +1071,47 @@ label kitchen_cupboard:
 
     $ explored_kitchen_cupboard = True
 
-    "It's full of glass and raisins"
+if carpenter:
+
+    "A red clay teapot with a lion figurine carved onto the lid"
+
+    jump cupboard_inside
+
+label cupboard_inside:
+
+    "There are several different types of tea inside the cupboard: Earl Grey, chamomile, genmai cha and Puerh."
+    "Some in packets, others sealed inside a labeled jar."
+
+if carpenter:
+
+    "cool lots of tea"
 
     jump kitchen_menu
+
+if tutor:
+
+    "technically chamomile isn't a tea"
+
+    jump kitchen_menu
+
+if merchant:
+
+    "the loose leaf is better tasting and more expensive"
+
+    jump kitchen_menu
+
+if tutor:
+
+    "A teapot reminiscent of Dutch red stoneware but with Asian influence in its design"
+
+    jump cupboard_inside
+
+if merchant:
+
+    "This looks like a Böttger teapot, modeled after those made of Yixing clay."
+    "These pots gradually take on the flavor of the tea brewed inside, and so choosing one type of tea is recommended."
+
+    jump cupboard_inside
 
 label kitchen_drawer:
 
@@ -1085,7 +1123,7 @@ label kitchen_drawer:
 
     "Another drawer holds a set of appliance accessories. I see attachments for a large beater, some doodads to screw in, and some, perhaps, extra things to cut with."
 
-if merchant
+if merchant:
 
     "Most of these belong to an older model of stand mixer, though I could hardly call them old."
 
