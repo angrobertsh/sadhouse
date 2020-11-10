@@ -1530,15 +1530,23 @@ label study_safe:
 
     $ explored_study_safe = True
 
+    "The safe looks locked tight."
+
 if carpenter:
+
+    "This material is corroded, looks like it could collapse with just a good whack..."
 
     jump study_safe_open
 
 if merchant:
 
+    "I bet there are a few release mechanisms somewhere though. Safes like these always have one."
+
     jump study_safe_open
 
 if tutor:
+
+    "Structurally, having something here, for this long would put stress on parts of the safe that could weaken its supports."
 
     jump study_safe_open
 
