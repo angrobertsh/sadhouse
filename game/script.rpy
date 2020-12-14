@@ -66,6 +66,10 @@ default explored_conservatory_drawer = False
 default explored_study_safe = False
 default explored_study_picture = False
 default explored_study_papers = False
+default explored_study_check = False
+default explored_study_check_cult = False
+default explored_study_check_drugs = False
+default explored_study_check_wishes = False
 
 # Insight
 default insight_1_library_book_1 = False
@@ -1558,9 +1562,141 @@ label study_menu:
 
             jump study_pictures
 
+        "There is a signed check in the corner" if not explored_study_check:
+
+            jump study_check
+
         "I move on":
 
             jump bedroom
+
+label study_check:
+
+  $ explored_study_check = True
+
+  "There's a check here, signed and dated several months ago. It's addressed to an organization, and its sum manages to surprise me."
+
+if merchant or carpenter:
+
+  "The name doesn't ring a bell. But it sounds pretty new-fangled, if I say it out loud, \"Spiritual Seekers\""
+
+  jump study_check_choice
+
+if tutor:
+
+  "I don't recognize the recipient immediately, but when I think about it, a translation pops into my head: \'Buscadoras Espirituales.\'"
+
+  "They were big in Central America a few decades ago. I didn't realize they had many connections here, of all places."
+
+  jump study_check_choice
+
+label study_check_choice:
+
+  "The memo on the bottom says, \"To help open the mind's journey to higher consciousness, YWH\""
+
+  "It doesn't take me long to understand that this may be associated with James's hobbies involving that taricus pipe."
+
+  "I hold the check in my hands, thinking about where all that money was going to go."
+
+  "The check remains here, however, in James's study, unsent. And by the looks of it, it'd been here long enough that the ink had started to look sunbleached."
+
+  "I can't help but wonder, was it absentmindedness, or ambivalence?"
+
+  "I feel my own sense of morality creeping in, and the paper between my fingers suddenly feels heavy."
+
+label study_choice_menu:
+
+  menu:
+
+      "These \"Spiritual Seekers\" sound like a cult.": if explored_study_check_cult == False
+
+          jump study_check_cult
+
+      "People who smoke taricus are described as \"under the influence.\"": if explored_study_check_drugs == False
+
+          jump study_check_drugs
+
+      "I am here to fulfill James's wishes.": if explored_study_check_wishes == False
+
+          jump study_check_wishes
+
+      "I will do what I need to with this check.":
+
+          jump study_check_choice_2
+
+label study_check_cult:
+
+  $ explored_study_check_cult = True
+
+  "I mean, really, \"Spiritual Seekers\"!? I bet the only thing they could seek was a base of wealthy donors."
+
+  "Ridiculous, why would they even need this much money? If what they sought was truly spiritual, what good would money do?"
+
+  "I take a moment then to breathe, and really think about how worked up I was getting over a piece of paper."
+
+  "Maybe this isn't what I think. Maybe this was something important to James, and maybe that is what matters."
+
+  "I've seen many people find meaning and purpose in things bigger than themselves."
+
+  "It was always after a breaking point, some moment of clarity when they saw what they wanted, or needed, wasn't in the cards."
+
+  "Some found God, some joined knitting circles, some volunteered."
+
+  "From my, admittedly, distant vantage point, the difference between them was that some seemed to give in to their fate, and others fought to reverse it."
+
+  "I doubt I'll ever understand James's relationship with the Spiritual Seekers enough to know what purpose it served in his life. But I see here a concrete monetary value James had assigned to these people, and it isn't small."
+
+  jump study_choice_menu
+
+label study_check_drugs:
+
+  $ explored_study_check_drugs = True
+
+  "Taricus was neither legal nor good. I'd seen multiple movies and posters espousing its dangers and how it was truly madness!"
+
+  "People under the influence became addicts. They hit and run, had hallucinations, and even killed themselves."
+
+  "If this organization helped people \"open the mind's journey to higher consciousness\" with these terribly addictive drugs, it seemed my moral imperative to stop them."
+
+  "They'd even hooked poor James, poor, poor James."
+
+  jump study_choice_menu
+
+label study_check_wishes:
+
+  $ explored_study_check_wishes = True
+
+  "What James wanted to do with his money was James's business. I suppose if he wrote this check, then he'd presumably have wanted it sent, at some point."
+
+  "If I could speak to him, and ask him if this was all sincerity, or all jokes... then maybe I'd have a clue about what to do with this check."
+
+  "But I can't, so I don't."
+
+  "And thinking about this all, this entire journey, I don't think my feelings on the matter are very relevant at all. All I can do is try and act in the most appropriate way."
+
+  jump study_choice_menu
+
+label study_check_choice_2:
+
+  menu:
+
+    "I place the check in an envelope and remind myself to put it in the mail later."
+
+      jump study_check_conclusion
+
+    "I leave the check where it is. Someone else can deal with it."
+
+      jump study_check_conclusion
+
+    "I tear the check up."
+
+      jump study_check_conclusion
+
+label study_check_conclusion:
+
+  "Satisfied with my choice, I turn away from that heavy business and step away from the desk."
+
+  jump study_menu
 
 label study_safe:
 
