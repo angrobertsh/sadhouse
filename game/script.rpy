@@ -635,6 +635,8 @@ label library_book_2:
     scene wedding_reception at truecenter
     with fade
 
+    play music "audio/The Wedding of James and Marian Pryor_1.mp3"
+
     "After the ceremony, I manage to briefly chat with Jimmy and Marian before they move on to greeting their other guests."
 
     "I'm standing alone, sipping my third glass of wine when Rory approaches the bar for another drink."
@@ -875,8 +877,11 @@ label wedding_epilogue:
 
     "I haven't seen Rory since, but I wish him only the best and I wonder if he has yet heard of Jimmy's passing."
 
+    stop music fadeout 5.0
+
     scene library at truecenter
-    with fade
+
+    with Fade(2.0, 2.0, 2.0)
     jump library_menu
 
 label library_book_3:
