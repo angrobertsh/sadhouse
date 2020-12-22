@@ -11,10 +11,6 @@ label splashscreen:
 
     return
 
-# Declare characters used by this game.
-define s = Character(_("Sylvie"), color="#c8ffc8")
-define m = Character(_("Me"), color="#c8c8ff")
-
 # Qualities/attributes
 default carpenter = False
 default tutor = False
@@ -562,7 +558,7 @@ label library_book_1_insight_1:
 
     "While certainly painting in broad strokes, I could imagine James using some of these tips and tricks, so to speak, to meet and identify with people."
 
-    "Ever the gentleman, he could refine some of the more coarse lessons here, clothe them in  manners, and serve them to guests like fine hors d'oeuvres."
+    "Ever the gentleman, he could refine some of the more coarse lessons here, clothe them in manners, and serve them to guests like fine hors d'oeuvres."
 
     "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
 
@@ -576,9 +572,9 @@ label library_book_1_insight_2:
 
     $ insight_2_library_book_1 = True
 
-    "This seemed like a book made for a young, insecure man, of which James was nothing of the sort."
+    "This seemed like a book made for a young, insecure man. James was nothing of the sort."
 
-    "Besides, he'd been happily married to Marian for... decades surely."
+    "Marian had been swept off her feet years before this book was published."
 
     "\"Your wardrobe on your best night out should layer your accent pieces. They are sure to attract attention, and after all, all attention is good attention.\""
 
@@ -1132,9 +1128,9 @@ label kitchen_drawer:
 
     "I'm not sure what I expect to find in these drawers. Jimmy isn't, wasn't, the type who'd keep a secret stash of documents underneath a pile of folded dish towels."
 
-    "I find pedestrian cutlery, some knives and their whetstones, and a few rusty peelers."
+    "There's pedestrian cutlery, some knives and their whetstones, and a few rusty peelers."
 
-    "Another drawer holds a set of appliance accessories. I see attachments for a large beater, some doodads to screw in, and some, perhaps, extra things to cut with."
+    "Another drawer holds a set of appliance accessories. I see attachments for a large beater, some doodads to screw in, and some, perhaps, extra things that look like they could really slice something up."
 
 if merchant:
 
@@ -1263,8 +1259,6 @@ label gueuloir_menu:
             jump conservatory
 
 label conservatory:
-
-    # NEEDS IMAGE?
     scene conservatory at truecenter
 
     "The conservatory is full of plants"
@@ -1547,7 +1541,7 @@ label study:
 
     scene study at truecenter
 
-    "Where Jimmy would sit and write the next great novel"
+    "This was Jimmy's home within his home. I imagined him holed up here for hours, days, refusing cups of tea as he feverishly wrote his next great novel."
 
 label study_menu:
 
