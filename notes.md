@@ -31,4 +31,81 @@ I only included left click because I'm lazy, but by default, left click, enter, 
 
 The characters per second tag sets the speed of text display, for text between the tag and its closing tag. If the argument begins with an asterisk, it's taken as a multiplier to the current text speed. Otherwise, the argument gives the speed to show the text at, in characters per second.
 
-"{cps=20}Fixed Speed{/cps} {cps=*2}Double Speed{/cps}
+"{cps=20}Fixed Speed{/cps} {cps=*2}Double Speed{/cps}"
+
+
+
+
+
+
+
+Splash
+- [ASSET] Theme song
+
+Intro
+- Class selection
+- Optimistic Pessimistic increases
+- Short endings
+- Letter (in flux)
+
+Front door
+- Empty house
+
+Lounge
+- Piano
+  - [ASSET] Trillbird
+- Window
+- Chair
+
+Library
+- Gentleman's Guide to Negotiation
+  - Possible mention of Marian
+- Rory novel
+  - [ASSET] Wedding Song
+  - [ASSET] Blurred Images
+  - Flashback 1
+    - Rory relationship exposition and Jimmy's hidden background
+    - [TODO] dialogue based on occupation
+    - [TODO] family at wedding dialogue?
+- A Noble Charade
+
+Dining Room
+- Table
+- Silverware
+  - [TODO] conclusion dialogue based on mood
+- Picture
+
+Patio
+- Mood dialogue
+
+Kitchen
+- Cupboard
+  - [TODO] tea talks
+- Drawer with stand mixer
+- Whiskey
+
+Upstairs hallway
+- [TODO]
+
+Balcony
+- [TODO]
+
+Salon
+- [TODO] Painting
+
+Gueuloir
+- [TODO]
+
+Conservatory
+- Pasiphae play
+
+Interlude
+- [TODO]
+
+Study
+- [TODO] Safe
+- Mess of papers
+- [TODO] Picture
+- Check for taricus cult
+
+Bedroom
