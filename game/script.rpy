@@ -1268,7 +1268,7 @@ label conservatory_menu:
 
         "I move on":
 
-            jump interlude
+            jump study
 
 label pasiphae_play_intro:
 
@@ -1525,12 +1525,6 @@ label pasiphae_play_sympathy:
   "I put the book back in the drawer"
 
   jump conservatory_menu
-
-label interlude:
-
-    "Ooo interlude"
-
-    jump study
 
 label study:
 
