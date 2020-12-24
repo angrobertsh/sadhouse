@@ -99,9 +99,6 @@ Gueuloir
 Conservatory
 - Pasiphae play
 
-Interlude
-- [TODO]
-
 Study
 - [TODO] Safe
 - Mess of papers
