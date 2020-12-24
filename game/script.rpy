@@ -1307,27 +1307,29 @@ label gueuloir:
 
     "In tidying, I notice the shelf has very obviously been displaced from its original position. I deduce, after simply looking down, that this must have occurred because this shelf is in fact on wheels."
 
-    "What a strange thing to have be so insecure. I give it a jiggle, and a tug, and when the wheels of the shelf reach their natural stopping point against the carpet, what is revealed is a door."
+    "What a strange thing to have be so insecure. I give it a jiggle, and a tug, then a smooth roll. The great urn I was reaching for seems to be in fact glued or otherwise fastened to the top of the shelf. Probably for the best given its heft, and my current nosy preoccupation."
 
-    "A fascinating discovery."
+    "When the wheels of the shelf reach their natural stopping point against the carpet, what is revealed is a door."
+
+    "What a fascinating discovery!"
 
     "I open the door and enter the windowless room."
 
-    "{i}Click!{/i} I find a pull chain for a light and give it a tug."
+    "{i}Click{/i} I find a pull chain for a light and give it a go."
 
-    "The room is somewhat bare. Aside from the light fixture, all I can see is a podium, and a phonograph."
+    "The room revealed is somewhat bare. Aside from the light fixture, all I can see is a podium, and a phonograph."
 
 if carpenter:
 
-    "An odd, but somewhat unsurprising room. Houses like these always have one or two little airless boxes whose reasons for existence were lost to time."
+    "Rooms like these are odd, but unsurprising. Bigger houses always have one or two little airless boxes whose reasons for existence are lost to time."
 
-    "I can tell, however, by the distinct proportions of this room, and the paneling on the walls that this chamber was acoustically designed to resonate pleasantly."
+    "I can tell, however, by the distinct dimensions of this room, and the paneling on the walls that this chamber was acoustically designed to resonate pleasantly."
 
     jump gueuloir_end
 
 if tutor:
 
-    "Podium... recording instrument... is this some sort of gueuloir?"
+    "Podium... recording instrument... closed room... is this some sort of gueuloir?"
 
     "Flaubert had one, a room to scream prose in, basically. I imagine James, perhaps more calmly, reciting his works aloud, capturing them in the phonograph, listening to the sound of himself with a measure of probing dissatisfaction."
 
