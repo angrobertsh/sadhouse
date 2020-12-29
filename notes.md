@@ -92,15 +92,12 @@ Balcony
 
 Salon
 - [TODO] Painting
+- Shelf
 
 Gueuloir
-- [TODO]
 
 Conservatory
 - Pasiphae play
-
-Interlude
-- [TODO]
 
 Study
 - [TODO] Safe

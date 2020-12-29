@@ -58,7 +58,11 @@ default explored_library_book_1 = False
 default explored_library_book_2 = False
 default explored_library_book_3 = False
 default explored_salon_painting = False
+default explored_salon_shelf_vase = False
+default explored_salon_shelf_glove = False
+default explored_salon_shelf_picture = False
 default explored_conservatory_drawer = False
+default explored_gueuloir = False
 default explored_study_safe = False
 default explored_study_picture = False
 default explored_study_papers = False
@@ -899,7 +903,7 @@ label library_book_3:
 
     "{i}It was then that I knew it mattered not who I was, but who others would perceive me to be. And so that was who I became. Day in and night out, I played the best version of myself upon society's stage.{/i}"
     "{i}As much as they insisted otherwise, the audience did not care to see or know of the toil and turmoil behind weighted curtains, nor did I wish to show any of it. {/i}"
-    "{i}The world only desired to witness a polished performance which I fully intended to deliver until the day I died. T'was a noble charade. But it is difficult to call it deceit, when it was so very earnest. {/i}"
+    "{i}The world only desired to witness a polished performance which I fully intended to deliver until the day I died. 'Twas a noble charade. But it is difficult to call it deceit, when it was so very earnest. {/i}"
 
     jump library_menu
 
@@ -1222,9 +1226,13 @@ label salon_menu:
 
             jump salon_painting
 
+        "I examine the curio shelf": if not explored_salon_shelf
+
+            jump salon_shelf
+
         "I move on":
 
-            jump gueuloir
+            jump conservatory
 
 label salon_painting:
     $ explored_salon_painting = True
@@ -1234,29 +1242,127 @@ label salon_painting:
     jump salon_menu
 
 
-label gueuloir:
+label salon_shelf:
+    $ explored_salon_shelf = True
 
-    "A hidden enclosed room"
+    "On each shelf lives a lovely, albeit dusty, set of oddities: a signed boxing glove, little clay vases painted with even littler cacti, various paintings in miniature."
 
-if carpenter:
+    "It's all quite charming, and I can imagine Jimmy retelling a story about each one."
 
-    "The room is acoustically designed to resonate pleasantly"
-
-if tutor:
-
-    "Is this a gueloir?"
-
-if merchant:
-
-    "A vintage phonograph"
-
-label gueuloir_menu:
+label salon_shelf_menu:
 
     menu:
 
+        "I gingerly pick up a clay vase" if not explored_salon_shelf_vase:
+
+            jump salon_shelf_vase
+
+        "I examine the imposing boxing glove" if not explored_salon_shelf_glove:
+
+            jump salon_shelf_glove
+
+        "I squint at one of the miniature paintings" if not explored_salon_shelf_picture:
+
+            jump salon_shelf_picture
+
+        "I reach for the great urn at the very top of the shelf" if not explored_gueuloir:
+
+            jump gueuloir
+
         "I move on":
 
-            jump conservatory
+            jump salon_menu
+
+
+label salon_shelf_vase:
+    $ explored_salon_shelf_vase = True
+
+    "There's a tiny donkey marching across a brown clay desert. When I pick up the vase, the material is rough against my fingers."
+
+    "\"That was from the winter I spent in Mexico. Nothing like the desert can stir your soul. And there were so many villages in them! Just when you were out of sight of one, another would appear. Naturally I just had to indulge in some of the indigenous folk art.\""
+
+    jump salon_shelf_menu
+
+label salon_shelf_glove:
+    $ explored_salon_shelf_glove = True
+
+    "It seems sacriligeous to handle the old sweaty boxing glove with my bare hands. It was signed by... someone, famous, I'm sure. The signature is stylized in a way only fighters could do."
+
+    "\"That was from the Remy vs. Johnstone fight. Sat in the front row! Could feel their sweat flying off of them when they ate one. Better than television. Thousand, no, a million times better. You gotta see a fight live. There isn't anything like it.\""
+
+    jump salon_shelf_menu
+
+label salon_shelf_picture:
+    $ explored_salon_shelf_picture = True
+
+    "Truly it takes no small degree of both skill and artistry to reproduce works at such scale! I squint at a miniature of a rococo scene. More nobles than I can count, gathered for a picnic, joined by a riot of cherubs."
+
+    "\"I couldnt imagine what it'd be like to live in those times, but isn't this painting just {i}darling?{/i} Marian found it somewhere here, in Palace Gardens. I remember, ah yes, it must have been that thrift shop! The one on 9th! Always such hidden treasures there.\""
+
+    jump salon_shelf_menu
+
+label gueuloir:
+    $ explored_gueuloir = True
+
+    "Disaster! My bumbling feet catch on themselves and I fall forcefully into the shelf. Vases clatter to the floor, the signed glove flies across the room, and each and every picture tips over in its frame."
+
+    "I am immediately mortified as I try to collect the bits and as best I can restore order. Oh, dear, the vases have shattered, and... ah. What a clumsy oaf I am. I will just put everything as it was as best I can and..."
+
+    "The shelf has moved."
+
+    "In tidying, I notice the shelf has very obviously been displaced from its original position. I deduce, after simply looking down, that this must have occurred because this shelf is in fact on wheels."
+
+    "What a strange thing to have be so insecure. I give it a jiggle, and a tug, then a smooth roll. The great urn I was reaching for seems to be in fact glued or otherwise fastened to the top of the shelf. Probably for the best given its heft, and my current nosy preoccupation."
+
+    "When the wheels of the shelf reach their natural stopping point against the carpet, what is revealed is a door."
+
+    "What a fascinating discovery!"
+
+    "I open the door and enter the windowless room."
+
+    "{i}Click{/i} I find a pull chain for a light and give it a go."
+
+    "The room revealed is somewhat bare. Aside from the light fixture, all I can see is a podium, and a phonograph."
+
+if carpenter:
+
+    "Rooms like these are odd, but unsurprising. Bigger houses always have one or two little airless boxes whose reasons for existence are lost to time."
+
+    "I can tell, however, by the distinct dimensions of this room, and the paneling on the walls that this chamber was acoustically designed to resonate pleasantly."
+
+    jump gueuloir_end
+
+if tutor:
+
+    "Podium... recording instrument... closed room... is this some sort of gueuloir?"
+
+    "Flaubert had one, a room to scream prose in, basically. I imagine James, perhaps more calmly, reciting his works aloud, capturing them in the phonograph, listening to the sound of himself with a measure of probing dissatisfaction."
+
+    jump gueuloir_end
+
+if merchant:
+
+    "The bronze of the phonograph is stunning. Not tarnished in the least. A pristine record. Good equipment begets good practices. If this was used, then it was kept well."
+
+    jump gueuloir_end
+
+label gueuloir_end:
+
+    "I place the needle on the record in the phonograph to see if there are any recordings here to enjoy."
+
+    "\"In the April showers soothing, in the May the flowers brooding.\""
+
+    "Ah! It is James! His voice tinkles through the horn."
+
+    "\"Alright, now, Chapter 7, page 3, start. ... 'How do you think that makes me feel?' he cried, 'Each day you tear and moan. Do you not see what it is you do to me?' His hands gripped the cornered curve of the desk, but across it, in this one instance, she remained unmoved.\""
+
+    "The emotion in his voice is even, despite the frantic scene of a man expostulating at a woman. As he continues, I hear some words catch, they somersault over his tongue. And in my mind's eye, I can see him standing at that podium, calculating each sentence."
+
+    "\"...that he was convinced that he was the convincer, to convince her, 'twas the, 'twas not the, no, ugh.\" there is some paper shuffling, and the recording stops."
+
+    "Ah! It is as if his ghost continued industriously from the beyond. I find myself smiling as I imagine James now, pacing in this little room, his words inhabiting it forever."
+
+    jump salon_menu
 
 label conservatory:
     scene conservatory at truecenter
