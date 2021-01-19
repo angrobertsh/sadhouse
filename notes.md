@@ -85,7 +85,8 @@ Kitchen
 - Whiskey
 
 Upstairs hallway
-- [TODO]
+- [TODO] Interlude
+  - [TODO] [ASSET] interlude music
 
 Balcony
 - [TODO]
@@ -95,6 +96,7 @@ Salon
 - Shelf
 
 Gueuloir
+  - [TODO] [ASSET] record scratch noise
 
 Conservatory
 - Pasiphae play
@@ -103,6 +105,8 @@ Study
 - [TODO] Safe
 - Mess of papers
 - [TODO] Picture
+  - [TODO] Memory 2 with Oliver
 - Check for taricus cult
 
 Bedroom
+- Fan Mail

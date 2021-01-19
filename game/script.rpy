@@ -1845,9 +1845,7 @@ label study_papers:
 
     "I am saddened when I understand that nobody will ever be able to piece this story together."
 
-    "But, maybe this is my job."
-
-    "I fruitlessly rummage through James's mind. My fingers line up pages as if they'll fit together like a puzzle. There's a short story about a minstrel. A few paragraphs about an installation he'd gone to at a museum, maybe a review? The papers are now in thorough disarray. There's a description of what he says is the last perfect peach he'll ever have."
+    "I fruitlessly rummage through James's mind. My fingers line up pages as if they'll fit together like a puzzle. There's a short story about a hunter and a harp. A few paragraphs about an installation he'd gone to at a museum, maybe a review? The papers are now in thorough disarray. There's a description of what he says is the last perfect peach he'll ever have."
 
     "I take this moment, then, to put this burden down. There will only ever be one Jimmy Pryor, and he is gone now."
 
@@ -1857,18 +1855,50 @@ label bedroom:
 
     scene bedroom at truecenter
 
-    "The scent is quite strong"
+    "It's quiet. No clocks ticking, no birds to be heard through the windows, the air is still. "
 
 label bedroom_menu:
 
     menu:
 
+        "I look at a piece of stationery on the bedstand" if not explored_bedroom_fanmail:
+
+            jump bedroom_fanmail
+
         "I move on":
 
             jump bathroom
 
-label bathroom:
+label bedroom_fanmail:
 
-    "Bathroom"
+    $ explored_bedroom_fanmail = True
 
-    return
+    "There is a piece of blank stationery on James' bedstand. Next to it is a pen, and beside that, a yellowing book titled '22 Habits of the Well Informed.' Unmistakeably, there are the indents of penmanship on its cover."
+
+    "James must have written letters in bed. Never even a moment to rest!"
+
+    "I slide open the desk drawer in the bedstand. In it is revealed a crush of letters, all packed neatly against each other and stored in horizontal stacks."
+
+    "It's fun to see the various shapes and sizes of the pieces of them all, several slender white envelopes, postcards from all over the country, one envelope pert and pink, closed with a heart sticker. There's no mistake about this, this must be fanmail."
+
+    "A set of letters stands out. There are at least a half dozen of them, all set uniformly within red square envelopes. When I tip back their corners, I see they're all marked with a return address to 'Martin Fellows'"
+
+    "Just who was this 'Martin Fellows' fellow?"
+
+    "I pick a letter out, making sure to turn another sideways to mark where it had come from."
+
+    "It's dated several years ago. The handwriting is messy, but legible."
+
+    "\"Dear Mr. Pryor,\""
+
+    "\"Thank you for your letter. I have always liked Kurt. Even though he was a fraud. Sometimes being a man means putting on a mask. It was so refreshing to see someone say that. This world is so connected. Man can never get a break. Man! (Ha ha ha)\""
+
+    "\"Do you think Kurt had any other hobbies other than fishing? There is not much water around here. But fishing sounds peaceful. I would like some more peace in my life. I wonder if Kurt could get into rock collecting. Lots of rocks out here and not much else!\""
+
+    "\"I think things would have turned out differently for Kurt if he had kids. You have to live differently if you have little ones. If they caught me in a big lie I would hate to see their hearts break. World be damned.\""
+
+    "\"I hope things are well with you and Marian. I will be keeping an eye on the news for your kids! (Ha ha ha)\""
+
+    "\"Sincerely, Martin Fellows\""
+
+    jump bedroom_menu
