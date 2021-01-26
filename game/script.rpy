@@ -57,6 +57,7 @@ default explored_kitchen_bar = False
 default explored_library_book_1 = False
 default explored_library_book_2 = False
 default explored_library_book_3 = False
+default explored_salon_shelf = False
 default explored_salon_painting = False
 default explored_salon_shelf_vase = False
 default explored_salon_shelf_glove = False
@@ -1222,11 +1223,11 @@ label salon_menu:
 
     menu:
 
-        "A large painting on the wall, depicting various fruits." if not explored_salon_painting:
+        "A large portrait of James and Marian." if not explored_salon_painting:
 
             jump salon_painting
 
-        "I examine the curio shelf": if not explored_salon_shelf
+        "I examine the curio shelf." if not explored_salon_shelf:
 
             jump salon_shelf
 
@@ -1237,7 +1238,8 @@ label salon_menu:
 label salon_painting:
     $ explored_salon_painting = True
 
-    "The grapes look realistic enough to eat."
+    "James sits on a chair, with Marian standing beside him."   
+
 
     jump salon_menu
 
@@ -1707,15 +1709,15 @@ label study_choice_menu:
 
   menu:
 
-      "These \"Spiritual Seekers\" sound like a cult.": if explored_study_check_cult == False
+      "These \"Spiritual Seekers\" sound like a cult." if explored_study_check_cult == False:
 
           jump study_check_cult
 
-      "People who smoke taricus are described as \"under the influence.\"": if explored_study_check_drugs == False
+      "People who smoke taricus are described as \"under the influence.\"" if explored_study_check_drugs == False:
 
           jump study_check_drugs
 
-      "I am here to fulfill James's wishes.": if explored_study_check_wishes == False
+      "I am here to fulfill James's wishes." if explored_study_check_wishes == False:
 
           jump study_check_wishes
 
@@ -1779,15 +1781,15 @@ label study_check_choice_2:
 
   menu:
 
-    "I place the check in an envelope and remind myself to put it in the mail later."
+    "I place the check in an envelope and remind myself to put it in the mail later.":
 
       jump study_check_conclusion
 
-    "I leave the check where it is. Someone else can deal with it."
+    "I leave the check where it is. Someone else can deal with it.":
 
       jump study_check_conclusion
 
-    "I tear the check up."
+    "I tear the check up.":
 
       jump study_check_conclusion
 
