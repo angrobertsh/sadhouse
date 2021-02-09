@@ -35,7 +35,11 @@ The characters per second tag sets the speed of text display, for text between t
 
 
 
+show letter_7 at truecenter
+with dissolve
 
+hide letter_7
+with dissolve
 
 
 
@@ -84,12 +88,10 @@ Kitchen
 - Drawer with stand mixer
 - Whiskey
 
-Upstairs hallway
-- [TODO] Interlude
-  - [TODO] [ASSET] interlude music
-
-Balcony
-- [TODO]
+Upstairs hallway/Balcony
+- [TODO] [ASSET] interlude music
+- [TODO] [ASSET] Balcony image
+- Balcony interlude
 
 Salon
 - [TODO] Painting

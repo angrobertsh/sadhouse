@@ -507,7 +507,7 @@ label library:
 
     scene library at truecenter
 
-    "Jimmy was a writer after all, so it makes sense that he would own many books, and have a room dedicated to them. The library has a scent of wood and laminant."
+    "Jimmy was a writer after all, so it makes sense that he would own many books, and have a room dedicated to them. The library has a scent of fabric and laminant."
 
     "A few volumes catch my eye:"
 
@@ -1189,27 +1189,29 @@ label upstairs:
 
     scene hallway3 at truecenter
 
-    "It's darker up here than when I first entered the house."
+    "It's darker up here than when I first entered the house. The hallway is illumined only by the glass panes before a sunlit balcony. The shadows of the doorframes set them deeper in the walls."
 
-label upstairs_menu:
+    "There is a faintly musky odor that was not present downstairs. Upstairs are often a little more private, and a little less well-kept. I am unable to place the specific scent. It is distinct against the smell of wood."
 
-    menu:
+    "I decide this would be a good a time as any to get some air. There's something close, and heavy about being in an empty home."
 
-        "I move on":
+    # scene balcony at truecenter
 
-            jump balcony
+    "I step onto the coarse tiles of the balcony. There is room enough for me to stretch my arms. I exhale, and my neck cracks. I didn't realize how tense my body had become! The breeze is mild and sweet."
 
-label balcony:
+    "I hear the crisp chirps of a handful of small birds. Some dot the lawn, searching for beetles among the weeds. If I still myself, I can imagine the faint sound of running water."
 
-    "A faintly musky scent that was not present downstairs"
+    "Touching the railing, I see before me the garden, stretching to the boulevard. Beyond, the rest of Palace Gardens."
 
-label balcony_menu:
+    "There is a precise lushness about the town. The layered treetops cascade over each other like verdant falls. I see gentle maples that promise brilliance in fall, a few slender birches, a tree shaped like a willow, and not too far away, a riot of wisterias. "
 
-    menu:
+    "Between them are the suggestions of roofs, homes with glassy exteriors. They are enclaves, designed for perfect privacy, little perfect worlds."
 
-        "I move on":
+    "To stand on this balcony, I feel both at once a sense of peace, and a sense of alienation. I am a visitor, looking in, and looking out on a life I didn't live."
 
-            jump salon
+    "Enough air. There is more to do."
+
+    jump salon
 
 label salon:
 
@@ -1238,7 +1240,7 @@ label salon_menu:
 label salon_painting:
     $ explored_salon_painting = True
 
-    "James sits on a chair, with Marian standing beside him."   
+    "James sits on a chair, with Marian standing beside him."
 
 
     jump salon_menu
