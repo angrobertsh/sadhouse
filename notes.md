@@ -76,7 +76,6 @@ Library
 Dining Room
 - Table
 - Silverware
-  - [TODO] conclusion dialogue based on mood
 - Picture
 
 Patio
