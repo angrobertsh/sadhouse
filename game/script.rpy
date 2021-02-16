@@ -961,7 +961,7 @@ if carpenter:
 
 if tutor:
 
-    "It appears I have stumbled upon Jimmy's very own Mildenhall Treasure. No inscriptions to be found, but..."
+    "It appears I have stumbled upon Jimmy's very own Mildenhall Treasure. No inscriptions to be found, but I knew this cutlery had a history all of its own."
 
     jump silverware_memory
 
@@ -994,15 +994,25 @@ label silverware_memory:
 
 if mood > 0:
 
-    "he has achieved his goal"
+    "Jimmy was fortunate to be recognized during his lifetime."
 
-    "Jimmy was fortunate to be recognized during his lifetime"
+    "Whether it be chance, or talent, Jimmy wrote the exact works that we all wanted to read."
+
+    "And with his success, he managed to fulfill one of his idle childhood promises."
+
+    "I am proud of what Jimmy accomplished. I know he would be proud of his legacy as well."
 
     jump dining_room_menu
 
 if mood < 1:
 
-    "rich snob"
+    "I knew he'd said that to cushion his ego if he failed."
+
+    "But there was more sense to it than he thought. Success within a lifetime often turned people into rich snobs."
+
+    "Most don't reach the heights of fame that Jimmy did. I'm sure he found it easy to look down on the rest of us."
+
+    "Well, you got your wish, Jimmy, you got your spoons. I hope they made you happy."
 
     jump dining_room_menu
 
