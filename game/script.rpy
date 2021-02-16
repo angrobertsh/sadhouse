@@ -163,11 +163,17 @@ label intro_merchant:
 
 label attorney:
 
+    show letter_7 at truecenter
+    with dissolve
+
     "The gentleman on the phone introduced himself as Thomas Lupin, attorney-at-law. I could scarcely fathom what reason a lawyer would have to make my acquaintance."
 
     "\"Mr. Pryor was a client of mine. I'm sorry to tell you that James has passed away.\""
 
     "\"He suffered a stroke and unfortunately never recovered. While tragic and untimely, the coroner has determined his passing to be of \'natural cause.\'\""
+
+    hide letter_7
+    with dissolve
 
     "\"Mr. Pryor left behind a will, drafted by myself and notarized as of this morning. In it, he has appointed you the executor of his estate. If you accept, I will make the necessary arrangements.\""
 
@@ -644,6 +650,10 @@ label library_book_2:
 
     "After the ceremony, I manage to briefly chat with Jimmy and Marian before they move on to greeting their other guests."
 
+    "I barely have time to congratulate them, let alone ask where Oliver is."
+
+    "Perhaps I could have hitched a ride with Jimmy's brother, seeing as we would be coming from the same place but I figured as family, he would have made his own arrangements."
+
     "I'm standing alone, sipping my third glass of wine when Rory approaches the bar for another drink."
 
     "With whiskey in one hand, he introduces himself with a firm, jovial handshake. \"So how do you know James?\""
@@ -812,6 +822,8 @@ label wedding_end:
     "\"It was good to see you, but it's time for me to head back. I must get back to work first thing tomorrow morning,\" I tell them."
 
     "Rory claps me on the shoulder. \"You really should stick around. I'm sure James can put you up if you're too out of sorts to travel by the end of the night, I know I will be.\""
+
+    "(protagonist asks about Oliver and it gets slightly awkward)"
 
     "Jimmy smiles thinly, giving me a nod. \"Trip was all right? Thanks for coming out here today.\""
 
@@ -1238,7 +1250,7 @@ label salon_menu:
 label salon_painting:
     $ explored_salon_painting = True
 
-    "James sits on a chair, with Marian standing beside him."   
+    "James sits on a chair, with Marian standing beside him."
 
 
     jump salon_menu
