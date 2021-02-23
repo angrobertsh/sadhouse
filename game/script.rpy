@@ -1107,14 +1107,6 @@ label kitchen_cupboard:
 
     $ explored_kitchen_cupboard = True
 
-if carpenter:
-
-    "A red clay teapot with a lion figurine carved onto the lid"
-
-    jump cupboard_inside
-
-label cupboard_inside:
-
     "There are several different types of tea inside the cupboard: Earl Grey, chamomile, genmai cha and Puerh."
     "Some in packets, others sealed inside a labeled jar."
 
@@ -1122,32 +1114,45 @@ if carpenter:
 
     "cool lots of tea"
 
-    jump kitchen_menu
+    jump cupboard_inside
 
 if tutor:
 
     "technically chamomile isn't a tea"
 
-    jump kitchen_menu
+    jump cupboard_inside
 
 if merchant:
 
     "the loose leaf is better tasting and more expensive"
 
-    jump kitchen_menu
+    jump cupboard_inside
+
+label cupboard_inside:
+
+if carpenter:
+
+    "A red clay teapot with a lion figurine carved onto the lid"
+
+    jump cupboard_memory
 
 if tutor:
 
     "A teapot reminiscent of Dutch red stoneware but with Asian influence in its design"
 
-    jump cupboard_inside
+    jump cupboard_memory
 
 if merchant:
 
     "This looks like a Böttger teapot, modeled after those made of Yixing clay."
     "These pots gradually take on the flavor of the tea brewed inside, and so choosing one type of tea is recommended."
 
-    jump cupboard_inside
+    jump cupboard_memory
+
+label cupboard_memory:
+
+
+    jump kitchen_menu
 
 label kitchen_drawer:
 
