@@ -49,8 +49,8 @@ Splash
 Intro
 - Class selection
 - Optimistic Pessimistic increases
-- Short endings
-- Letter (in flux)
+- [TODO] Short endings
+- [TODO] Letter
 
 Front door
 - Empty house
@@ -70,6 +70,7 @@ Library
   - Flashback 1
     - Rory relationship exposition and Jimmy's hidden background
     - [TODO] dialogue based on occupation
+    - [TODO] travel dialogue
     - [TODO] family at wedding dialogue?
 - A Noble Charade
 

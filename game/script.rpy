@@ -18,31 +18,6 @@ default merchant = False
 default mood = 0
 default likes_alcohol = False
 
-# "From my vantage point, it seemed that James's life had unfolded like a dream."
-#
-# "When we were at school together, he'd spoken of leaving, writing the next great novel, and making a name for himself."
-#
-# "A man of his word, after escaping as fast as he could from Atford, he'd went to Lintonbury, where he took a job in a mailroom at a big publishing company."
-#
-# "He'd filled me in on the broad strokes, and I was left to imagine his life there."
-#
-# "Working in the mailroom, thinking of the next plotline in his novel, then getting it all down onto paper at night, as soon as he could."
-#
-# "Presumably he'd met Rory, and Marian, as well, somewhere in those youthful days."
-#
-# "Eventually he got his big break, his first novel published, 'A Nobel Charade', and everything just went from there."
-#
-# "The fame, the wife, then the home, he'd made it and settled into the life of his dreams in his early 30s, in this house, in Palace Gardens."
-#
-# # no college
-# # straight out of high school, went to a BIG  city
-# # prestigious city + seediness
-# # Lintonbury where he met rory
-# # they would write together
-# # mailroom stuff
-# # james got a big  break  one day, according to rory and then put in good word for rory
-# # lintonbury -> palace gardens around late  20s early 30s because he made  it
-
 # Explored
 default explored_kitchen = False
 default explored_lounge_piano = False
@@ -259,7 +234,6 @@ label do_nothing:
 
     jump mean_ending
 
-
 label apathetic:
 
     "\"Be that as it may, Mr. Pryor named you rather than any other relative or beneficiary. He asked me to put this in writing about three years ago from this date.\""
@@ -362,14 +336,14 @@ label james_letter:
 label optimistic_house:
     $ mood = mood + 1
 
-    "The front yard is trim and well-kept and in the midst of neatly manicured bushes, I take in the serene lull of peace and seclusion."
+    "The front yard is trim and well-kept and in the midst of neatly manicured bushes. I take in the serene lull of peace and seclusion."
 
     jump front_door
 
 label pessimistic_house:
     $ mood = mood - 1
 
-    "It becomes eerily quiet once I've moved away from the street.."
+    "It becomes eerily quiet once I've moved away from the street."
 
     jump front_door
 
@@ -383,23 +357,27 @@ label hallway_menu:
 
     scene stephen_king_hall at truecenter
 
-    "When I enter, I am greeted by warmth and sun. The home is colored in cream tones and wood. There is immediate room to spread my arms."
+    "When I enter, I feel warmth on my skin."
 
-    "But the absence of habitation is felt. Dust motes swirl in a shaft of sunlight. The scent of wood in the air faintly musky."
+    "The home is colored with cream tones and wood. There is room to spread my arms."
 
-    "This home would been easy to build a life in."
+    "But the absence of habitation is felt."
 
-    "To my right is the lounge. I move beyond and enter."
+    "Dust swirls in sunlight cast through the landing window. The scent of wood in the air faintly musky."
+
+    "In better times, this home would have been easy to build a life in."
+
+    "To my right is the lounge. It seems a good a place to begin as any."
 
 label lounge:
 
     scene piano living room at truecenter
 
-    "Where he would have received his many distinguished guests."
+    "This was where he would have received his many distinguished guests."
 
     "The grand piano is what immediately draws the eye."
 
-    "Sunlight pours in through a French door that offers a view into a garden patio."
+    "I open a curtain, revealing a French door that offers a view into a garden patio."
 
 label lounge_menu:
 
@@ -463,7 +441,7 @@ label lounge_window:
 
     "I look out towards the path I'd taken to enter the home and am struck by just how lovely a neighborhood this is."
 
-    "Greenery all around, a lawn for dogs or kids, gentle shade from trees in the summer, curtains for coziness in winter."
+    "Greenery all around, a lawn for dogs or kids, gentle shade from trees in the summer, a fireplace for coziness in winter."
 
     "I wonder if James knew what a lovely home he had."
 
@@ -473,25 +451,29 @@ label lounge_chair:
 
     $ explored_lounge_chair = True
 
-    "Despite its plush appearance, the chair feels stiff underneath me from lack of use."
+    "Despite its plush appearance, the chair feels stiff underneath me."
 
 if carpenter:
 
     "Some furniture ends up being more decorative than functional."
 
-    "Though, if that were the case, I would have picked a lower quality leather to upholster. This burnished full-grain has been left in the sun to get crisp, like an old pencil eraser. Such a shame."
+    "Though, if that were the case, I would have picked a lower quality leather to upholster these chairs with."
 
-    "James himself must have spent most of his time in more private areas. In such a large house, I could easily see him picking several favorite nooks to curl into. Just not here."
+    "I can tell from looking that this burnished top-grain has been left in the sun to get crisp. Such a shame."
+
+    "James must have spent most of his time in more private areas."
 
     jump lounge_menu
 
 if tutor:
 
-    "It feels the same as some of my client's lounges I have been in."
+    "I am reminded of my pupil's homes."
 
-    "I imagine the homes that love could have built. A child playing the piano while his doting parents watch on, or a favored guest entertaining her hosts with a newfound talent."
+    "A tutor often plays the role of a guest. Some clients would sit me on their unused furniture that was \"reserved for company.\" Others would place me at a kitchen table."
 
-    "I feel a moment of warmth, but it is gone when I remember my sad business here."
+    "It is pleasantly odd to be in such a lounge without a book in my hand, or a willful child to handle."
+
+    "I smile before I remember my sad business here."
 
     jump lounge_menu
 
@@ -499,9 +481,11 @@ if merchant:
 
     "It's all about the piano."
 
-    "Esteemed guests would have crowded around, standing and craning their necks to hear the latest jingle be played. There would be no room for sitting, lest you miss a single note."
+    "This was the type of piano guests would have crowded around. They would be standing, craning their necks to hear the latest jingle being played."
 
-    "That's just how people are. Too much excitement with such a beautiful instrument in front of them. No wonder these chairs were stiff!"
+    "There would definitely be no room for sitting."
+
+    "This is what I tell myself to explain why this chair is so uncomfortable."
 
     "No need for me to sit, either. There's too much to see, too much afoot."
 
@@ -513,7 +497,9 @@ label library:
 
     scene library at truecenter
 
-    "Jimmy was a writer after all, so it makes sense that he would own many books, and have a room dedicated to them. The library has a scent of fabric and laminant."
+    "I enter what appears to be a library."
+
+    "Jimmy was a writer after all, so it makes sense that he would own many books, and have a room dedicated to them."
 
     "A few volumes catch my eye:"
 
@@ -529,7 +515,7 @@ label library_menu:
 
             jump library_book_2
 
-        "A Noble Charade, James's own work" if not explored_library_book_3:
+        "A Noble Charade, Jimmy's own work" if not explored_library_book_3:
 
             jump library_book_3
 
@@ -543,11 +529,9 @@ label library_book_1:
 
     $ explored_library_book_1 = True
 
-    "It's immediately clear how this would differ from a ladies' version."
+    "I open the book to a section in the middle. It's a full chapter on good posture (\"Keeping an erect carriage is the key to success,\" it begins)."
 
-    "I glance over a few pages and see a section about good posture ('keep an erect carriage,' it says)."
-
-    "Next is a section on a lady's favorite drinks and what they might mean ('avoid {i}desmoiselles{/i} who indulge in beverages served by the pint')."
+    "Next is a section on a lady's favorite drinks and what they might mean (\"avoid {i}desmoiselles{/i} who indulge in beverages served by the pint\")."
 
     menu:
 
@@ -559,7 +543,7 @@ label library_book_1:
 
             jump library_book_1_insight_2
 
-        "This is a book about how the weak becoming strong":
+        "Did Jimmy feel socially deficient in some way?":
 
             jump library_book_1_insight_3
 
@@ -567,15 +551,15 @@ label library_book_1_insight_1:
 
     $ insight_1_library_book_1 = True
 
-    "While certainly painting in broad strokes, I could imagine James using some of these tips and tricks, so to speak, to meet and identify with people."
+    "One could never been too socially attuned. I imagine Jimmy felt similarly. How studious of him!"
 
-    "Ever the gentleman, he could refine some of the more coarse lessons here, clothe them in manners, and serve them to guests like fine hors d'oeuvres."
+    "Though, some of these tips verged on crude. Jimmy surely would have gussied them up with some flair, or, at least, manners."
 
     "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
 
-    "I smiled as I imagined James practicing this one, gliding a lady friend down a hallway, making her heart flutter in a pool of moonlight."
+    "I smile as I imagine Jimmy practicing this one. His arm a crook, he and a lady friend glide down a long hallway, her heart fluttering in a pool of moonlight."
 
-    "I considered a moment pocketing the book, but decided better of it. Back on the shelf it went."
+    "What a tempting image. I consider pocketing the book, but remember, then, that I am no James Pryor. Back on the shelf it goes."
 
     jump library_menu
 
@@ -583,19 +567,17 @@ label library_book_1_insight_2:
 
     $ insight_2_library_book_1 = True
 
-    "This seemed like a book made for a young, insecure man. James was nothing of the sort."
+    "Marian had been swept off her feet years before this book was published. What was there to negotiate?"
 
-    "Marian had been swept off her feet years before this book was published."
+    "\"A good \'night out\' outfit layers accent pieces. They are sure to attract attention. After all, all attention is good attention.\""
 
-    "\"Your wardrobe on your best night out should layer your accent pieces. They are sure to attract attention, and after all, all attention is good attention.\""
-
-    "James, strutting about with handfuls of rings, acid green shoelaces, and a bowler hat. I could think of nothing funnier!"
+    "Jimmy, strutting about with handfuls of rings, acid green shoelaces, and a bowler hat. I could think of nothing funnier!"
 
     "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
 
-    "I imagined him trying to 'put Marian in her place.' There was no way she would let anything of the sort pass."
+    "I imagine him \"reminding\" Marian of her \"luck.\" There was no possibility of that ending well, for either of them."
 
-    "He must have received this book as a gag gift. I chuckled as I put it back on the shelf."
+    "Jimmy must have received this book as a gag gift. I chuckle as I place it back on the shelf."
 
     jump library_menu
 
@@ -603,19 +585,17 @@ label library_book_1_insight_3:
 
     $ insight_3_library_book_1 = True
 
-    "Knowledge is power. And if I knew anything about James, it was that he wanted to know everything about the people around him."
+    "Knowledge is power. And if I knew anything about Jimmy, it was that he wanted to know everything about everyone."
 
-    "I think one of his greatest talents was making enemies, friends, and understanding how he could get what he wanted from you."
-
-    "Some tips in this guide seemed helpful and fairly innocuous:"
+    "Some tips in this guide seemed helpful, and fairly innocuous:"
 
     "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
 
-    "But, there was a decidedly metallic edge to others:"
+    "But, there is a forceful edge to others:"
 
     "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
 
-    "I remembered some of the women in his life, his mother, his wife, and wondered what in him needed to be hardened to survive this world."
+    "I remembered some of the women in his life, his mother, his wife. I wondered what in him needed to be refined from those fundamental relationships."
 
     "I put the book back on the shelf."
 
@@ -950,9 +930,11 @@ label dining_room_dining_table_sit:
 
     $ explored_dining_room_dining_table_sit = True
 
-    "I imagine Jimmy sitting at the head. A caterer, or maybe Marian would enter grandly with a delectable platter to share. He would compliment it with equal aplomb, and serve."
+    "I am a guest, now. To my right would be Jimmy, at the head of the table. From behind, a caterer, or maybe Marian would enter grandly with a Christmas goose, or a Thanksgiving turkey."
 
-    "Grand affairs, or cups of coffee alone in the morning, this table would likely borne witness to all."
+    "Jimmy would compliment it effusively, the writer in him always finding a new way of saying \"delicous!\" each time."
+
+    "The morning after, there would have been quiet cups of coffee, crosswords, and comics."
 
     "I was probably the first person to sit here in quite a while."
 
@@ -1018,11 +1000,11 @@ if mood > 0:
 
 if mood < 1:
 
-    "I knew he'd said that to cushion his ego if he failed."
+    "That was the sort of thing he'd say to cushion his ego, should he fail."
 
-    "But there was more sense to it than he thought. Success within a lifetime often turned people into rich snobs."
+    "Not to say it wasn't true. Success within a lifetime was rare. When it did occur, it often turned people into rich snobs."
 
-    "Most don't reach the heights of fame that Jimmy did. I'm sure he found it easy to look down on the rest of us."
+    "From this mansion on a hill, I'm sure Jimmy found it easy to look down on the rest of us."
 
     "Well, you got your wish, Jimmy, you got your spoons. I hope they made you happy."
 
@@ -1032,13 +1014,15 @@ label dining_room_dining_room_painting:
 
     $ explored_dining_room_dining_room_painting = True
 
-    "I see a set of birds perched acutely on some barren branches. Against the cold landscape, they look sprightly, vivacious enough to come singing off the canvas."
+    "I see a set of birds perched acutely on barren branches. Against the cold landscape, they look sprightly, vivacious enough to come singing off the canvas."
 
-    "What a fun piece. I'm sure Jimmy curated it himself, thought about how to make a piece of art hold its own in such a lively, busy room."
+    "What a lively piece of art. I'm sure Jimmy curated it himself. Matching art to the room seemed like an activity he would have loved to talk about."
 
 if merchant:
 
-    "The work is seemingly unsigned. Although well crafted, it is likely to be a piece of highly reproduced art."
+    "I can see no artist's signature. Although it is well crafted, it is likely to be a reproduction."
+
+    "The type of people that produced these works either lived in a sweatshop, or sold pieces in minuscule seaside galleries."
 
     "I wonder if any of his guests would have noticed or judged Jimmy for this choice."
 
