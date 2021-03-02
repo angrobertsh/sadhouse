@@ -529,7 +529,7 @@ label library_book_1:
 
     $ explored_library_book_1 = True
 
-    "I glance over a few pages. There's a full chapter on good posture (\"Keeping an erect carriage is the key to success,\" it begins)."
+    "I open the book to a section in the middle. It's a full chapter on good posture (\"Keeping an erect carriage is the key to success,\" it begins)."
 
     "Next is a section on a lady's favorite drinks and what they might mean (\"avoid {i}desmoiselles{/i} who indulge in beverages served by the pint\")."
 
@@ -543,7 +543,7 @@ label library_book_1:
 
             jump library_book_1_insight_2
 
-        "This is a book about how the weak becoming strong":
+        "Did Jimmy feel socially deficient in some way?":
 
             jump library_book_1_insight_3
 
@@ -551,15 +551,15 @@ label library_book_1_insight_1:
 
     $ insight_1_library_book_1 = True
 
-    "While certainly painting in broad strokes, I could imagine James using some of these tips and tricks, so to speak, to meet and identify with people."
+    "One could never been too socially attuned. I imagine Jimmy felt similarly. How studious of him!"
 
-    "Ever the gentleman, he could refine some of the more coarse lessons here, clothe them in manners, and serve them to guests like fine hors d'oeuvres."
+    "Though, some of these tips verged on crude. Jimmy surely would have gussied them up with some flair, or, at least, manners."
 
     "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
 
-    "I smiled as I imagined James practicing this one, gliding a lady friend down a hallway, making her heart flutter in a pool of moonlight."
+    "I smile as I imagine Jimmy practicing this one. His arm a crook, he and a lady friend glide down a long hallway, her heart fluttering in a pool of moonlight."
 
-    "I considered a moment pocketing the book, but decided better of it. Back on the shelf it went."
+    "What a tempting image. I consider pocketing the book, but remember, then, that I am no James Pryor. Back on the shelf it goes."
 
     jump library_menu
 
@@ -567,19 +567,17 @@ label library_book_1_insight_2:
 
     $ insight_2_library_book_1 = True
 
-    "This seemed like a book made for a young, insecure man. James was nothing of the sort."
+    "Marian had been swept off her feet years before this book was published. What was there to negotiate?"
 
-    "Marian had been swept off her feet years before this book was published."
+    "\"A good \'night out\' outfit layers accent pieces. They are sure to attract attention. After all, all attention is good attention.\""
 
-    "\"Your wardrobe on your best night out should layer your accent pieces. They are sure to attract attention, and after all, all attention is good attention.\""
-
-    "James, strutting about with handfuls of rings, acid green shoelaces, and a bowler hat. I could think of nothing funnier!"
+    "Jimmy, strutting about with handfuls of rings, acid green shoelaces, and a bowler hat. I could think of nothing funnier!"
 
     "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
 
-    "I imagined him trying to 'put Marian in her place.' There was no way she would let anything of the sort pass."
+    "I imagine him \"reminding\" Marian of her \"luck.\" There was no possibility of that ending well, for either of them."
 
-    "He must have received this book as a gag gift. I chuckled as I put it back on the shelf."
+    "Jimmy must have received this book as a gag gift. I chuckle as I place it back on the shelf."
 
     jump library_menu
 
@@ -587,19 +585,17 @@ label library_book_1_insight_3:
 
     $ insight_3_library_book_1 = True
 
-    "Knowledge is power. And if I knew anything about James, it was that he wanted to know everything about the people around him."
+    "Knowledge is power. And if I knew anything about Jimmy, it was that he wanted to know everything about everyone."
 
-    "I think one of his greatest talents was making enemies, friends, and understanding how he could get what he wanted from you."
-
-    "Some tips in this guide seemed helpful and fairly innocuous:"
+    "Some tips in this guide seemed helpful, and fairly innocuous:"
 
     "\"A change of scenery will bring a change of mindset. A fresh location will bring about a fresh mood and a fresh conversation.\""
 
-    "But, there was a decidedly metallic edge to others:"
+    "But, there is a forceful edge to others:"
 
     "\"Never let a woman ruin your confidence. Should you ever feel unvalued, allow yourself to remind her that she should be lucky for the opportunity to be speaking to you.\""
 
-    "I remembered some of the women in his life, his mother, his wife, and wondered what in him needed to be hardened to survive this world."
+    "I remembered some of the women in his life, his mother, his wife. I wondered what in him needed to be refined from those fundamental relationships."
 
     "I put the book back on the shelf."
 
@@ -934,9 +930,11 @@ label dining_room_dining_table_sit:
 
     $ explored_dining_room_dining_table_sit = True
 
-    "I imagine Jimmy sitting at the head. A caterer, or maybe Marian would enter grandly with a delectable platter to share. He would compliment it with equal aplomb, and serve."
+    "I am a guest, now. To my right would be Jimmy, at the head of the table. From behind, a caterer, or maybe Marian would enter grandly with a Christmas goose, or a Thanksgiving turkey."
 
-    "Grand affairs, or cups of coffee alone in the morning, this table would likely borne witness to all."
+    "Jimmy would compliment it effusively, the writer in him always finding a new way of saying \"delicous!\" each time."
+
+    "The morning after, there would have been quiet cups of coffee, crosswords, and comics."
 
     "I was probably the first person to sit here in quite a while."
 
@@ -1002,11 +1000,11 @@ if mood > 0:
 
 if mood < 1:
 
-    "I knew he'd said that to cushion his ego if he failed."
+    "That was the sort of thing he'd say to cushion his ego, should he fail."
 
-    "But there was more sense to it than he thought. Success within a lifetime often turned people into rich snobs."
+    "Not to say it wasn't true. Success within a lifetime was rare. When it did occur, it often turned people into rich snobs."
 
-    "Most don't reach the heights of fame that Jimmy did. I'm sure he found it easy to look down on the rest of us."
+    "From this mansion on a hill, I'm sure Jimmy found it easy to look down on the rest of us."
 
     "Well, you got your wish, Jimmy, you got your spoons. I hope they made you happy."
 
@@ -1016,13 +1014,15 @@ label dining_room_dining_room_painting:
 
     $ explored_dining_room_dining_room_painting = True
 
-    "I see a set of birds perched acutely on some barren branches. Against the cold landscape, they look sprightly, vivacious enough to come singing off the canvas."
+    "I see a set of birds perched acutely on barren branches. Against the cold landscape, they look sprightly, vivacious enough to come singing off the canvas."
 
-    "What a fun piece. I'm sure Jimmy curated it himself, thought about how to make a piece of art hold its own in such a lively, busy room."
+    "What a lively piece of art. I'm sure Jimmy curated it himself. Matching art to the room seemed like an activity he would have loved to talk about."
 
 if merchant:
 
-    "The work is seemingly unsigned. Although well crafted, it is likely to be a piece of highly reproduced art."
+    "I can see no artist's signature. Although it is well crafted, it is likely to be a reproduction."
+
+    "The type of people that produced these works either lived in a sweatshop, or sold pieces in minuscule seaside galleries."
 
     "I wonder if any of his guests would have noticed or judged Jimmy for this choice."
 
