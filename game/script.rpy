@@ -1151,8 +1151,94 @@ if merchant:
 
 label cupboard_memory:
 
+    "Hiding behind the collection of tea, I find a box of Hotecakes. The package has already been opened and there's only one left inside. Hard to say how long it's been sitting here, but Hotecakes are said to last quite a while."
+
+    "Right, Jimmy used to love these. He must still have been fond of them after all of these years. I've always preferred Jelly Pies myself."
+
+    "The packaging has changed since then, with the lettering now more simple and prominent. The cakes used to be wrapped in wax paper, but these days they come in clear, crinkly plastic and somewhat smaller than I remember."
+
+    scene black
+    with fade
+
+    "Jimmy grins as he licks the the crumbs off of the waxy wrapping. \"I don't want to waste a single bit.\""
+
+    "\"You're really licking the paper, you're crazy.\" I'm laughing as Jimmy's mother comes up behind us. She gives me an exasperated smile."
+
+    "\"Come on now Jimmy, set the table. What on earth are you doing?\""
+
+    "\"Eating Hotecakes, mother.\""
+
+    "\"You're going to spoil your appetite, we have a cake to eat later.\""
+
+    "\"Hotecakes are a cake, I could have them instead.\""
+
+    "\"Don't be silly. Now come on, everyone's going to be here any moment. Throw that away, don't just leave it on the ground beside you.\""
+
+    "I get up to follow them but Mrs. Pry motions for me to stay. \"You just wait and enjoy yourself, everything will be ready soon.\""
+
+    menu:
+
+        "Wait for the party to begin.":
+
+            jump party_outside
+
+        "Follow Jimmy into the kitchen.":
+
+            jump party_inside
+
+label party_outside:
+
+    "The yard looks tidier than usual, with none of Oliver's toys lying around and Jimmy's bike nowhere to be seen. We'd spent hours one afternoon rummaging through the garden patch, searching for treasure until we grew weary of digging up nothing but weeds."
+
+    "The weeds are now cleared out and the surrounding grass smells fresh from being newly mowed. The \"X\" that Jimmy had scrawled into the center of the patch has since been smoothed over with no remaining traces."
+
+    "Over in the corner, I see Oliver sitting in the shade of the oak tree..."
+
+    menu:
+
+        "...instead of on the swing that used to hang from its largest branch.":
+
+            jump oliver_truck
+
+        "...playing with a pair of binoculars.":
+
+            jump oliver_binoculars
+
+label oliver_truck:
+
+    "Jimmy and I used to swing high and then jump off of as far as we could, seeing who could land farther. Once after we had gone back inside the house, Oliver had tried the same thing and landed on his knees instead of his feet."
+
+    "All of us ran outside at the sound of his loud cries and after that, Mrs. Pry had gotten rid of the swing for good. Jimmy had been rather sore about it, which culminated in Jimmy and me sneaking into Oliver's room."
+
+    "I anxiously stood aside and watched the door while Jimmy searched for his brother's Tractor Truck. Once he found it, we rushed downstairs and past his mother and brother--I didn't dare look up until we were outside and behind the tool shed."
+
+    "Jimmy threw the Tractor Truck onto the ground before going into the shed and emerging with a hammer."
+
+    "\"Jimmy, are you sure...?\" I stammered before he proceeded to whack it over and over until he had cracked the body and bent the frame. We stared at what Jimmy had done and to my horror, Oliver came running up behind us only to see his favorite toy ruined."
+
+    "I remember expecting Oliver to get angry and lash out at his older brother in retaliation. Instead, Oliver simply began to weep. Uneasily, I glanced over at Jimmy who now looked as if he were regretting his actions."
+
+    "\"Olly--\" Jimmy began, but Oliver had already run back to the house. In the end, Mrs. Pry sent me home early and I awkwardly bade Jimmy farewell as he trudged behind her."
+
+    "Later that week, Jimmy had me accompany him to the toy store. We walked past guns, dolls and board games, briefly stopping by a train set and moving on after we saw the price."
+
+    "Jimmy ended up picking an assortment of small die cast vehicles, none of which looked like the Tractor Truck but at least there were several of them. At the cashier, he pulled his piggy bank out of his knapsack and paid for them."
+
 
     jump kitchen_menu
+
+label party_inside:
+
+    "Jimmy opens the drawer to pull out several forks and knives, the ones that Jimmy's mother got at the local corner store and would use at every occasion since."
+
+    "\"Fork on the left, knife on the right Jimmy.\""
+
+    "\"I know, mother.\" Jimmy gathers up the utensils in his hands and they clink loudly against each other."
+
+    "\"And be careful with those, don't pick them up so carelessly.\""
+
+    "\"If you don't like how I do it, why don't you do it yourself?\" Jimmy calls back to her."
+    
 
 label kitchen_drawer:
 
