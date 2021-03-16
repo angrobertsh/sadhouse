@@ -786,6 +786,7 @@ label hometown_lie:
     "\"I've lived in Palace Gardens all my life. Never ventured out much in my youth, I used to come to Hestia once in a while. Fancy lot out here, aren't they? Not too much has changed.\""
     "\"It's fascinating how even one town can be so different from the next, let alone a different country.\""
 
+    # TODO
     "(is it the person or the location)"
 
     jump wedding_end
@@ -803,6 +804,7 @@ label wedding_end:
 
     "Rory claps me on the shoulder. \"You really should stick around. I'm sure James can put you up if you're too out of sorts to travel by the end of the night, I know I will be.\""
 
+    # TODO
     "(protagonist asks about Oliver and it gets slightly awkward)"
 
     "Jimmy smiles thinly, giving me a nod. \"Trip was all right? Thanks for coming out here today.\""
@@ -845,8 +847,8 @@ if rory_choices:
     "\"It's true, I could be out of a job come tomorrow if I stay much longer,\" I joke in return. In jest, there is truth."
     "\"Fair enough. Then, here's to jobs that pay the rent.\" Rory raises his glass, then throws it back."
     "Marian gives me a sympathetic smile. \"Thanks again for celebrating with us.\""
+    # TODO
     "(dialogue based on occupation)"
-    # im working on this now
 
     jump wedding_epilogue
 
@@ -862,6 +864,7 @@ if rory_atford:
 
 if rory_travel:
 
+    # TODO
     "travel stuff"
 
     jump wedding_epilogue
@@ -904,7 +907,7 @@ label dining_room:
 
     scene dining room at truecenter
 
-    "The dining room would have been host to innumerable parties, all gathered around a glass of champagne, or a late night espresso"
+    "The dining room would have been host to innumerable parties. Champagne would have flowed freely beside buffets, splayed across the tablecloth."
 
 label dining_room_menu:
     scene dining room at truecenter
@@ -990,9 +993,9 @@ if mood > 0:
 
     "Jimmy was fortunate to be recognized during his lifetime."
 
-    "Whether it be chance, or talent, Jimmy wrote the exact works that we all wanted to read."
+    "Whether it be chance, or talent, Jimmy wrote works that people wanted to read, no small feat in this day and age."
 
-    "And with his success, he managed to fulfill one of his idle childhood promises."
+    "With his success, he managed to fulfill one of his idle childhood promises. Or, perhaps it wasn't so idle, if he remembered it after all those years."
 
     "I am proud of what Jimmy accomplished. I know he would be proud of his legacy as well."
 
@@ -1000,13 +1003,13 @@ if mood > 0:
 
 if mood < 1:
 
-    "That was the sort of thing he'd say to cushion his ego, should he fail."
+    "I wonder if Jimmy's cleverness grew increasingly tiresome with age. Jimmy would always find some way to cushion his ego, should he fail."
 
-    "Not to say it wasn't true. Success within a lifetime was rare. When it did occur, it often turned people into rich snobs."
+    "Not to say he wasn't right. Success within a lifetime was rare. And when it did occur, it often turned people into rich snobs."
 
     "From this mansion on a hill, I'm sure Jimmy found it easy to look down on the rest of us."
 
-    "Well, you got your wish, Jimmy, you got your spoons. I hope they made you happy."
+    "Well, you got your wish, Jimmy. You got your spoons. I hope they made you happy."
 
     jump dining_room_menu
 
@@ -1016,15 +1019,17 @@ label dining_room_dining_room_painting:
 
     "I see a set of birds perched acutely on barren branches. Against the cold landscape, they look sprightly, vivacious enough to come singing off the canvas."
 
-    "What a lively piece of art. I'm sure Jimmy curated it himself. Matching art to the room seemed like an activity he would have loved to talk about."
+    "What a lively piece of art. I'm sure Jimmy curated it himself. Manipulating the mood of a room through art seemed like an activity he would have loved to talk about."
 
 if merchant:
 
-    "I can see no artist's signature. Although it is well crafted, it is likely to be a reproduction."
+    "When I search the corners of the painting, I can see no artist's signature. Looking at the paint quality, and the subject matter, I begin to form an impression."
 
-    "The type of people that produced these works either lived in a sweatshop, or sold pieces in minuscule seaside galleries."
+    "One would have purchased this work from a minuscule seaside gallery. The artist that painted it would be eccentric, and solitary, and sometimes even talented."
 
-    "I wonder if any of his guests would have noticed or judged Jimmy for this choice."
+    "One would have purchased this painting on some dreamy weekend getaway, and the story of its acquisition would far outweigh its artistic value."
+
+    "Jimmy would have loved telling that story. I wonder with whom it lives on."
 
     jump dining_room_menu
 
