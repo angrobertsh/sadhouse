@@ -46,7 +46,7 @@ default explored_study_check = False
 default explored_study_check_cult = False
 default explored_study_check_drugs = False
 default explored_study_check_wishes = False
-
+default explored_bedroom_fanmail = False
 # Insight
 default insight_1_library_book_1 = False
 default insight_2_library_book_1 = False
@@ -1222,7 +1222,7 @@ label party_inside:
     "\"And be careful with those, don't pick them up so carelessly.\""
 
     "\"If you don't like how I do it, why don't you do it yourself?\" Jimmy calls back to her."
-    
+
 
 label kitchen_drawer:
 
