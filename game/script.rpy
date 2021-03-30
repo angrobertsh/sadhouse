@@ -1344,16 +1344,15 @@ label salon_painting:
 
     "James sits on a chair, with Marian standing beside him."
 
-
     jump salon_menu
 
 
 label salon_shelf:
     $ explored_salon_shelf = True
 
-    "On each shelf lives a lovely, albeit dusty, set of oddities: a signed boxing glove, little clay vases painted with even littler cacti, various paintings in miniature."
+    "On each shelf lives a charming set of oddities: a signed boxing glove, little clay vases painted with cacti, various paintings in miniature."
 
-    "It's all quite charming, and I can imagine Jimmy retelling a story about each one."
+    "I can imagine Jimmy retelling a story about each one."
 
 label salon_shelf_menu:
 
@@ -1747,7 +1746,9 @@ label study:
 
     scene study at truecenter
 
-    "This was Jimmy's home within his home. I imagined him holed up here for hours, days, refusing cups of tea as he feverishly wrote his next great novel."
+    "This is Jimmy's home within his home. If any room were a reflection of his mind, it would be this study."
+
+    "I imagine him losing track of hours, days even, as he feverishly wrote his next great novel."
 
 label study_menu:
 
@@ -1767,7 +1768,7 @@ label study_menu:
 
             jump study_pictures
 
-        "There is a signed check in the corner" if not explored_study_check:
+        "There is an odd pipe on an end table" if not explored_study_check:
 
             jump study_check
 
@@ -1779,41 +1780,47 @@ label study_check:
 
   $ explored_study_check = True
 
-  "There's a check here, signed and dated several months ago. It's addressed to an organization, and its sum manages to surprise me."
+  "As I approach the end table, the musky, resin-y scent that had drifted through the upstairs hallway becomes clear."
+
+  "This is a taricus pipe. I am shocked by the realization. More shocking, however, is the slip of paper I see next to the pipe."
+
+  "It's a sunbleached check, signed and dated almost a year ago. Addressed to \"The Spiritual Seekers\", its sum makes my jaw drop."
 
 if merchant or carpenter:
 
-  "The name doesn't ring a bell. But it sounds pretty new-fangled, if I say it out loud, \"Spiritual Seekers\""
+  "That name doesn't ring a bell. But it sounds pretty new-fangled. I say the words aloud. It smacks of alternative religion."
 
   jump study_check_choice
 
 if tutor:
 
-  "I don't recognize the recipient immediately, but when I think about it, a translation pops into my head: \'Buscadoras Espirituales.\'"
+  "Something about this name sounds familiar. A translation pops into my head: \"Buscadoras Espirituales.\""
 
-  "They were big in Central America a few decades ago. I didn't realize they had many connections here, of all places."
+  "They were classified as a religious group, I believe. A few decades ago they made waves in Central America."
+
+  "It appears they had made it to the English speaking world, but had yet to become popular."
 
   jump study_check_choice
 
 label study_check_choice:
 
-  "The memo on the bottom says, \"To help open the mind's journey to higher consciousness, YWH\""
+  "At the bottom of the check is the memo. It says, \"To help open the mind's journey to higher consciousness, YWH\""
 
-  "It doesn't take me long to understand that this may be associated with James's hobbies involving that taricus pipe."
+  "I glance towards the taricus pipe nearby, and give a little sniff. I am to understand that these objects are likely related."
 
-  "I hold the check in my hands, thinking about where all that money was going to go."
+  "I double check the sum. James meant to donate a lifechanging amount of money to this organization."
 
-  "The check remains here, however, in James's study, unsent. And by the looks of it, it'd been here long enough that the ink had started to look sunbleached."
+  "Yet the check remains here, in James's study, unsent, for nearly a year."
 
   "I can't help but wonder, was it absentmindedness, or ambivalence?"
 
-  "I feel my own sense of morality creeping in, and the paper between my fingers suddenly feels heavy."
+  "The paper between my fingers suddenly feels heavy."
 
 label study_choice_menu:
 
   menu:
 
-      "These \"Spiritual Seekers\" sound like a cult." if explored_study_check_cult == False:
+      "These \"Spiritual Seekers\"... they sound like a cult." if explored_study_check_cult == False:
 
           jump study_check_cult
 
@@ -1825,7 +1832,7 @@ label study_choice_menu:
 
           jump study_check_wishes
 
-      "I will do what I need to with this check.":
+      "I have made my decision on what to do with this check.":
 
           jump study_check_choice_2
 
@@ -1833,23 +1840,27 @@ label study_check_cult:
 
   $ explored_study_check_cult = True
 
-  "I mean, really, \"Spiritual Seekers\"!? I bet the only thing they could seek was a base of wealthy donors."
+  "\"Spiritual Seekers\"? I bet the only thing they sought was a base of wealthy donors."
 
-  "Ridiculous, why would they even need this much money? If what they sought was truly spiritual, what good would money do?"
+  "The mere thought of handing some new-age cult this sum of money is ridiculous."
 
-  "I take a moment then to breathe, and really think about how worked up I was getting over a piece of paper."
+  "Moreover, why would they even need money? If they sought the spiritual, wouldn't mortal currency merely be a distraction?"
 
-  "Maybe this isn't what I think. Maybe this was something important to James, and maybe that is what matters."
+  "I take a moment to breathe. Here I stand getting flustered over a piece of paper."
 
-  "I've seen many people find meaning and purpose in things bigger than themselves."
+  "Perhaps I was making rash conclusions. This organization could be building homes, clothing the poor, purifying water."
 
-  "It was always after a breaking point, some moment of clarity when they saw what they wanted, or needed, wasn't in the cards."
+  "Or maybe they simply threw hedonistic parties full of taricus."
 
-  "Some found God, some joined knitting circles, some volunteered."
+  "I don't know the truth of this organization. What I know is that this was something important to Jimmy."
 
-  "From my, admittedly, distant vantage point, the difference between them was that some seemed to give in to their fate, and others fought to reverse it."
+  "Seeing this check reminds me just how little I knew about Jimmy. What would have made Jimmy want to donate so much of his material wealth to this organization?"
 
-  "I doubt I'll ever understand James's relationship with the Spiritual Seekers enough to know what purpose it served in his life. But I see here a concrete monetary value James had assigned to these people, and it isn't small."
+  "To be part of something bigger... I've seen many people struggle to find meaning. Some found God, some volunteered."
+
+  "Jimmy had made his mark in the world with his novels. Maybe he wanted to leave a different legacy."
+
+  "I doubt I'll ever understand James's relationship with the \"Spiritual Seekers\" enough to know what purpose it served in his life."
 
   jump study_choice_menu
 
@@ -1857,13 +1868,13 @@ label study_check_drugs:
 
   $ explored_study_check_drugs = True
 
-  "Taricus was neither legal nor good. I'd seen multiple movies and posters espousing its dangers and how it was truly madness!"
+  "The movement against taricus and \"Taricus Madness\" was popular in my youth. I remember seeing movies and posters espousing its dangers."
 
-  "People under the influence became addicts. They hit and run, had hallucinations, and even killed themselves."
+  "I'd never smoke taricus myself, but I'd heard people who did became addicts. Under the influence, they hit and run, had hallucinations, and sometimes even killed themselves."
 
-  "If this organization helped people \"open the mind's journey to higher consciousness\" with these terribly addictive drugs, it seemed my moral imperative to stop them."
+  "If this organization helped people \"open the mind's journey to higher consciousness\" with these drugs, I couldn't help but feel that it was my moral duty to... question this decision."
 
-  "They'd even hooked poor James, poor, poor James."
+  "It was a possibility that these drugs had influenced Jimmy's faculties. Did he really want to donate such a large amount of money to this organization?"
 
   jump study_choice_menu
 
@@ -1871,7 +1882,7 @@ label study_check_wishes:
 
   $ explored_study_check_wishes = True
 
-  "What James wanted to do with his money was James's business. I suppose if he wrote this check, then he'd presumably have wanted it sent, at some point."
+  "What Jimmy wanted to do with his money was Jimmy's business. I suppose if he wrote this check, then he'd presumably have wanted it sent, at some point."
 
   "If I could speak to him, and ask him if this was all sincerity, or all jokes... then maybe I'd have a clue about what to do with this check."
 
@@ -1887,19 +1898,43 @@ label study_check_choice_2:
 
     "I place the check in an envelope and remind myself to put it in the mail later.":
 
-      jump study_check_conclusion
+      jump study_check_conclusion_mail
 
     "I leave the check where it is. Someone else can deal with it.":
 
-      jump study_check_conclusion
+      jump study_check_conclusion_leave
 
     "I tear the check up.":
 
-      jump study_check_conclusion
+      jump study_check_conclusion_tear
+
+label study_check_conclusion_mail:
+
+  "James Pryor, I am here as your appointed executor to carry out your wishes."
+
+  "Though I feel a twinge of unease, I choose to believe that your choices will make the world a better place."
+
+  jump study_check_conclusion
+
+label study_check_conclusion_leave:
+
+  "This is beyond my capabilities. Lawyers could spend months arguing Jimmy's intent in leaving a signed check unmailed."
+
+  "There is no decision for me to make here, one way, or another. When the appropriate authorities can be present, they can decide what to do."
+
+  jump study_check_conclusion
+
+label study_check_conclusion_tear:
+
+  "Jimmy, I am stopping you from making a grave mistake. Your legacy will remain intact."
+
+  "I don't know what you were thinking in these last years, but I know that this is not you."
+
+  jump study_check_conclusion
 
 label study_check_conclusion:
 
-  "Satisfied with my choice, I turn away from that heavy business and step away from the desk."
+  "Satisfied with my decision, I turn away from that heavy business and step away from the desk."
 
   jump study_menu
 
@@ -1951,7 +1986,7 @@ label study_papers:
 
     "I am saddened when I understand that nobody will ever be able to piece this story together."
 
-    "I fruitlessly rummage through James's mind. My fingers line up pages as if they'll fit together like a puzzle. There's a short story about a hunter and a harp. A few paragraphs about an installation he'd gone to at a museum, maybe a review? The papers are now in thorough disarray. There's a description of what he says is the last perfect peach he'll ever have."
+    "I fruitlessly rummage through Jimmy's mind. My fingers line up pages as if they'll fit together like a puzzle. There's a short story about a hunter and a harp. A few paragraphs about an installation he'd gone to at a museum, maybe a review? The papers are now in thorough disarray. There's a description of what he says is the last perfect peach he'll ever have."
 
     "I take this moment, then, to put this burden down. There will only ever be one Jimmy Pryor, and he is gone now."
 
