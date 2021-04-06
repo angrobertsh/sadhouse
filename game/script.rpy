@@ -1935,7 +1935,7 @@ label study_safe_open:
 
     jump study_menu
 
-label study_picture:
+label study_pictures:
 
     $ explored_study_picture = True
 
@@ -1973,7 +1973,7 @@ label bedroom_menu:
 
         "I move on":
 
-            jump bathroom
+            return
 
 label bedroom_fanmail:
 
