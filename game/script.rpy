@@ -2020,7 +2020,7 @@ label bedroom_fanmail:
 
     "I can't help but be amused by their various shapes and sizes. There are several slender white numbers, very classic. There are postcards from all over the country, the world, even. One envelope is pert and pink, closed with a heart sticker."
 
-    "Stuffed at the end nearest to me seems to be a set, as they are all beige squares, and their edges are quite worried. Owing to their to the drawer opening, or their frequent leafing, I do not know. When I tip back the corner of the most upturned one, I see a return address to 'Martin Fellows.'"
+    "Stuffed at the end nearest to me seems to be a set. They are all beige squares, and their edges are quite worried. I could not tell if this was owing to their tendency to be crushed by the opening and closing of the drawer, or from frequent leafing. When I tip back the corner of the most askew envelope, I see a return address to 'Martin Fellows.'"
 
     "It seems in poor taste to paw through Jimmy's fanmail, but I can't help myself. I pick a letter out, making sure to turn another sideways to mark where it had come from."
 
