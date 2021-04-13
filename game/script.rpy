@@ -630,9 +630,12 @@ label library_book_2:
 
     "After the ceremony, I manage to briefly chat with Jimmy and Marian before they move on to greeting their other guests."
 
-    "I barely have time to congratulate them, let alone ask where Oliver is."
+    "\"Where's Oliver?\" I ask after congratulating the newly married couple. I haven't seen Jimmy's younger brother among the guests yet."
+    "I suppose we could have shared a car down here, seeing as we were coming from the same place, and split the fare while at it."
+    "I had assumed that being family, he would have made separate arrangements with Jimmy."
 
-    "Perhaps I could have hitched a ride with Jimmy's brother, seeing as we would be coming from the same place but I figured as family, he would have made his own arrangements."
+    "\"He couldn't make it, I'm afraid. Work has him tied up and it can't be helped. But do enjoy yourself while you're here. I'll catch up with you later!\""
+    "Jimmy waves to someone in the crowd and heads over with Marian in tow."
 
     "I'm standing alone, sipping my third glass of wine when Rory approaches the bar for another drink."
 
@@ -783,11 +786,11 @@ label hometown_lie:
     $ rory_travel = True
 
     "\"It seemed like James couldn't wait to leave, but it must not be so bad if you've stayed. There's something comforting about the familiarity of the place you grew up in.\""
-    "\"I've lived in Palace Gardens all my life. Never ventured out much in my youth, I used to come to Hestia once in a while. Fancy lot out here, aren't they? Not too much has changed.\""
-    "\"It's fascinating how even one town can be so different from the next, let alone a different country.\""
-
-    # TODO
-    "(is it the person or the location)"
+    "\"I've lived in Palace Gardens all my life. I never travelled much in my youth, but I used to come to Hestia once in a while. Fancy lot out here, aren't they?\""
+    "\"Not too much has changed, except maybe the new hotel on Fourth Street. It's funny, to think of people coming to visit when to the residents here, it's just home.\""
+    "\"My schoolmates and I would spend our days idling about the streets, grumbling about how there was nothing to do. So naturally, I leapt at the chance to leave.\""
+    "\"And now here I am, back to where I started, idling about the same streets and nipping down to the grocer's like my mother used to, dear god.\""
+    "\"How I dread being grown...\""
 
     jump wedding_end
 
@@ -865,7 +868,13 @@ if rory_atford:
 if rory_travel:
 
     # TODO
-    "travel stuff"
+    "\"When can we see each other again? Say, I've been meaning to go see the world for once once of these days. Expand my horizons. You should come along.\""
+
+    "\"That sounds lovely,\" I reply. \"Where would you want to go?\""
+
+    "\"I've always wanted to visit Honom, but I've heard that it's dreadfully hot year round. The Jora Naya islands are said to be sublime. Or Moreland and its beautiful green hills. I should take the year off and see them all.\""
+
+    "(Marian says something intelligent about one of these places)"
 
     jump wedding_epilogue
 
