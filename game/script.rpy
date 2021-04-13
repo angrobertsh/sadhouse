@@ -2025,30 +2025,26 @@ label bedroom_fanmail:
 
     "There is a piece of blank stationery on James' bedstand. Next to it is a pen, and beside that, a yellowing book titled '22 Habits of the Well Informed.' Unmistakeably, there are the indents of penmanship on its cover."
 
-    "James must have written letters in bed. Never even a moment to rest!"
-
     "I slide open the desk drawer in the bedstand. In it is revealed a crush of letters, all packed neatly against each other and stored in horizontal stacks."
 
-    "It's fun to see the various shapes and sizes of the pieces of them all, several slender white envelopes, postcards from all over the country, one envelope pert and pink, closed with a heart sticker. There's no mistake about this, this must be fanmail."
+    "I can't help but be amused by their various shapes and sizes. There are several slender white numbers, very classic. There are postcards from all over the country, the world, even. One envelope is pert and pink, closed with a heart sticker."
 
-    "A set of letters stands out. There are at least a half dozen of them, all set uniformly within red square envelopes. When I tip back their corners, I see they're all marked with a return address to 'Martin Fellows'"
+    "Stuffed at the end nearest to me seems to be a set. They are all beige squares, and their edges are quite worried. I could not tell if this was owing to their tendency to be crushed by the opening and closing of the drawer, or from frequent leafing. When I tip back the corner of the most askew envelope, I see a return address to 'Martin Fellows.'"
 
-    "Just who was this 'Martin Fellows' fellow?"
+    "It seems in poor taste to paw through Jimmy's fanmail, but I can't help myself. I pick a letter out, making sure to turn another sideways to mark where it had come from."
 
-    "I pick a letter out, making sure to turn another sideways to mark where it had come from."
-
-    "It's dated several years ago. The handwriting is messy, but legible."
+    "It's dated several years ago. The handwriting is perfectly legible."
 
     "\"Dear Mr. Pryor,\""
 
-    "\"Thank you for your letter. I have always liked Kurt. Even though he was a fraud. Sometimes being a man means putting on a mask. It was so refreshing to see someone say that. This world is so connected. Man can never get a break. Man! (Ha ha ha)\""
+    "\"Thank you for your letter. It is always such a pleasure to hear from you. I am a staunch believer that God only puts so many words in each of us. You surprise me time and time again with your generosity. I hope you are treating yourself well."
 
-    "\"Do you think Kurt had any other hobbies other than fishing? There is not much water around here. But fishing sounds peaceful. I would like some more peace in my life. I wonder if Kurt could get into rock collecting. Lots of rocks out here and not much else!\""
+    "\"My inner Kurt came out again this week. I find it easier to spot him as time passes. It was when my daughter ran into my divorcée's arms. I knew she was growing up without me. But sometimes being a man means putting on a mask. It is not something I would know how to put words to were it not for your book. I would be lost in this experience."
 
-    "\"I think things would have turned out differently for Kurt if he had kids. You have to live differently if you have little ones. If they caught me in a big lie I would hate to see their hearts break. World be damned.\""
+    "\"I think things would have turned out differently for Kurt if he had kids. He would have protected them, no matter what. When he was found out, he would have dropped his \"Noble Charade\" to keep his family safe and moved to a little cabin in the woods."
 
-    "\"I hope things are well with you and Marian. I will be keeping an eye on the news for your kids! (Ha ha ha)\""
+    "\"That's what I think, at least. If that ends up in your next novel, leave me some credit would ya? I could use it.\""
 
-    "\"Sincerely, Martin Fellows\""
+    "\"Thanks a million, Martin Fellows\""
 
     jump bedroom_menu
