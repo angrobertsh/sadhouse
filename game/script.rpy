@@ -38,10 +38,12 @@ default explored_salon_shelf_vase = False
 default explored_salon_shelf_glove = False
 default explored_salon_shelf_picture = False
 default explored_conservatory_drawer = False
+default explored_conservatory_table = False
 default explored_gueuloir = False
 default explored_study_safe = False
 default explored_study_picture = False
 default explored_study_papers = False
+default explored_study_book_3 = False
 default explored_study_check = False
 default explored_study_check_cult = False
 default explored_study_check_drugs = False
@@ -898,16 +900,21 @@ label library_book_3:
     $ explored_library_book_3 = True
 
     "I remember it being somewhat fascinating at the time when Jimmy was first published, that he had now written a book like the ones we were obligated to read when we were students."
+
     "Looking back on it now, I can better acknowledge and appreciate the impressiveness of this feat."
 
     "He had gifted me a copy back then, and I had congratulated him and told him that I enjoyed it very much. I'm certain it's sitting on my bookshelf, which I admit I have perused much more rarely of late."
 
     "To be honest, some of the details elude me when I attempt to recollect the events of the story. Is it still fair to say that I once read it?"
+
     "But I know the main plot--Kurt Candon, the protagonist, is a skilled practitioner who at the height of his celebrated career is discovered to be a fraud."
+
     "One passage stands out in my mind, the one that his debut novel remains most famous for. I turn to the last section of the novel (where most important things occur) and manage to find it:"
 
     "{i}It was then that I knew it mattered not who I was, but who others would perceive me to be. And so that was who I became. Day in and night out, I played the best version of myself upon society's stage.{/i}"
+
     "{i}As much as they insisted otherwise, the audience did not care to see or know of the toil and turmoil behind weighted curtains, nor did I wish to show any of it. {/i}"
+
     "{i}The world only desired to witness a polished performance which I fully intended to deliver until the day I died. 'Twas a noble charade. But it is difficult to call it deceit, when it was so very earnest. {/i}"
 
     jump library_menu
@@ -1487,13 +1494,38 @@ label conservatory_menu:
 
     menu:
 
-        "I look in the drawer" if not explored_conservatory_drawer:
+        "There is a chest of drawers adorned with plants." if not explored_conservatory_drawer:
 
             jump pasiphae_play_intro
+
+        "There are papers pressed under a glass sheet on a table." if not explored_conservatory_table:
+
+            jump conservatory_table
 
         "I move on":
 
             jump study
+
+label conservatory_table:
+
+  $ explored_conservatory_table = True
+
+  "Before we wake, \
+  All is darkness \
+  A light ignites-- \
+  And life begins."
+
+  "The light becomes a fire. \
+  It demands to be stoked and fed. \
+  To fight is to suppress. \
+  Unrested till expressed \
+  It sulks in smoldry waiting."
+
+  "A fire that only ever consumes, \
+  Can only destroy. \
+  Man would fall upon it, and burn his tongue."
+
+  jump conservatory_menu
 
 label pasiphae_play_intro:
 
@@ -1777,6 +1809,10 @@ label study_menu:
 
             jump study_pictures
 
+        "On the floor is a stack of papers held together by multiple crooked staples" if not explored_study_book_3:
+
+            jump study_book_3
+
         "There is an odd pipe on an end table" if not explored_study_check:
 
             jump study_check
@@ -1849,25 +1885,17 @@ label study_check_cult:
 
   $ explored_study_check_cult = True
 
-  "\"Spiritual Seekers\"? I bet the only thing they sought was a base of wealthy donors."
+  "\"Spiritual Seekers\". The name brings to mind white robes, long hair, and sitting in unmowed grass."
 
-  "The mere thought of handing some new-age cult this sum of money is ridiculous."
+  "Like many such organizations, I suspect they seek less the spiritual, more a base of wealthy donors."
 
-  "Moreover, why would they even need money? If they sought the spiritual, wouldn't mortal currency merely be a distraction?"
+  "Why would they need money? Wouldn't mortal matters be merely be a distraction? Did they need to purchase spiritual seeking tools? It would probably be turned into taricus, and burned away just as quickly."
 
-  "I take a moment to breathe. Here I stand getting flustered over a piece of paper."
+  "I find myself frowning as I reflect on how little I know about Jimmy. The amount on this check could change lives, build homes, clothe the poor, feed the hungry. Instead he's choosing to donate this sum to some religious organization in the name of \"higher consciousness\"."
 
-  "Perhaps I was making rash conclusions. This organization could be building homes, clothing the poor, purifying water."
+  "I've seen many people struggle to find something meaningful to connect to. Some found God, some volunteered."
 
-  "Or maybe they simply threw hedonistic parties full of taricus."
-
-  "I don't know the truth of this organization. What I know is that this was something important to Jimmy."
-
-  "Seeing this check reminds me just how little I knew about Jimmy. What would have made Jimmy want to donate so much of his material wealth to this organization?"
-
-  "To be part of something bigger... I've seen many people struggle to find meaning. Some found God, some volunteered."
-
-  "Jimmy had made his mark in the world with his novels. Maybe he wanted to leave a different legacy."
+  "Jimmy had made his mark in the world with his novels, and I would have thought that would have been enough for him. Maybe he wanted to leave a different legacy."
 
   "I doubt I'll ever understand James's relationship with the \"Spiritual Seekers\" enough to know what purpose it served in his life."
 
@@ -1891,13 +1919,13 @@ label study_check_wishes:
 
   $ explored_study_check_wishes = True
 
-  "What Jimmy wanted to do with his money was Jimmy's business. I suppose if he wrote this check, then he'd presumably have wanted it sent, at some point."
+  "If a check is written, it is meant to be cashed. Jimmy wrote this check, and I suppose it is my duty to cash it."
 
-  "If I could speak to him, and ask him if this was all sincerity, or all jokes... then maybe I'd have a clue about what to do with this check."
+  "If Jimmy were standing here, now, I'd have asked him if he was {i}sure{/i} about this."
 
-  "But I can't, so I don't."
+  "But he isn't, so I can't."
 
-  "And thinking about this all, this entire journey, I don't think my feelings on the matter are very relevant at all. All I can do is try and act in the most appropriate way."
+  "I am the executor of this estate. Jimmy's will is exacted through me. The only voice he has is his signature on this check. And that is enough."
 
   jump study_choice_menu
 
@@ -1919,7 +1947,7 @@ label study_check_choice_2:
 
 label study_check_conclusion_mail:
 
-  "James Pryor, I am here as your appointed executor to carry out your wishes."
+  "James Pryor, your wish is my command."
 
   "Though I feel a twinge of unease, I choose to believe that your choices will make the world a better place."
 
@@ -1984,6 +2012,24 @@ label study_pictures:
     $ explored_study_picture = True
 
     # Memory with visit to Lintonbury with his brother who was left behind here
+
+    jump study_menu
+
+label study_book_3:
+
+    $ explored_study_book_3 = True
+
+    "The top sheet of the stack is covered in crossed out words and vertical scribbles. In the bottom right, decisively clear, are the words 'The Burning Man, by James Pryor'"
+
+    "I picked up the stack of papers from the floor. The mess of staples does not entirely succeed in holding it together. A few of the bottom sheets escape, which I carefully gather."
+
+    "{i}{s}It is what{/s} It is INSIDE of him hailfire like the metallic haze it jumps out like reflex around the cat silk corner. Elegant in his rage he is armed with his rifle he {s}shoots{/s} turns OUT the fire INSIDE. Hailfire to hellfire down drop the dazzling dirigibles.{/i}"
+
+    "{i}EN: \"dirigible\" dated, rework alliteration?{/i}"
+
+    "Jumping in in the middle of this text is immediately disorienting. I am surprised by the sheer amount of scribbles, editing, and, what it appears, are editor's notes that surround the text. I don't recognize Jimmy in this writing. My curiosity has me turn back to the first page."
+
+    "{i}{s}Ace was a man on fire.{/s} Ace Allen was the last {s}of his kind{/s} striker. {s}on Earth{/s}. {s}His birth was marked by a falling star{/s} Born from an unknown mother, on an unknown night, he clawed his way to a lonely freedom. {s}As he was born, as he lived.{/s} He lived as he was born. This is his story:{/i}"
 
     jump study_menu
 
