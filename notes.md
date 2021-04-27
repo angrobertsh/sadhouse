@@ -84,7 +84,7 @@ Patio
 
 Kitchen
 - Cupboard
-  - [TODO] tea talks
+  - [TODO] Memory 2 with birthday party
 - Drawer with stand mixer
 - Whiskey
 
@@ -107,8 +107,9 @@ Study
 - [TODO] Safe
 - Mess of papers
 - [TODO] Picture
-  - [TODO] Memory 2 with Oliver
+  - [TODO] Memory 3 with Oliver
 - Check for taricus cult
+- Novel 3 relating to Marian's work
 
 Bedroom
 - Fan Mail
