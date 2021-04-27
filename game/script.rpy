@@ -1160,7 +1160,7 @@ label cupboard_memory:
 
     "Right, Jimmy used to love these. He must still have been fond of them after all of these years. I've always preferred Jelly Pies myself."
 
-    "The packaging has changed since then, with the lettering now more simple and prominent. The cakes used to be wrapped in wax paper, but these days they come in clear, crinkly plastic and somewhat smaller than I remember."
+    "The packaging has changed since then, with the lettering now more simple and prominent. The cakes used to be wrapped in wax paper, but these days they come in clear, crinkly plastic and are somewhat smaller than I remember."
 
     scene black
     with fade
@@ -1253,7 +1253,7 @@ label kitchen_drawer:
 
     "There's pedestrian cutlery, some knives and their whetstones, and a few rusty peelers."
 
-    "Another drawer holds a set of appliance accessories. I see attachments for a large beater, some doodads to screw in, and some, perhaps, extra things that look like they could really slice something up."
+    "Another drawer holds a set of appliance accessories. I see attachments for a large whisk, some doodads to screw in, and something bladed that looked far too dangerous for domestic use."
 
 if merchant:
 
@@ -1261,7 +1261,7 @@ if merchant:
 
     "A mere decade ago, the only way to beat an egg was with a beater and some elbow grease. Having an automatic mixer in your home was considered very \"À là mode\"."
 
-    "Since coming to market, each year, new improved automatic mixers have been clamoring for space in everyone's homes and cabinets. Nutty! I'd never seen technology move so fast."
+    "Since coming to market, however, each year new and improved automatic mixers have been clamoring for space in everyone's homes and cabinets. Nutty! I'd never seen technology move so fast."
 
     jump kitchen_menu
 
@@ -1473,11 +1473,11 @@ label gueuloir_end:
 
     "\"In the April showers soothing, in the May the flowers brooding.\""
 
-    "Ah! It is James! His voice tinkles through the horn."
+    "Ah! It is Jimmy! His voice, familiar enough, though recorded, tinkles through the horn."
 
-    "\"Alright, now, Chapter 7, page 3, start. ... 'How do you think that makes me feel?' he cried, 'Each day you tear and moan. Do you not see what it is you do to me?' His hands gripped the cornered curve of the desk, but across it, in this one instance, she remained unmoved.\""
+    "\"Alright, now, Chapter 7, page 84, start. ... 'How do you think that makes me feel?' he cried, 'Each day you tear and moan. Do you not see what it is you do to me?' His hands gripped the cornered curve of the desk, but across it, she remained unmoved.\""
 
-    "The emotion in his voice is even, despite the frantic scene of a man expostulating at a woman. As he continues, I hear some words catch, they somersault over his tongue. And in my mind's eye, I can see him standing at that podium, calculating each sentence."
+    "The emotion in his voice is even, despite the frantic scene he describes. As he continues, I hear some words catch, they somersault over his tongue. And in my mind's eye, I can see him standing at that podium, calculating each sentence."
 
     "\"...that he was convinced that he was the convincer, to convince her, 'twas the, 'twas not the, no, ugh.\" there is some paper shuffling, and the recording stops."
 
@@ -2023,15 +2023,63 @@ label study_book_3:
 
     "I picked up the stack of papers from the floor. The mess of staples does not entirely succeed in holding it together. A few of the bottom sheets escape, which I carefully gather."
 
-    "{i}{s}It is what{/s} It is INSIDE of him hailfire like the metallic haze it jumps out like reflex around the cat silk corner. Elegant in his rage he is armed with his rifle he {s}shoots{/s} turns OUT the fire INSIDE. Hailfire to hellfire down drop the dazzling dirigibles.{/i}"
+    "{i}{s}It is what{/s} It is INSIDE of him, hailfire like the metallic haze, it jumps out like reflex around the cat silk corner. Elegant in his rage he is armed with his rifle he {s}shoots{/s} turns OUT the fire INSIDE. Hailfire to hellfire down drop the dazzling dirigibles.{/i}"
 
     "{i}EN: \"dirigible\" dated, rework alliteration?{/i}"
 
-    "Jumping in in the middle of this text is immediately disorienting. I am surprised by the sheer amount of scribbles, editing, and, what it appears, are editor's notes that surround the text. I don't recognize Jimmy in this writing. My curiosity has me turn back to the first page."
+    "Jumping in in the middle of this text is immediately disorienting. I am surprised by the sheer amount of scribbles, editing, and, what it appears, are editor's notes that surround the text. I see no trace of the Jimmy I know in this text, but isn't that something? The writer's craft... My curiosity has me turn back to the first page."
 
-    "{i}{s}Ace was a man on fire.{/s} Ace Allen was the last {s}of his kind{/s} striker. {s}on Earth{/s}. {s}His birth was marked by a falling star{/s} Born from an unknown mother, on an unknown night, he clawed his way to a lonely freedom. {s}As he was born, as he lived.{/s} He lived as he was born. This is his story:{/i}"
+    "{i}{s}Ace Allen was a man on fire.{/s} Ace was last {s}of his kind{/s} burning. {s}on Earth{/s}. {s}His birth was marked by a falling star{/s} From an unknown mother, on an unknown night, he clawed his way to a lonely freedom.{/i}"
+
+    "{i}Movement, move, swim, jump, cut, the cinder INSIDE knew no rest. What was OUT served only to quench that self-kindling cinder. Life was the question, answered by pursuit. How deep the thirst? How strong the will?{/i}"
+
+    "{i}{s}As a young boy Ace knew he was different. He would never tire. When still he was ill at ease. It only felt right when he ran, pulled ropes, dug holes, fell into danger. His peers fell away one by one. They felt not what he did INSIDE. They would never change the world, not like him.{/s}{/i}"
+
+    "{i}EN: Too explanatory.{/i}"
+
+    "{i}Ace felt the heat rise in his neck. A young man, he had found kindred in resting alleys. Black bile sloshed in their twisted stomachs, spittle hung from their chins. When they laid their dirty fingers on his sleeves he felt repulsed. But when they moved their sickening sacks of flesh he knew that they understood, they felt that INSIDE, turn to OUT, their sputtering flames expelling that last ounce of strength.{/i}"
+
+    "{i}\"A prick! Just one more!\" a voice shrieked to him. \"Just one more and I'll be set!\" Ace rolled a bottle of shards across the ground, crystal glint even there.{/i}"
+
+    "There is an arrow pointing off the page, a label saying \"BUTTERFLY 1, PAGE 24\""
+
+    menu:
+
+        "I turn to page 24":
+
+            jump butterfly_1
+
+        "I continue reading":
+
+            jump butterfly_0
+
+label butterfly_0:
+
+    "{i}Grasping hands seethed forth and pulled it into the nothing. Invincible, one darted into the street to meet his destiny.{/i}"
+
+    "{i}These were his first days. Never the easy route, always umbra, Ace {s}broke into labs{/s} found the good stuff by smell. There were makers, tenders, nurturers, whose INSIDEs were built like fortresses, kilns of creation. And then there was him, the searcher, the runner, the fighter, the one that would take {s}what was rightfully his{/s} everything and everything and more.{/i}"
+
+    "{i}\"The day will come,\" he told himself, \"The day will come when someday your body betrays you\"{/i}"
 
     jump study_menu
+
+label butterfly_1:
+
+    "{i}The {/i}"
+
+    menu:
+
+        "I turn to page 32":
+
+            jump butterfly_1_1
+
+        "I continue reading":
+
+            jump butterfly_1_2
+
+label butterfly_1_1:
+
+label butterfly_1_2:
 
 label study_papers:
 
