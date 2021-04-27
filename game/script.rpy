@@ -79,7 +79,7 @@ label start:
 
     scene black with fade
 
-    "I had received a call in the morning from an unfamiliar voice, while I was..."
+    "{s} I had {/s}received a call in the morning from an unfamiliar voice, while I was..."
 
     menu:
 
@@ -779,6 +779,9 @@ label hometown_truth:
     "Rory raises an eyebrow. \"Atford? If I recall correctly, James came up to Lintonbury from Earnsworth after finishing school.\""
     "\"Isn't Atford up in Commerce Valley? Now that I think of it, one of my friends was talking about buying a residence there, I've heard it's rather quaint. I didn't know James had lived in Atford prior. James Atford Pryor.\" Rory laughs at his own joke."
     "\'Did the Pryors move around much when he was a child? I imagine that could be difficult. But I'm sure James got along just fine.\""
+    "\"It made him resilient in the end. Or perhaps it revealed that character within him. He was once a child, just like any of us, but I really can't imagine him any other way.\""
+    "\"What do you think it is, that makes us the same person we are throughout our lifetimes? Even when our beliefs and dispositions are ever changing?\""
+    "\"I'd hate to be judged as the stupid lad I was ten years ago, but he is me just as much as the man I am now--older, wiser and of legal drinking age!\""
 
     jump wedding_end
 
