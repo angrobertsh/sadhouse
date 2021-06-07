@@ -42,7 +42,6 @@ default explored_conservatory_table = False
 default explored_gueuloir = False
 default explored_study_safe = False
 default explored_study_picture = False
-default explored_study_papers = False
 default explored_study_book_3 = False
 default explored_study_check = False
 default explored_study_check_cult = False
@@ -81,7 +80,7 @@ label start:
 
     scene black with fade
 
-    "{s} I had {/s}received a call in the morning from an unfamiliar voice, while I was..."
+    "I had received a call in the morning from an unfamiliar voice, while I was..."
 
     menu:
 
@@ -1804,10 +1803,6 @@ label study_menu:
 
             jump study_safe
 
-        "I examine the mess upon the desk" if not explored_study_papers:
-
-            jump study_papers
-
         "A picture catches my eye" if not explored_study_picture:
 
             jump study_pictures
@@ -2028,7 +2023,7 @@ label study_book_3:
 
     "{i}{s}It is what{/s} It is INSIDE of him, hailfire like the metallic haze, it jumps out like reflex around the cat silk corner. Elegant in his rage he is armed with his rifle he {s}shoots{/s} turns OUT the fire INSIDE. Hailfire to hellfire down drop the dazzling dirigibles.{/i}"
 
-    "{i}EN: \"dirigible\" dated, rework alliteration?{/i}"
+    "{i}EN: \"dirigible\" dated, rework alliteration? No.{/i}"
 
     "Jumping in in the middle of this text is immediately disorienting. I am surprised by the sheer amount of scribbles, editing, and, what it appears, are editor's notes that surround the text. I see no trace of the Jimmy I know in this text, but isn't that something? The writer's craft... My curiosity has me turn back to the first page."
 
@@ -2040,9 +2035,11 @@ label study_book_3:
 
     "{i}EN: Too explanatory.{/i}"
 
-    "{i}Ace felt the heat rise in his neck. A young man, he had found kindred in resting alleys. Black bile sloshed in their twisted stomachs, spittle hung from their chins. When they laid their dirty fingers on his sleeves he felt repulsed. But when they moved their sickening sacks of flesh he knew that they understood, they felt that INSIDE, turn to OUT, their sputtering flames expelling that last ounce of strength.{/i}"
+    "{i}Ace felt the heat rise in his neck. A young man, he had found kindred in resting alleys. Those gibbering addicts, black bile sloshed in their twisted stomachs, spittle hung from their chins. When they laid their dirty fingers on his sleeves he felt repulsed. But when they moved their sickening sacks of flesh he knew that they understood, they felt that INSIDE, turn to OUT, their sputtering flames expelling that last ounce of strength.{/i}"
 
     "{i}\"A prick! Just one more!\" a voice shrieked to him. \"Just one more and I'll be set!\" Ace rolled a bottle of shards across the ground, crystal glint even there.{/i}"
+
+    "{i}Grasping hands seethed forth and pulled it into the nothing. Invincible, one darted into the street to meet its destiny.{/i}"
 
     "There is an arrow pointing off the page, a label saying \"BUTTERFLY 1, PAGE 24\""
 
@@ -2058,17 +2055,43 @@ label study_book_3:
 
 label butterfly_0:
 
-    "{i}Grasping hands seethed forth and pulled it into the nothing. Invincible, one darted into the street to meet his destiny.{/i}"
+    "{i}These were his first days. Always umbra, Ace {s}broke into labs{/s} found the good stuff by smell. There were makers, tenders, nurturers, whose INSIDEs were built like fortresses, kilns of creation. And then there was him, {s}the seeker, the runner, the fighter,{/s} the one who takes {s}what was rightfully his{/s} everything and everything and more.{/i}"
 
-    "{i}These were his first days. Never the easy route, always umbra, Ace {s}broke into labs{/s} found the good stuff by smell. There were makers, tenders, nurturers, whose INSIDEs were built like fortresses, kilns of creation. And then there was him, the searcher, the runner, the fighter, the one that would take {s}what was rightfully his{/s} everything and everything and more.{/i}"
+    "{i}\"The day will come,\" he told himself, \"The day will come when your betraying body betrays you, finally, some INSIDE flame too great.\"{/i}"
 
-    "{i}\"The day will come,\" he told himself, \"The day will come when someday your body betrays you\"{/i}"
+    "{i}But that day was not today. The next mark was {s}in Roundflatts{/s}, nestled in a forgotten court. The cooks had security, armed and avid. A switchblade and the ever burning cinder INSIDE was with all he was armed.{/i}"
 
-    jump study_menu
+    "{i}Hour 'til the rising moon his ear he placed against the lock. The thrum INSIDE rearing staring crushed against his chest. These were his first days, the pain to click the tumblers quiet turn that OUT side INSIDE. Each passing moment that cinder lights with patience feed the flame.{/i}"
+
+    "{i}And when he could take it no more, that INSIDE heat too much. A ready hour he swung the door. His speech was shatterglass, his dance like death. They had no time to turn. Junkie sick but there they were, molasses movement vs shrewd shredding steel.{/i}"
+
+    "{i}The umber fires, the vivid beakers, smoke that smelled like aching eager. His eyes were drawn to little sacs all pert and plum and ready to be burned.{/i}"
+
+    "{i}Who should impede upon his path? His glinting teeth a dagger's trick and INSIDE turn to OUT, the diving left, a rising right, the only right, the only rite of memory of who that once was. So far in the past he fell behind forgotten in the OUT.{/i}"
+
+    "{i}A shriek, another, then shatterglass, his voice. It finally rang, {s}but not from him,{/s} but all around. The rising right it turns to thrust, it barrels through the cluster of shadows around him. They shy and crumple like the fragile things they are. And in his hand he takes what is his, and everything, and more.{/i}"
+
+    "There is an arrow pointing off the page, a label saying \"BUTTERFLY 2, PAGE 101\""
+
+    menu:
+
+        "I turn to page 101":
+
+            jump butterfly_0_1
+
+        "I continue reading":
+
+            jump butterfly_0_0
+
+        "I close the book":
+
+            jump study_book_3_end
 
 label butterfly_1:
 
-    "{i}The {/i}"
+    "{i}The potter's daughter weighed the clay her father placed upon the scale. Why pay for dirt? It was all around. Her father had explained to her that it was special dirt. Maybe he was right. Dirt cakes in the kiln didn't turn into jars. She practiced her numbers meanwhile.{/i}"
+
+    "{i}\"Very good. That's enough,\" he said looking at her lines and crosses. They contained no discernible meaning, even to her, but he knew: this much would turn to into planters. They would be sold into the neighborhood, again. Another of the same order, going to the same homes, likely as replacements. Wasn't it strange that he made things to break?{/i}"
 
     menu:
 
@@ -2080,21 +2103,24 @@ label butterfly_1:
 
             jump butterfly_1_2
 
+        "I close the book":
+
+            jump study_book_3_end
+
 label butterfly_1_1:
 
 label butterfly_1_2:
+
+label study_book_3_end:
+
+    "I find what I'd expect of Jimmy. A grand screed of ideas that span time and space, clusters of finished and unfinished thoughts from a grandiose life."
+
+    jump study_menu
 
 label study_papers:
 
     $ explored_study_papers = True
 
-    "I find what I'd expect of Jimmy. A whirlwind of papers covered in varying levels of dust. A grand screed of ideas that span time and history, illegible scrolls of unfinished thoughts."
-
-    "I am saddened when I understand that nobody will ever be able to piece this story together."
-
-    "I fruitlessly rummage through Jimmy's mind. My fingers line up pages as if they'll fit together like a puzzle. There's a short story about a hunter and a harp. A few paragraphs about an installation he'd gone to at a museum, maybe a review? The papers are now in thorough disarray. There's a description of what he says is the last perfect peach he'll ever have."
-
-    "I take this moment, then, to put this burden down. There will only ever be one Jimmy Pryor, and he is gone now."
 
     jump study_menu
 
