@@ -412,7 +412,7 @@ if mood > 0:
 
 if mood < 1:
 
-    "I had begun to grow weary of his noncommittal gestures"
+    "Though, I am unsurprised. I had grown weary of Jimmy's noncommittal gestures"
 
     jump library
 
@@ -438,13 +438,15 @@ label lounge_window:
 
     $ explored_lounge_window = True
 
-    "The grand windows allow the sun to shine beautifully into this room."
+    "The grand windows allow the morning sun to cast gentle shadows across the rug."
 
-    "I look out towards the path I'd taken to enter the home and am struck by just how lovely a neighborhood this is."
+    "As I look beyond, I see the brick path I'd taken to enter the home."
 
-    "Greenery all around, a lawn for dogs or kids, gentle shade from trees in the summer, a fireplace for coziness in winter."
+    "Surrounding it is a great lawn, perfect for dogs, or children. Subtle trees would cast comforting shade in the summer. The iron gate provided safety, in this already safe neighborhood."
 
-    "I wonder if James knew what a lovely home he had."
+    "In the winter, there was room to build a snowman, or have a snowball fight."
+
+    "I wonder if Jimmy was aware of what a jewel of a home this was."
 
     jump lounge_menu
 
@@ -472,7 +474,7 @@ if tutor:
 
     "A tutor often plays the role of a guest. Some clients would sit me on their unused furniture that was \"reserved for company.\" Others would place me at a kitchen table."
 
-    "It is pleasantly odd to be in such a lounge without a book in my hand, or a willful child to handle."
+    "It is pleasantly odd to be in such a lounge without a book in my hand, or a willful child to reprimand."
 
     "I smile before I remember my sad business here."
 
