@@ -2031,7 +2031,7 @@ label study_book_3:
 
     "{i}{s}Ace Allen was a man on fire.{/s} Ace was last {s}of his kind{/s} burning. {s}on Earth{/s}. {s}His birth was marked by a falling star{/s} From an unknown mother, on an unknown night, he clawed his way to a lonely freedom.{/i}"
 
-    "{i}Movement, move, swim, jump, cut, the cinder INSIDE knew no rest. What was OUT served only to quench that self-kindling cinder. Life was the question, answered by pursuit. How deep the thirst? How strong the will?{/i}"
+    "{i}Movement, move, run, jump, cut, the cinder INSIDE knew no rest. What was OUT served only to quench that self-kindling cinder. Life was the question, answered by pursuit. How deep the thirst? How strong the will?{/i}"
 
     "{i}{s}As a young boy Ace knew he was different. He would never tire. When still he was ill at ease. It only felt right when he ran, pulled ropes, dug holes, fell into danger. His peers fell away one by one. They felt not what he did INSIDE. They would never change the world, not like him.{/s}{/i}"
 
@@ -2043,7 +2043,7 @@ label study_book_3:
 
     "{i}Grasping hands seethed forth and pulled it into the nothing. Invincible, one darted into the street to meet its destiny.{/i}"
 
-    "There is an arrow pointing off the page, a label saying \"BUTTERFLY 1, PAGE 24\""
+    "There is an arrow pointing off the page, a label saying \"BUTTERFLY 1 (STONE), PAGE 24\""
 
     menu:
 
@@ -2069,7 +2069,7 @@ label butterfly_0:
 
     "{i}The umber fires, the vivid beakers, smoke that smelled like aching eager. His eyes were drawn to little sacs all pert and plum and ready to be burned.{/i}"
 
-    "{i}Who should impede upon his path? His glinting teeth a dagger's trick and INSIDE turn to OUT, the diving left, a rising right, the only right, the only rite of memory of who that once was. So far in the past he fell behind forgotten in the OUT.{/i}"
+    "{i}Who should impede upon his path? His glinting teeth a talon's trick and INSIDE turn to OUT, the diving left, a rising right, the only right, the only rite of memory of who that once was. So far in the past he fell behind forgotten in the OUT.{/i}"
 
     "{i}A shriek, another, then shatterglass, his voice. It finally rang, {s}but not from him,{/s} but all around. The rising right it turns to thrust, it barrels through the cluster of shadows around him. They shy and crumple like the fragile things they are. And in his hand he takes what is his, and everything, and more.{/i}"
 
@@ -2091,19 +2091,29 @@ label butterfly_0:
 
 label butterfly_1:
 
-    "{i}The potter's daughter weighed the clay her father placed upon the scale. Why pay for dirt? It was all around. Her father had explained to her that it was special dirt. Maybe he was right. Dirt cakes in the kiln didn't turn into jars. She practiced her numbers meanwhile.{/i}"
+    "{i}EN: Stone 1{/i}"
+
+    "{i}The potter's daughter weighed the clay her father placed upon the scale. Why pay for dirt? It was all around. Her father had explained to her that it was special dirt. Maybe he was right. Dirt cakes in the kiln didn't turn into jars. She practiced her numbers, meanwhile.{/i}"
 
     "{i}\"Very good. That's enough,\" he said looking at her lines and crosses. They contained no discernible meaning, even to her, but he knew: this much would turn to into planters. They would be sold into the neighborhood, again. Another of the same order, going to the same homes, likely as replacements. Wasn't it strange that he made things to break?{/i}"
 
+    "{i}In the old days it was well. {s}Rarely broken was the city,{/s} Rarely broken was the pottery. There was room to breathe, and clean air to breathe. A potter belonged there, in those days. Not now.{/i}"
+
+    "{i}The erosion of the neighborhood was shored up by his pottery. All was well until it was broken by some addled mind seeking asylum. Then they were reminded of where they lived, the ugly reality around them. The planters returned to the earth, and in some way, returned to him, the endless cycle.{/i}"
+
+    "{i}All stones were the same, to most, but there was more truth to it than it seemed.{/i}"
+
+    "There is an arrow pointing off the page, a label saying \"BUTTERFLY 1-1 (STONE), PAGE 203\""
+
     menu:
 
-        "I turn to page 32":
+        "I turn to page 203":
 
             jump butterfly_1_1
 
-        "I continue reading":
+        "I turn back to where I left off":
 
-            jump butterfly_1_2
+            jump butterfly_0
 
         "I close the book":
 
@@ -2111,7 +2121,43 @@ label butterfly_1:
 
 label butterfly_1_1:
 
-label butterfly_1_2:
+    "{i}EN: Stone 2{/i}"
+
+    "{i}\"Your breath, it catches more easily now,\" she explained calmly.{/i}"
+
+    "{i}\"I don't understand.\"{/i}"
+
+    "{i}\"In dust it crystallizes the lungs. It will be slow, and you may burn before it takes you. But I have begun the inevitable. It is the age of quartz, the time of quartz.\"{/i}"
+
+    "{i}The machinery roared as if shearing its pulverizing gears. Those who watched didn't care, and those above cared even less. Fed a diet of {s}stones{/s} earth, and blood, in return it excreted pinpoints of stars.{/i}"
+
+    "{i}In return it excreted clay, mined from the quarries, wet particles of stone amassed in open pits. Withering diagenesis procreant. Among the stuff sat humble quartz, discarded to the tailings.{/i}"
+
+    menu:
+
+        "I turn back to where I left off":
+
+            jump butterfly_0
+
+        "I close the book":
+
+            jump study_book_3_end
+
+label butterfly_0_1:
+
+    menu:
+
+        "I close the book":
+
+            jump study_book_3_end
+
+label butterfly_0_0:
+
+    menu:
+
+        "I close the book":
+
+            jump study_book_3_end
 
 label study_book_3_end:
 
