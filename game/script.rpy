@@ -2027,7 +2027,7 @@ label study_book_3:
 
     "{i}EN: \"dirigible\" dated, rework alliteration? No.{/i}"
 
-    "Jumping in in the middle of this text is immediately disorienting. I am surprised by the sheer amount of scribbles, editing, and, what it appears, are editor's notes that surround the text. I see no trace of the Jimmy I know in this text, but isn't that something? The writer's craft... My curiosity has me turn back to the first page."
+    "Shuffling to the middle of this text is immediately disorienting. I am surprised by the sheer amount of scribbles, editing, and, what it appears, are editor's notes that surround the text. I see no trace of the Jimmy I know in this text, but isn't that something? The writer's craft... My curiosity has me turn back to the first page."
 
     "{i}{s}Ace Allen was a man on fire.{/s} Ace was last {s}of his kind{/s} burning. {s}on Earth{/s}. {s}His birth was marked by a falling star{/s} From an unknown mother, on an unknown night, he clawed his way to a lonely freedom.{/i}"
 
@@ -2037,7 +2037,7 @@ label study_book_3:
 
     "{i}EN: Too explanatory.{/i}"
 
-    "{i}Ace felt the heat rise in his neck. A young man, he had found kindred in resting alleys. Those gibbering addicts, black bile sloshed in their twisted stomachs, spittle hung from their chins. When they laid their dirty fingers on his sleeves he felt repulsed. But when they moved their sickening sacks of flesh he knew that they understood, they felt that INSIDE, turn to OUT, their sputtering flames expelling that last ounce of strength.{/i}"
+    "{i}Ace felt the fire INSIDE rise as he cracked his neck. A young man, he had found kindred in resting alleys. Those gibbering addicts, black bile sloshed in their twisted stomachs, spittle hung from their chins. When they laid their dirty fingers on his sleeves he felt repulsed. But when they moved their sickening sacks of flesh he knew that they understood, they felt that INSIDE, turn to OUT, their sputtering flames expelling that last ounce of strength.{/i}"
 
     "{i}\"A prick! Just one more!\" a voice shrieked to him. \"Just one more and I'll be set!\" Ace rolled a bottle of shards across the ground, crystal glint even there.{/i}"
 
@@ -2057,11 +2057,11 @@ label study_book_3:
 
 label butterfly_0:
 
-    "{i}These were his first days. Always umbra, Ace {s}broke into labs{/s} found the good stuff by smell. There were makers, tenders, nurturers, whose INSIDEs were built like fortresses, kilns of creation. And then there was him, {s}the seeker, the runner, the fighter,{/s} the one who takes {s}what was rightfully his{/s} everything and everything and more.{/i}"
+    "{i}These were his first days. Always umbra, Ace {s}broke into labs{/s} found the \"good stuff\" by smell. There were makers, tenders, nurturers, whose INSIDEs were built like fortresses, kilns of creation. And then there was him, {s}the seeker, the runner, the fighter,{/s} the one who takes {s}what was rightfully his{/s} everything and everything and more.{/i}"
 
     "{i}\"The day will come,\" he told himself, \"The day will come when your betraying body betrays you, finally, some INSIDE flame too great.\"{/i}"
 
-    "{i}But that day was not today. The next mark was {s}in Roundflatts{/s}, nestled in a forgotten court. The cooks had security, armed and avid. A switchblade and the ever burning cinder INSIDE was with all he was armed.{/i}"
+    "{i}But that day was not today. The next mark was {s}in Roundflatts{/s}, nestled in a forgotten court. The cooks had security, avid. A switchblade and the ever burning cinder INSIDE was with all he was armed.{/i}"
 
     "{i}Hour 'til the rising moon his ear he placed against the lock. The thrum INSIDE rearing staring crushed against his chest. These were his first days, the pain to click the tumblers quiet turn that OUT side INSIDE. Each passing moment that cinder lights with patience feed the flame.{/i}"
 
@@ -2095,13 +2095,13 @@ label butterfly_1:
 
     "{i}The potter's daughter weighed the clay her father placed upon the scale. Why pay for dirt? It was all around. Her father had explained to her that it was special dirt. Maybe he was right. Dirt cakes in the kiln didn't turn into jars. She practiced her numbers, meanwhile.{/i}"
 
-    "{i}\"Very good. That's enough,\" he said looking at her lines and crosses. They contained no discernible meaning, even to her, but he knew: this much would turn to into planters. They would be sold into the neighborhood, again. Another of the same order, going to the same homes, likely as replacements. Wasn't it strange that he made things to break?{/i}"
+    "{i}\"Very good. That's enough,\" he said looking at her noughts and crosses. They contained no discernible meaning, even to her, but he knew: this much would turn to into planters. They would be sold into the neighborhood, again. Another of the same order, going to the same homes, likely as replacements. Wasn't it strange that he made things to break?{/i}"
 
     "{i}In the old days it was well. {s}Rarely broken was the city,{/s} Rarely broken was the pottery. There was room to breathe, and clean air to breathe. A potter belonged there, in those days. Not now.{/i}"
 
-    "{i}The erosion of the neighborhood was shored up by his pottery. All was well until it was broken by some addled mind seeking asylum. Then they were reminded of where they lived, the ugly reality around them. The planters returned to the earth, and in some way, returned to him, the endless cycle.{/i}"
+    "{i}The erosion of the neighborhood was shored up by his pottery. All was well until it was broken by some addled mind seeking asylum. Then they were reminded of where they lived, {s}the ugly reality around them{/s}. The planters returned to the earth, and in some way, returned to him, the endless cycle.{/i}"
 
-    "{i}All stones were the same, to most, but there was more truth to it than it seemed.{/i}"
+    "{i}All stones were the same, to most, and there was more truth to it than it seemed.{/i}"
 
     "There is an arrow pointing off the page, a label saying \"BUTTERFLY 1-1 (STONE), PAGE 203\""
 
@@ -2127,7 +2127,7 @@ label butterfly_1_1:
 
     "{i}\"I don't understand.\"{/i}"
 
-    "{i}\"In dust it crystallizes the lungs. It will be slow, and you may burn before it takes you. But I have begun the inevitable. It is the age of quartz, the time of quartz.\"{/i}"
+    "{i}\"In dust it crystallizes the lungs. {s}It will be slow, and{/s} you may burn before it takes you. But I have begun the inevitable. It is the age of quartz, the time of quartz.\"{/i}"
 
     "{i}The machinery roared as if shearing its pulverizing gears. Those who watched didn't care, and those above cared even less. Fed a diet of {s}stones{/s} earth, and blood, in return it excreted pinpoints of stars.{/i}"
 
@@ -2145,6 +2145,18 @@ label butterfly_1_1:
 
 label butterfly_0_1:
 
+    "{i}The dirty job turned young men old. The old stayed for reasons they told no one, {s}including themselves{/s}. So many spiders, so many sins, hot weather sail the sweet beyond ailing.{/i}"
+
+    "{i}They took pains to find things to keep. There was something about the preservation of matter when what mattered was not preserved. A stained cloth was sent to the cleaner's and the color reminded her of the burgundy of the orchids of her youth.{/i}"
+
+    "{i}\"Flagrant flora!\" the older girls had called it, \"Not nice like a daisy.\"{/i}"
+
+    "{i}The stain was to be removed. Too deep in, though, the bleach would work but she didn't want to put her hands in it, so she didn\'t. Anna\'d thrust her hands in once, it splashed and made her eyes sting for days! It was in the evening though, worrying over that stain, when she didn\'t watch where she was going.{/i}"
+
+    "{i}\"Oh!\" she stood agape. The man before her looked at her with annoyance, then precision. This attention was meant for girls in posters, not girls like her.{/i}"
+
+    "{i}\"Hey!\" she yelped as pressure was placed on her arm. She resisted, but something yawning was opening under her, whose eyes above its maw had that same precise look.{/i}"
+
     menu:
 
         "I close the book":
@@ -2152,6 +2164,26 @@ label butterfly_0_1:
             jump study_book_3_end
 
 label butterfly_0_0:
+
+    "{i}But what was his was nothing. {s}Something about the intemperance of youth.{/s} Fast was the hunger, come as soon as it had gone: kindling INSIDE stoked again anew. Again and again that INSIDE flame grew less sated.{/i}"
+
+    "{i}\"Tell me your dreams,\" asked a voice from OUT. It shook him for no reason, from the torpor of years. Each hand callused, a mystery geometry of scars, blast patterns, stretching feathers.{/i}"
+
+    "{i}There was distance between his finger and itself on the mirror. The voice from OUT behind.{/i}"
+
+    "{i}\"If you tell me what you want, we may be able to help,\" it said.{/i}"
+
+    "{i}The reflection smirked at nothing. A man in a hat was nothing.{/i}"
+
+    "{i}\"You could be surprised,\" it said, \"or maybe not. But you'll never know unless you let us in.\"{/i}"
+
+    "{i}\"I already know,\" Ace replied, and doubt, there was none, but curiosity, there was. He felt in this moment the INSIDE quiet, the empty sound leaving room to fill with a different kind of echo.{/i}"
+
+    "{i}\"You may know, but you don't know if you'll like it. Give it a chance,\" it said. There was a patient moment then, when he undid the clip at his belt, slid the gun that sounded like hot water across the table.{/i}"
+
+    "{i}\"I could kill you/you could kill me,\" they said at once. \"But I wouldn't need that/but you wouldn't need that\"{/i}"
+
+    "{i}Nevertheless Ace grasped it in his hand, cocked the trigger, aimed the gun at his reflection, and felt the INSIDE simmer. Click once, the mirror fell away.{/i}"
 
     menu:
 
@@ -2162,13 +2194,6 @@ label butterfly_0_0:
 label study_book_3_end:
 
     "I find what I'd expect of Jimmy. A grand screed of ideas that span time and space, clusters of finished and unfinished thoughts from a grandiose life."
-
-    jump study_menu
-
-label study_papers:
-
-    $ explored_study_papers = True
-
 
     jump study_menu
 

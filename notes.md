@@ -104,7 +104,7 @@ Conservatory
 - Pasiphae play
 
 Study
-- [TODO] Safe
+- [TODO] Safe - OLIVER OPENS IT?!!?!?
 - Mess of papers
 - [TODO] Picture
   - [TODO] Memory 3 with Oliver
@@ -113,3 +113,8 @@ Study
 
 Bedroom
 - Fan Mail
+- Shitty ending where you don't do anything? No redistribution of assets, no publishing of unfinished works?
+
+
+QUOTES:
+Oliver: Do I have to take on his debt? -- he isn't super aware of the reality of death and debt, and also he potentially questions James's situation overall but thinks James generally has it made
