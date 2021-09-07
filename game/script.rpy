@@ -1060,7 +1060,17 @@ label patio:
 
 if mood > 0:
 
-    "What were you thinking as you sat out here, Jimmy?"
+    "The patio looks decorated enough, almost as lavishly as inside. The guests would not want for reclining, dining or entertainment even when walking out these doors."
+    "They would retire here with food and drink, exchanging idle gossip and comparing prices on each other's newly purchased houses, or congratulating themselves on the recently increased values on their stocks."
+
+    "I don't blame him for never extending me an official invitation. I was still spending half my monthly income on rent and could hardly fathom holding onto my savings, let alone any investments."
+
+    "Perhaps he was sparing me from keeping up the pretense of being able to compete." 
+
+    "And now I'm here, not as a visitor but a scavenger of sorts, gleaning through the remains of a life that I could never be a part of or understand. His path had only continued to diverge further from mine until it was no longer in sight."
+
+    "Jimmy, why am I here for him? Surely there were others more qualified than I, more intimate and knowledgeable of retaining assets and such. Yet in the end, I was his choice."
+
 
 if mood < 1:
 
@@ -1075,7 +1085,7 @@ if mood < 1:
 
     "Better than to acknowledge my skepticism or to outright refuse his invitations, I suppose."
 
-    "Jimmy, why am I even here for him?"
+    "What were you thinking as you sat out here, Jimmy?"
 
 label patio_menu:
 
