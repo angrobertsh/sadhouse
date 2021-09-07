@@ -81,7 +81,7 @@ label start:
 
     scene black with fade
 
-    "{s} I had {/s}received a call in the morning from an unfamiliar voice, while I was..."
+    "I had received a call in the morning from an unfamiliar voice, while I was..."
 
     menu:
 
@@ -1065,7 +1065,7 @@ if mood > 0:
 
     "I don't blame him for never extending me an official invitation. I was still spending half my monthly income on rent and could hardly fathom holding onto my savings, let alone any investments."
 
-    "Perhaps he was sparing me from keeping up the pretense of being able to compete." 
+    "Perhaps he was sparing me from keeping up the pretense of being able to compete."
 
     "And now I'm here, not as a visitor but a scavenger of sorts, gleaning through the remains of a life that I could never be a part of or understand. His path had only continued to diverge further from mine until it was no longer in sight."
 
