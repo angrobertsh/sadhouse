@@ -310,13 +310,24 @@ label james_letter:
     scene letters_6
 
     "To my old friend."
-    "Thomas tells me I need to plan for when I'm gone..."
 
-    "Palace Gardens is a fine place to live."
+    "Thomas tells me I need to plan for when I'm gone. Such morbid business, really. But, the end of a story is as important as its beginning."
 
-    "Perhaps you'll visit one day."
+    "Although, if we were to be {i}pedantic{/i}, I suppose this would be my epilogue."
 
-    # TODO this letter is unfinished
+    "I've named you the executor of my estate. Few have been privy to my life as you have. I know you a kind soul, and will grant me this one favor."
+
+    "Thomas has my last will and testament. He will be in charge of ___, but you will be ___."
+
+    "There are a few certain intangible things that I'd like you to take care of as well. Please ensure Marian continues receiving her care. And please keep an eye on Oliver. I know you have been, and I thank you for that."
+
+    "If you find any loose ends, tie them up as I would have. I can't remember it all, but I trust you to do what is best."
+
+    "I am tired. I don't much like all this business of dying. It takes all the breath out of living."
+
+    "I hope this letter finds you well, and reaches you long before I've departed this mortal coil. Palace Gardens is a fine place to live. Perhaps you'll visit one day."
+
+    "Jimmy"
 
     scene stephen_king_mansion at truecenter
 
